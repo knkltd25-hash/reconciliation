@@ -1,0 +1,12 @@
+{
+  "price mismatch": "Invoice Price Issue",
+  "invoice discrepancy": "Invoice Price Issue",
+  "quantity mismatch": "Quantity Issue",
+  "quantity discrepancy": "Quantity Issue",
+  "late delivery": "Delivery Issue",
+  "delayed shipment": "Delivery Issue",
+  "missing grn": "GRN Issue",
+  "no grn": "GRN Issue",
+  "asn mismatch": "ASN Issue",
+  "wrong asn": "ASN Issue"
+}

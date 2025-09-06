@@ -1,0 +1,885 @@
+PO_ID,reason
+PO1000,arrived late
+PO1001,no reason
+PO1002,over-delivery
+PO1003,invoice/grn quantity mismatch
+PO1004,no reason
+PO1005,invoice quantity mismatch
+PO1006,multiple grns
+PO1007,more received
+PO1008,no reason
+PO1009,currency mismatch
+PO1010,invoice quantity mismatch
+PO1011,total price discrepancy
+PO1012,asn grn mismatch
+PO1013,price mismatch
+PO1014,no reason
+PO1015,missing grn
+PO1016,asn grn mismatch
+PO1017,price mismatch
+PO1018,no reason
+PO1019,currency mismatch
+PO1020,no reason
+PO1021,asn grn mismatch
+PO1022,currency mismatch
+PO1023,over delivered
+PO1024,invoice/grn quantity mismatch
+PO1025,currency mismatch
+PO1026,no reason
+PO1027,currency mismatch
+PO1028,no reason
+PO1029,late delivery
+PO1030,no reason
+PO1031,grn missing
+PO1032,grn missing
+PO1033,no reason
+PO1034,no reason
+PO1035,no reason
+PO1036,no reason
+PO1037,asn grn mismatch
+PO1038,no reason
+PO1039,no reason
+PO1040,currency mismatch
+PO1041,more received
+PO1042,over delivered
+PO1043,unit price mismatch
+PO1044,multiple grns
+PO1045,asn/grn mismatch
+PO1046,asn quantity mismatch
+PO1047,over-delivery
+PO1048,no reason
+PO1049,more received
+PO1050,partial shipments
+PO1051,price mismatch
+PO1052,grn missing
+PO1053,no reason
+PO1054,total price discrepancy
+PO1055,total price discrepancy
+PO1056,currency mismatch
+PO1057,multiple grns
+PO1058,asn quantity mismatch
+PO1059,asn quantity mismatch
+PO1060,late delivery
+PO1061,total price discrepancy
+PO1062,under delivered
+PO1063,currency mismatch
+PO1064,unit price mismatch
+PO1065,total price discrepancy
+PO1066,no reason
+PO1067,invoice quantity mismatch
+PO1068,no reason
+PO1069,less received
+PO1070,currency mismatch
+PO1071,less received
+PO1072,no reason
+PO1073,price mismatch
+PO1074,under-delivery
+PO1075,partial shipments
+PO1076,over delivered
+PO1077,multiple grns
+PO1078,multiple grns
+PO1079,no reason
+PO1080,no reason
+PO1081,arrived late
+PO1082,late delivery
+PO1083,invoice grn mismatch
+PO1084,total price discrepancy
+PO1085,asn quantity mismatch
+PO1086,currency mismatch
+PO1087,split shipment
+PO1088,no reason
+PO1089,currency mismatch
+PO1090,over delivered
+PO1091,delivered late
+PO1092,no reason
+PO1093,no reason
+PO1094,late delivery
+PO1095,no reason
+PO1096,more received
+PO1097,partial shipments
+PO1098,split shipment
+PO1099,invoice quantity mismatch
+PO1100,delivered late
+PO1101,delivered late
+PO1102,asn/grn mismatch
+PO1103,total price discrepancy
+PO1104,no reason
+PO1105,delivered late
+PO1106,price mismatch
+PO1107,missing grn
+PO1108,price mismatch
+PO1109,unit price mismatch
+PO1110,invoice/grn quantity mismatch
+PO1111,currency mismatch
+PO1112,total price discrepancy
+PO1113,over-delivery
+PO1114,currency mismatch
+PO1115,currency mismatch
+PO1116,no reason
+PO1117,price mismatch
+PO1118,less received
+PO1119,late delivery
+PO1120,arrived late
+PO1121,under-delivery
+PO1122,under-delivery
+PO1123,more received
+PO1124,split shipment
+PO1125,under-delivery
+PO1126,over-delivery
+PO1127,total price discrepancy
+PO1128,under delivered
+PO1129,under-delivery
+PO1130,asn grn mismatch
+PO1131,total price discrepancy
+PO1132,unit price mismatch
+PO1133,missing grn
+PO1134,late delivery
+PO1135,asn/grn mismatch
+PO1136,no grn
+PO1137,no reason
+PO1138,invoice/grn quantity mismatch
+PO1139,no reason
+PO1140,invoice quantity mismatch
+PO1141,currency mismatch
+PO1142,no grn
+PO1143,no reason
+PO1144,unit price mismatch
+PO1145,more received
+PO1146,total price discrepancy
+PO1147,grn missing
+PO1148,asn quantity mismatch
+PO1149,no reason
+PO1150,no reason
+PO1151,arrived late
+PO1152,partial shipments
+PO1153,no reason
+PO1154,multiple grns
+PO1155,split shipment
+PO1156,currency mismatch
+PO1157,invoice quantity mismatch
+PO1158,unit price mismatch
+PO1159,no reason
+PO1160,no grn
+PO1161,no reason
+PO1162,no reason
+PO1163,unit price mismatch
+PO1164,partial shipments
+PO1165,unit price mismatch
+PO1166,under delivered
+PO1167,unit price mismatch
+PO1168,no reason
+PO1169,arrived late
+PO1170,no reason
+PO1171,no reason
+PO1172,price mismatch
+PO1173,no grn
+PO1174,no grn
+PO1175,delivered late
+PO1176,price mismatch
+PO1177,asn quantity mismatch
+PO1178,no reason
+PO1179,no reason
+PO1180,price mismatch
+PO1181,asn quantity mismatch
+PO1182,partial shipments
+PO1183,currency mismatch
+PO1184,late delivery
+PO1185,no reason
+PO1186,no grn
+PO1187,late delivery
+PO1188,asn/grn mismatch
+PO1189,unit price mismatch
+PO1190,no reason
+PO1191,split shipment
+PO1192,less received
+PO1193,over delivered
+PO1194,split shipment
+PO1195,no reason
+PO1196,multiple grns
+PO1197,invoice/grn quantity mismatch
+PO1198,asn grn mismatch
+PO1199,no reason
+PO1200,partial shipments
+PO1201,split shipment
+PO1202,currency mismatch
+PO1203,currency mismatch
+PO1204,missing grn
+PO1205,total price discrepancy
+PO1206,unit price mismatch
+PO1207,unit price mismatch
+PO1208,unit price mismatch
+PO1209,multiple grns
+PO1210,over delivered
+PO1211,no reason
+PO1212,no reason
+PO1213,split shipment
+PO1214,no reason
+PO1215,missing grn
+PO1216,asn grn mismatch
+PO1217,unit price mismatch
+PO1218,partial shipments
+PO1219,currency mismatch
+PO1220,no reason
+PO1221,unit price mismatch
+PO1222,no reason
+PO1223,less received
+PO1224,asn grn mismatch
+PO1225,unit price mismatch
+PO1226,no reason
+PO1227,no reason
+PO1228,no grn
+PO1229,no reason
+PO1230,partial shipments
+PO1231,invoice quantity mismatch
+PO1232,under delivered
+PO1233,total price discrepancy
+PO1234,no reason
+PO1235,invoice quantity mismatch
+PO1236,split shipment
+PO1237,price mismatch
+PO1238,asn grn mismatch
+PO1239,currency mismatch
+PO1240,no reason
+PO1241,unit price mismatch
+PO1242,arrived late
+PO1243,invoice quantity mismatch
+PO1244,currency mismatch
+PO1245,no reason
+PO1246,invoice quantity mismatch
+PO1247,total price discrepancy
+PO1248,no reason
+PO1249,multiple grns
+PO1250,unit price mismatch
+PO1251,total price discrepancy
+PO1252,no reason
+PO1253,currency mismatch
+PO1254,over delivered
+PO1255,unit price mismatch
+PO1256,less received
+PO1257,delivered late
+PO1258,invoice grn mismatch
+PO1259,partial shipments
+PO1260,missing grn
+PO1261,no grn
+PO1262,unit price mismatch
+PO1263,no reason
+PO1264,over-delivery
+PO1265,less received
+PO1266,grn missing
+PO1267,late delivery
+PO1268,partial shipments
+PO1269,no reason
+PO1270,currency mismatch
+PO1271,late delivery
+PO1272,less received
+PO1273,grn missing
+PO1274,no reason
+PO1275,currency mismatch
+PO1276,partial shipments
+PO1277,arrived late
+PO1278,over delivered
+PO1279,arrived late
+PO1280,grn missing
+PO1281,no grn
+PO1282,no reason
+PO1283,unit price mismatch
+PO1284,currency mismatch
+PO1285,invoice quantity mismatch
+PO1286,multiple grns
+PO1287,invoice/grn quantity mismatch
+PO1288,delivered late
+PO1289,no grn
+PO1290,under-delivery
+PO1291,missing grn
+PO1292,invoice quantity mismatch
+PO1293,arrived late
+PO1294,no reason
+PO1295,no reason
+PO1296,over delivered
+PO1297,price mismatch
+PO1298,over delivered
+PO1299,more received
+PO1300,no reason
+PO1301,unit price mismatch
+PO1302,no reason
+PO1303,asn/grn mismatch
+PO1304,invoice/grn quantity mismatch
+PO1305,currency mismatch
+PO1306,missing grn
+PO1307,missing grn
+PO1308,asn/grn mismatch
+PO1309,asn grn mismatch
+PO1310,late delivery
+PO1311,unit price mismatch
+PO1312,multiple grns
+PO1313,late delivery
+PO1314,currency mismatch
+PO1315,more received
+PO1316,total price discrepancy
+PO1317,no reason
+PO1318,unit price mismatch
+PO1319,asn/grn mismatch
+PO1320,total price discrepancy
+PO1321,no reason
+PO1322,currency mismatch
+PO1323,partial shipments
+PO1324,unit price mismatch
+PO1325,unit price mismatch
+PO1326,no reason
+PO1327,over delivered
+PO1328,invoice grn mismatch
+PO1329,no reason
+PO1330,asn grn mismatch
+PO1331,total price discrepancy
+PO1332,no reason
+PO1333,no reason
+PO1334,asn/grn mismatch
+PO1335,no reason
+PO1336,late delivery
+PO1337,late delivery
+PO1338,asn quantity mismatch
+PO1339,invoice/grn quantity mismatch
+PO1340,no reason
+PO1341,under-delivery
+PO1342,price mismatch
+PO1343,asn/grn mismatch
+PO1344,currency mismatch
+PO1345,under-delivery
+PO1346,total price discrepancy
+PO1347,asn quantity mismatch
+PO1348,price mismatch
+PO1349,price mismatch
+PO1350,unit price mismatch
+PO1351,invoice grn mismatch
+PO1352,asn grn mismatch
+PO1353,asn/grn mismatch
+PO1354,arrived late
+PO1355,under delivered
+PO1356,partial shipments
+PO1357,no reason
+PO1358,arrived late
+PO1359,no reason
+PO1360,asn grn mismatch
+PO1361,no reason
+PO1362,price mismatch
+PO1363,total price discrepancy
+PO1364,arrived late
+PO1365,split shipment
+PO1366,missing grn
+PO1367,unit price mismatch
+PO1368,less received
+PO1369,asn grn mismatch
+PO1370,no reason
+PO1371,no grn
+PO1372,under-delivery
+PO1373,total price discrepancy
+PO1374,delivered late
+PO1375,asn quantity mismatch
+PO1376,currency mismatch
+PO1377,total price discrepancy
+PO1378,price mismatch
+PO1379,unit price mismatch
+PO1380,unit price mismatch
+PO1381,no reason
+PO1382,unit price mismatch
+PO1383,no reason
+PO1384,currency mismatch
+PO1385,under-delivery
+PO1386,unit price mismatch
+PO1387,no reason
+PO1388,no reason
+PO1389,no reason
+PO1390,currency mismatch
+PO1391,no reason
+PO1392,less received
+PO1393,no reason
+PO1394,no reason
+PO1395,over delivered
+PO1396,over-delivery
+PO1397,total price discrepancy
+PO1398,total price discrepancy
+PO1399,invoice/grn quantity mismatch
+PO1400,delivered late
+PO1401,no reason
+PO1402,grn missing
+PO1403,invoice/grn quantity mismatch
+PO1404,over-delivery
+PO1405,asn quantity mismatch
+PO1406,price mismatch
+PO1407,asn grn mismatch
+PO1408,under-delivery
+PO1409,price mismatch
+PO1410,currency mismatch
+PO1411,currency mismatch
+PO1412,total price discrepancy
+PO1413,unit price mismatch
+PO1414,partial shipments
+PO1415,no reason
+PO1416,currency mismatch
+PO1417,missing grn
+PO1418,under-delivery
+PO1419,currency mismatch
+PO1420,invoice/grn quantity mismatch
+PO1421,no reason
+PO1422,currency mismatch
+PO1423,total price discrepancy
+PO1424,no reason
+PO1425,no reason
+PO1426,no reason
+PO1427,unit price mismatch
+PO1428,under-delivery
+PO1429,currency mismatch
+PO1430,no grn
+PO1431,no reason
+PO1432,unit price mismatch
+PO1433,under-delivery
+PO1434,arrived late
+PO1435,asn quantity mismatch
+PO1436,currency mismatch
+PO1437,no reason
+PO1438,no reason
+PO1439,late delivery
+PO1440,unit price mismatch
+PO1441,no reason
+PO1442,no reason
+PO1443,delivered late
+PO1444,more received
+PO1445,currency mismatch
+PO1446,unit price mismatch
+PO1447,unit price mismatch
+PO1448,unit price mismatch
+PO1449,over delivered
+PO1450,unit price mismatch
+PO1451,asn/grn mismatch
+PO1452,no reason
+PO1453,no reason
+PO1454,currency mismatch
+PO1455,price mismatch
+PO1456,no reason
+PO1457,unit price mismatch
+PO1458,over delivered
+PO1459,missing grn
+PO1460,no reason
+PO1461,no reason
+PO1462,no grn
+PO1463,currency mismatch
+PO1464,grn missing
+PO1465,asn/grn mismatch
+PO1466,no reason
+PO1467,currency mismatch
+PO1468,no reason
+PO1469,asn quantity mismatch
+PO1470,multiple grns
+PO1471,no reason
+PO1472,under-delivery
+PO1473,no reason
+PO1474,late delivery
+PO1475,no grn
+PO1476,asn grn mismatch
+PO1477,invoice/grn quantity mismatch
+PO1478,less received
+PO1479,no reason
+PO1480,grn missing
+PO1481,currency mismatch
+PO1482,under-delivery
+PO1483,unit price mismatch
+PO1484,split shipment
+PO1485,price mismatch
+PO1486,no reason
+PO1487,asn/grn mismatch
+PO1488,no reason
+PO1489,invoice grn mismatch
+PO1490,unit price mismatch
+PO1491,no reason
+PO1492,no reason
+PO1493,under delivered
+PO1494,total price discrepancy
+PO1495,no reason
+PO1496,invoice/grn quantity mismatch
+PO1497,invoice quantity mismatch
+PO1498,no reason
+PO1499,partial shipments
+PO1500,asn/grn mismatch
+PO1501,no reason
+PO1502,split shipment
+PO1503,less received
+PO1504,no reason
+PO1505,missing grn
+PO1506,partial shipments
+PO1507,missing grn
+PO1508,no grn
+PO1509,no reason
+PO1510,no reason
+PO1511,missing grn
+PO1512,under-delivery
+PO1513,unit price mismatch
+PO1514,grn missing
+PO1515,no reason
+PO1516,total price discrepancy
+PO1517,total price discrepancy
+PO1518,invoice quantity mismatch
+PO1519,unit price mismatch
+PO1520,no reason
+PO1521,unit price mismatch
+PO1522,delivered late
+PO1523,total price discrepancy
+PO1524,total price discrepancy
+PO1525,late delivery
+PO1526,no reason
+PO1527,over delivered
+PO1528,multiple grns
+PO1529,asn quantity mismatch
+PO1530,currency mismatch
+PO1531,over delivered
+PO1532,invoice quantity mismatch
+PO1533,no reason
+PO1534,partial shipments
+PO1535,currency mismatch
+PO1536,no reason
+PO1537,split shipment
+PO1538,asn grn mismatch
+PO1539,total price discrepancy
+PO1540,multiple grns
+PO1541,arrived late
+PO1542,asn grn mismatch
+PO1543,arrived late
+PO1544,no reason
+PO1545,grn missing
+PO1546,split shipment
+PO1547,currency mismatch
+PO1548,currency mismatch
+PO1549,currency mismatch
+PO1550,under-delivery
+PO1551,no reason
+PO1552,currency mismatch
+PO1553,split shipment
+PO1554,unit price mismatch
+PO1555,currency mismatch
+PO1556,currency mismatch
+PO1557,late delivery
+PO1558,asn/grn mismatch
+PO1559,over delivered
+PO1560,arrived late
+PO1561,currency mismatch
+PO1562,late delivery
+PO1563,late delivery
+PO1564,grn missing
+PO1565,unit price mismatch
+PO1566,no reason
+PO1567,no reason
+PO1568,price mismatch
+PO1569,price mismatch
+PO1570,no reason
+PO1571,late delivery
+PO1572,asn grn mismatch
+PO1573,no reason
+PO1574,invoice/grn quantity mismatch
+PO1575,invoice grn mismatch
+PO1576,late delivery
+PO1577,no reason
+PO1578,invoice/grn quantity mismatch
+PO1579,arrived late
+PO1580,grn missing
+PO1581,over-delivery
+PO1582,split shipment
+PO1583,no reason
+PO1584,no grn
+PO1585,price mismatch
+PO1586,price mismatch
+PO1587,invoice quantity mismatch
+PO1588,asn quantity mismatch
+PO1589,no reason
+PO1590,invoice/grn quantity mismatch
+PO1591,no grn
+PO1592,invoice quantity mismatch
+PO1593,invoice quantity mismatch
+PO1594,total price discrepancy
+PO1595,no reason
+PO1596,arrived late
+PO1597,missing grn
+PO1598,asn grn mismatch
+PO1599,currency mismatch
+PO1600,unit price mismatch
+PO1601,split shipment
+PO1602,invoice quantity mismatch
+PO1603,partial shipments
+PO1604,currency mismatch
+PO1605,no reason
+PO1606,asn/grn mismatch
+PO1607,arrived late
+PO1608,invoice grn mismatch
+PO1609,currency mismatch
+PO1610,unit price mismatch
+PO1611,unit price mismatch
+PO1612,under delivered
+PO1613,asn quantity mismatch
+PO1614,asn grn mismatch
+PO1615,less received
+PO1616,no reason
+PO1617,invoice quantity mismatch
+PO1618,invoice grn mismatch
+PO1619,over-delivery
+PO1620,no grn
+PO1621,invoice/grn quantity mismatch
+PO1622,currency mismatch
+PO1623,no reason
+PO1624,partial shipments
+PO1625,no grn
+PO1626,price mismatch
+PO1627,grn missing
+PO1628,multiple grns
+PO1629,partial shipments
+PO1630,currency mismatch
+PO1631,no grn
+PO1632,invoice quantity mismatch
+PO1633,no reason
+PO1634,invoice grn mismatch
+PO1635,no reason
+PO1636,invoice grn mismatch
+PO1637,invoice quantity mismatch
+PO1638,asn/grn mismatch
+PO1639,invoice quantity mismatch
+PO1640,grn missing
+PO1641,unit price mismatch
+PO1642,asn quantity mismatch
+PO1643,multiple grns
+PO1644,no reason
+PO1645,invoice quantity mismatch
+PO1646,currency mismatch
+PO1647,total price discrepancy
+PO1648,asn grn mismatch
+PO1649,no reason
+PO1650,no reason
+PO1651,asn/grn mismatch
+PO1652,price mismatch
+PO1653,asn/grn mismatch
+PO1654,over-delivery
+PO1655,unit price mismatch
+PO1656,no grn
+PO1657,no grn
+PO1658,no reason
+PO1659,over-delivery
+PO1660,arrived late
+PO1661,price mismatch
+PO1662,late delivery
+PO1663,grn missing
+PO1664,split shipment
+PO1665,late delivery
+PO1666,currency mismatch
+PO1667,split shipment
+PO1668,price mismatch
+PO1669,asn grn mismatch
+PO1670,under delivered
+PO1671,invoice quantity mismatch
+PO1672,no reason
+PO1673,over-delivery
+PO1674,over-delivery
+PO1675,no grn
+PO1676,price mismatch
+PO1677,currency mismatch
+PO1678,multiple grns
+PO1679,currency mismatch
+PO1680,unit price mismatch
+PO1681,unit price mismatch
+PO1682,over delivered
+PO1683,grn missing
+PO1684,price mismatch
+PO1685,asn quantity mismatch
+PO1686,arrived late
+PO1687,more received
+PO1688,invoice/grn quantity mismatch
+PO1689,split shipment
+PO1690,invoice quantity mismatch
+PO1691,delivered late
+PO1692,multiple grns
+PO1693,no grn
+PO1694,asn/grn mismatch
+PO1695,missing grn
+PO1696,no reason
+PO1697,grn missing
+PO1698,unit price mismatch
+PO1699,asn/grn mismatch
+PO1700,no reason
+PO1701,asn quantity mismatch
+PO1702,split shipment
+PO1703,total price discrepancy
+PO1704,asn/grn mismatch
+PO1705,less received
+PO1706,price mismatch
+PO1707,delivered late
+PO1708,asn/grn mismatch
+PO1709,total price discrepancy
+PO1710,total price discrepancy
+PO1711,no reason
+PO1712,delivered late
+PO1713,no reason
+PO1714,under-delivery
+PO1715,split shipment
+PO1716,currency mismatch
+PO1717,delivered late
+PO1718,multiple grns
+PO1719,over-delivery
+PO1720,currency mismatch
+PO1721,under-delivery
+PO1722,asn grn mismatch
+PO1723,under-delivery
+PO1724,no reason
+PO1725,split shipment
+PO1726,multiple grns
+PO1727,unit price mismatch
+PO1728,under-delivery
+PO1729,no reason
+PO1730,no reason
+PO1731,no reason
+PO1732,invoice/grn quantity mismatch
+PO1733,unit price mismatch
+PO1734,unit price mismatch
+PO1735,asn grn mismatch
+PO1736,unit price mismatch
+PO1737,no reason
+PO1738,over delivered
+PO1739,invoice/grn quantity mismatch
+PO1740,delivered late
+PO1741,no reason
+PO1742,asn/grn mismatch
+PO1743,no reason
+PO1744,currency mismatch
+PO1745,total price discrepancy
+PO1746,multiple grns
+PO1747,invoice quantity mismatch
+PO1748,missing grn
+PO1749,invoice grn mismatch
+PO1750,invoice grn mismatch
+PO1751,missing grn
+PO1752,multiple grns
+PO1753,partial shipments
+PO1754,no grn
+PO1755,over-delivery
+PO1756,no reason
+PO1757,unit price mismatch
+PO1758,invoice quantity mismatch
+PO1759,price mismatch
+PO1760,less received
+PO1761,no reason
+PO1762,asn/grn mismatch
+PO1763,unit price mismatch
+PO1764,multiple grns
+PO1765,price mismatch
+PO1766,asn/grn mismatch
+PO1767,unit price mismatch
+PO1768,currency mismatch
+PO1769,currency mismatch
+PO1770,unit price mismatch
+PO1771,asn/grn mismatch
+PO1772,grn missing
+PO1773,currency mismatch
+PO1774,no reason
+PO1775,currency mismatch
+PO1776,currency mismatch
+PO1777,arrived late
+PO1778,multiple grns
+PO1779,no reason
+PO1780,delivered late
+PO1781,asn grn mismatch
+PO1782,missing grn
+PO1783,partial shipments
+PO1784,no reason
+PO1785,under-delivery
+PO1786,grn missing
+PO1787,total price discrepancy
+PO1788,no reason
+PO1789,invoice quantity mismatch
+PO1790,currency mismatch
+PO1791,unit price mismatch
+PO1792,unit price mismatch
+PO1793,asn quantity mismatch
+PO1794,partial shipments
+PO1795,partial shipments
+PO1796,no reason
+PO1797,unit price mismatch
+PO1798,less received
+PO1799,arrived late
+PO1800,asn grn mismatch
+PO1801,delivered late
+PO1802,split shipment
+PO1803,no reason
+PO1804,partial shipments
+PO1805,over-delivery
+PO1806,no grn
+PO1807,grn missing
+PO2016,invoice/grn quantity mismatch
+PO2447,unit price mismatch
+PO2188,total price discrepancy
+PO2698,over delivered
+PO2488,more received
+PO2845,no grn
+PO2605,unit price mismatch
+PO2143,unit price mismatch
+PO2812,unit price mismatch
+PO2064,under-delivery
+PO2520,under-delivery
+PO2290,delivered late
+PO2271,invoice/grn quantity mismatch
+PO2433,under-delivery
+PO2355,unit price mismatch
+PO2279,partial shipments
+PO2099,over delivered
+PO2676,multiple grns
+PO2953,invoice grn mismatch
+PO2369,arrived late
+PO2195,under-delivery
+PO2872,currency mismatch
+PO2490,invoice/grn quantity mismatch
+PO2907,late delivery
+PO2417,more received
+PO2338,currency mismatch
+PO2507,currency mismatch
+PO2181,split shipment
+PO2893,asn/grn mismatch
+PO2134,arrived late
+PO2681,price mismatch
+PO2538,under-delivery
+PO2555,less received
+PO2876,total price discrepancy
+PO2487,more received
+PO2223,split shipment
+PO2838,unit price mismatch
+PO2069,under-delivery
+PO2803,price mismatch
+PO2741,total price discrepancy
+PO2460,arrived late
+PO2406,over-delivery
+PO2151,price mismatch
+PO2127,asn grn mismatch
+PO2863,asn grn mismatch
+PO2777,partial shipments
+PO2337,partial shipments
+PO2298,more received
+PO2220,asn quantity mismatch
+PO2147,late delivery
+PO2120,over delivered
+PO2781,multiple grns
+PO2610,under delivered
+PO2802,no grn
+PO2634,over delivered
+PO2182,over-delivery
+PO2180,invoice quantity mismatch
+PO2722,split shipment
+PO2837,unit price mismatch
+PO2383,unit price mismatch
+PO2091,more received
+PO2144,asn quantity mismatch
+PO2137,delivered late
+PO2176,asn grn mismatch
+PO2230,over-delivery
+PO2365,price mismatch
+PO2259,grn missing
+PO2866,price mismatch
+PO2986,invoice grn mismatch
+PO2886,over delivered
+PO2724,invoice/grn quantity mismatch
+PO2153,less received
+PO2084,currency mismatch
+PO2583,late delivery
+PO2879,split shipment
+PO2209,over delivered

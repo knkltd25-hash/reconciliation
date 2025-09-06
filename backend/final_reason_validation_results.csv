@@ -1,0 +1,885 @@
+PO_ID,stated_reason,Match/Not,Comments
+PO1003,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1005,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1010,invoice quantity mismatch,False,Could not validate invoice quantity mismatch due to missing data.
+PO1012,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1015,missing grn,True,No GRN record found for this PO.
+PO1016,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1021,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1024,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1031,grn missing,False,GRN found for PO. Incorrect tag
+PO1032,grn missing,False,GRN found for PO. Incorrect tag
+PO1037,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1045,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1046,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1052,grn missing,False,GRN found for PO. Incorrect tag
+PO1058,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1059,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1067,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1083,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1085,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1099,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1102,asn/grn mismatch,False,
+PO1107,missing grn,False,GRN found for PO. Incorrect tag
+PO1110,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1130,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1133,missing grn,False,GRN found for PO. Incorrect tag
+PO1135,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1136,no grn,False,GRN found for PO. Incorrect tag
+PO1138,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1140,invoice quantity mismatch,False,Could not validate invoice quantity mismatch due to missing data.
+PO1142,no grn,False,GRN found for PO. Incorrect tag
+PO1147,grn missing,False,GRN found for PO. Incorrect tag
+PO1148,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1157,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1160,no grn,False,GRN found for PO. Incorrect tag
+PO1173,no grn,False,GRN found for PO. Incorrect tag
+PO1174,no grn,False,GRN found for PO. Incorrect tag
+PO1177,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1181,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1186,no grn,True,No GRN record found for this PO.
+PO1188,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1197,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1198,asn grn mismatch,False,
+PO1204,missing grn,False,GRN found for PO. Incorrect tag
+PO1215,missing grn,False,GRN found for PO. Incorrect tag
+PO1216,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1224,asn grn mismatch,False,
+PO1228,no grn,True,No GRN record found for this PO.
+PO1231,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1235,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1238,asn grn mismatch,False,
+PO1243,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1246,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1258,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1260,missing grn,False,GRN found for PO. Incorrect tag
+PO1261,no grn,True,No GRN record found for this PO.
+PO1266,grn missing,False,GRN found for PO. Incorrect tag
+PO1273,grn missing,False,GRN found for PO. Incorrect tag
+PO1280,grn missing,True,No GRN record found for this PO.
+PO1281,no grn,True,No GRN record found for this PO.
+PO1285,invoice quantity mismatch,False,Could not validate invoice quantity mismatch due to missing data.
+PO1287,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1289,no grn,False,GRN found for PO. Incorrect tag
+PO1291,missing grn,False,GRN found for PO. Incorrect tag
+PO1292,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1303,asn/grn mismatch,False,
+PO1304,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1306,missing grn,True,No GRN record found for this PO.
+PO1307,missing grn,False,GRN found for PO. Incorrect tag
+PO1308,asn/grn mismatch,False,
+PO1309,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1319,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1328,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1330,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1334,asn/grn mismatch,False,
+PO1338,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1339,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1343,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1347,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1351,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1352,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1353,asn/grn mismatch,False,
+PO1360,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1366,missing grn,True,No GRN record found for this PO.
+PO1369,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1371,no grn,False,GRN found for PO. Incorrect tag
+PO1375,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1399,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1402,grn missing,True,No GRN record found for this PO.
+PO1403,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1405,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1407,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1417,missing grn,False,GRN found for PO. Incorrect tag
+PO1420,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1430,no grn,True,No GRN record found for this PO.
+PO1435,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1451,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1459,missing grn,False,GRN found for PO. Incorrect tag
+PO1462,no grn,False,GRN found for PO. Incorrect tag
+PO1464,grn missing,True,No GRN record found for this PO.
+PO1465,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1469,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1475,no grn,False,GRN found for PO. Incorrect tag
+PO1476,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1477,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1480,grn missing,False,GRN found for PO. Incorrect tag
+PO1487,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1489,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1496,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1497,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1500,asn/grn mismatch,False,
+PO1505,missing grn,True,No GRN record found for this PO.
+PO1507,missing grn,True,No GRN record found for this PO.
+PO1508,no grn,False,GRN found for PO. Incorrect tag
+PO1511,missing grn,False,GRN found for PO. Incorrect tag
+PO1514,grn missing,False,GRN found for PO. Incorrect tag
+PO1518,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1529,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1532,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1538,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1542,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1545,grn missing,True,No GRN record found for this PO.
+PO1558,asn/grn mismatch,False,
+PO1564,grn missing,False,GRN found for PO. Incorrect tag
+PO1572,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1574,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1575,invoice grn mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1578,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1580,grn missing,False,GRN found for PO. Incorrect tag
+PO1584,no grn,True,No GRN record found for this PO.
+PO1587,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1588,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1590,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1591,no grn,False,GRN found for PO. Incorrect tag
+PO1592,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1593,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1597,missing grn,True,No GRN record found for this PO.
+PO1598,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1602,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1606,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1608,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1613,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1614,asn grn mismatch,False,
+PO1617,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1618,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1620,no grn,True,No GRN record found for this PO.
+PO1621,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1625,no grn,False,GRN found for PO. Incorrect tag
+PO1627,grn missing,True,No GRN record found for this PO.
+PO1631,no grn,False,GRN found for PO. Incorrect tag
+PO1632,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1634,invoice grn mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1636,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1637,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1638,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1639,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1640,grn missing,True,No GRN record found for this PO.
+PO1642,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1645,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1648,asn grn mismatch,False,
+PO1651,asn/grn mismatch,False,
+PO1653,asn/grn mismatch,False,
+PO1656,no grn,False,GRN found for PO. Incorrect tag
+PO1657,no grn,False,GRN found for PO. Incorrect tag
+PO1663,grn missing,False,GRN found for PO. Incorrect tag
+PO1669,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1671,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1675,no grn,False,GRN found for PO. Incorrect tag
+PO1683,grn missing,False,GRN found for PO. Incorrect tag
+PO1685,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1688,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1690,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1693,no grn,False,GRN found for PO. Incorrect tag
+PO1694,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1695,missing grn,False,GRN found for PO. Incorrect tag
+PO1697,grn missing,False,GRN found for PO. Incorrect tag
+PO1699,asn/grn mismatch,False,
+PO1701,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1704,asn/grn mismatch,False,
+PO1708,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1722,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1732,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1735,asn grn mismatch,False,
+PO1739,invoice/grn quantity mismatch,True,Invoice amount not matching GRN received quantity or PO quantity.
+PO1742,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1747,invoice quantity mismatch,False,Could not validate invoice quantity mismatch due to missing data.
+PO1748,missing grn,False,GRN found for PO. Incorrect tag
+PO1749,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1750,invoice grn mismatch,True,Invoice quantity not matching GRN received quantity.
+PO1751,missing grn,False,GRN found for PO. Incorrect tag
+PO1754,no grn,True,No GRN record found for this PO.
+PO1758,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1762,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1766,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1771,asn/grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1772,grn missing,False,GRN found for PO. Incorrect tag
+PO1781,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1782,missing grn,False,GRN found for PO. Incorrect tag
+PO1786,grn missing,False,GRN found for PO. Incorrect tag
+PO1789,invoice quantity mismatch,True,Invoice amount not matching PO quantity.
+PO1793,asn quantity mismatch,True,ASN quantity not matching PO quantity.
+PO1800,asn grn mismatch,True,ASN shipped quantity not matching GRN received quantity.
+PO1806,no grn,False,GRN found for PO. Incorrect tag
+PO1807,grn missing,False,GRN found for PO. Incorrect tag
+PO2016,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO2845,no grn,True,No GRN record found for this PO.
+PO2271,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO2953,invoice grn mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO2490,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO2893,asn/grn mismatch,False,
+PO2127,asn grn mismatch,False,
+PO2863,asn grn mismatch,False,
+PO2220,asn quantity mismatch,False,Could not validate ASN quantity mismatch due to missing data.
+PO2802,no grn,True,No GRN record found for this PO.
+PO2180,invoice quantity mismatch,False,Could not validate invoice quantity mismatch due to missing data.
+PO2144,asn quantity mismatch,False,Could not validate ASN quantity mismatch due to missing data.
+PO2176,asn grn mismatch,False,
+PO2259,grn missing,True,No GRN record found for this PO.
+PO2986,invoice grn mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO2724,invoice/grn quantity mismatch,False,Could not validate invoice/grn quantity mismatch due to missing data.
+PO1009,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1011,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1013,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO1017,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1019,currency mismatch,True,PO and Invoice currencies differ.
+PO1022,currency mismatch,True,PO and Invoice currencies differ.
+PO1025,currency mismatch,True,PO and Invoice currencies differ.
+PO1027,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1040,currency mismatch,True,PO and Invoice currencies differ.
+PO1043,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1051,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1054,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1055,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1056,currency mismatch,True,PO and Invoice currencies differ.
+PO1061,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1063,currency mismatch,True,PO and Invoice currencies differ.
+PO1064,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1065,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1070,currency mismatch,True,PO and Invoice currencies differ.
+PO1073,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1084,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1086,currency mismatch,True,PO and Invoice currencies differ.
+PO1089,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1103,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1106,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1108,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO1109,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1111,currency mismatch,True,PO and Invoice currencies differ.
+PO1112,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1114,currency mismatch,True,PO and Invoice currencies differ.
+PO1115,currency mismatch,True,PO and Invoice currencies differ.
+PO1117,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1127,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1131,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1132,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1141,currency mismatch,True,PO and Invoice currencies differ.
+PO1144,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1146,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1156,currency mismatch,True,PO and Invoice currencies differ.
+PO1158,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1163,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1165,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1167,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1172,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1176,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1180,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1183,currency mismatch,True,PO and Invoice currencies differ.
+PO1189,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1202,currency mismatch,True,PO and Invoice currencies differ.
+PO1203,currency mismatch,True,PO and Invoice currencies differ.
+PO1205,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1206,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1207,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1208,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1217,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1219,currency mismatch,True,PO and Invoice currencies differ.
+PO1221,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1225,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1233,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1237,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1239,currency mismatch,True,PO and Invoice currencies differ.
+PO1241,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1244,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1247,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1250,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1251,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1253,currency mismatch,True,PO and Invoice currencies differ.
+PO1255,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1262,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1270,currency mismatch,True,PO and Invoice currencies differ.
+PO1275,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1283,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1284,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1297,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1301,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1305,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1311,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1314,currency mismatch,True,PO and Invoice currencies differ.
+PO1316,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1318,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1320,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1322,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1324,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1325,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1331,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1342,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1344,currency mismatch,True,PO and Invoice currencies differ.
+PO1346,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1348,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1349,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1350,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1362,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1363,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1367,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1373,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1376,currency mismatch,True,PO and Invoice currencies differ.
+PO1377,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1378,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1379,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1380,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1382,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1384,currency mismatch,True,PO and Invoice currencies differ.
+PO1386,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1390,currency mismatch,True,PO and Invoice currencies differ.
+PO1397,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1398,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1406,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1409,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1410,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1411,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1412,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1413,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1416,currency mismatch,True,PO and Invoice currencies differ.
+PO1419,currency mismatch,True,PO and Invoice currencies differ.
+PO1422,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1423,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1427,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1429,currency mismatch,True,PO and Invoice currencies differ.
+PO1432,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1436,currency mismatch,True,PO and Invoice currencies differ.
+PO1440,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1445,currency mismatch,True,PO and Invoice currencies differ.
+PO1446,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1447,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1448,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1450,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1454,currency mismatch,True,PO and Invoice currencies differ.
+PO1455,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1457,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1463,currency mismatch,True,PO and Invoice currencies differ.
+PO1467,currency mismatch,True,PO and Invoice currencies differ.
+PO1481,currency mismatch,True,PO and Invoice currencies differ.
+PO1483,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1485,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1490,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1494,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1513,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1516,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1517,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1519,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1521,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1523,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1524,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1530,currency mismatch,True,PO and Invoice currencies differ.
+PO1535,currency mismatch,True,PO and Invoice currencies differ.
+PO1539,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1547,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1548,currency mismatch,True,PO and Invoice currencies differ.
+PO1549,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1552,currency mismatch,True,PO and Invoice currencies differ.
+PO1554,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1555,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1556,currency mismatch,True,PO and Invoice currencies differ.
+PO1561,currency mismatch,True,PO and Invoice currencies differ.
+PO1565,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1568,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1569,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1585,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1586,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1594,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1599,currency mismatch,True,PO and Invoice currencies differ.
+PO1600,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1604,currency mismatch,True,PO and Invoice currencies differ.
+PO1609,currency mismatch,True,PO and Invoice currencies differ.
+PO1610,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1611,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1622,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1626,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1630,currency mismatch,True,PO and Invoice currencies differ.
+PO1641,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1646,currency mismatch,True,PO and Invoice currencies differ.
+PO1647,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1652,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1655,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1661,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1666,currency mismatch,True,PO and Invoice currencies differ.
+PO1668,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1676,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1677,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1679,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1680,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1681,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1684,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1698,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1703,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1706,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1709,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO1710,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1716,currency mismatch,True,PO and Invoice currencies differ.
+PO1720,currency mismatch,True,PO and Invoice currencies differ.
+PO1727,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1733,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1734,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1736,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO1744,currency mismatch,True,PO and Invoice currencies differ.
+PO1745,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1757,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1759,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1763,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1765,price mismatch,True,PO Unit_Price does not match Invoice total amount.
+PO1767,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1768,currency mismatch,True,PO and Invoice currencies differ.
+PO1769,currency mismatch,True,PO and Invoice currencies differ.
+PO1770,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1773,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1775,currency mismatch,True,PO and Invoice currencies differ.
+PO1776,currency mismatch,True,PO and Invoice currencies differ.
+PO1787,total price discrepancy,True,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1790,currency mismatch,True,PO and Invoice currencies differ.
+PO1791,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1792,unit price mismatch,True,PO Unit_Price does not match Invoice Unit_Price (calculated from total and quantity).
+PO1797,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2447,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2188,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO2605,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2143,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2812,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2355,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2872,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO2338,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO2507,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO2681,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO2876,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO2838,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2803,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO2741,total price discrepancy,False,PO or Invoice data missing for total price discrepancy validation.
+PO2151,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO2837,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2383,unit price mismatch,False,PO or Invoice data missing for unit price mismatch validation.
+PO2365,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO2866,price mismatch,False,PO or Invoice data missing for total price discrepancy validation.
+PO2084,currency mismatch,False,PO or Invoice data missing for currency mismatch validation.
+PO1000,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1029,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1060,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1081,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1082,late delivery,False,PO or GRN data not found
+PO1091,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1094,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1100,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1101,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1105,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1119,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1120,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1134,late delivery,False,PO or GRN data not found
+PO1151,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1169,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1175,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1184,late delivery,False,PO or GRN data not found
+PO1187,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1242,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1257,delivered late,False,PO or GRN data not found
+PO1267,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1271,late delivery,False,GRN Received Date is not after PO Delivery Date
+PO1277,arrived late,False,PO or GRN data not found
+PO1279,arrived late,False,PO or GRN data not found
+PO1288,delivered late,False,GRN Received Date is not after PO Delivery Date
+PO1293,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1310,late delivery,False,PO or GRN data not found
+PO1313,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1336,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1337,late delivery,False,PO or GRN data not found
+PO1354,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1358,arrived late,False,GRN Received Date is not after PO Delivery Date
+PO1364,arrived late,False,PO or GRN data not found
+PO1374,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1400,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1434,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1439,late delivery,False,PO or GRN data not found
+PO1443,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1474,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1522,delivered late,False,PO or GRN data not found
+PO1525,late delivery,False,GRN Received Date is not after PO Delivery Date
+PO1541,arrived late,False,PO or GRN data not found
+PO1543,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1557,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1560,arrived late,False,PO or GRN data not found
+PO1562,late delivery,False,PO or GRN data not found
+PO1563,late delivery,False,GRN Received Date is not after PO Delivery Date
+PO1571,late delivery,False,GRN Received Date is not after PO Delivery Date
+PO1576,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1579,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1596,arrived late,False,GRN Received Date is not after PO Delivery Date
+PO1607,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1660,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1662,late delivery,False,PO or GRN data not found
+PO1665,late delivery,True,GRN Received Date is after PO Delivery Date
+PO1686,arrived late,True,GRN Received Date is after PO Delivery Date
+PO1691,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1707,delivered late,False,PO or GRN data not found
+PO1712,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1717,delivered late,False,GRN Received Date is not after PO Delivery Date
+PO1740,delivered late,False,PO or GRN data not found
+PO1777,arrived late,False,PO or GRN data not found
+PO1780,delivered late,True,GRN Received Date is after PO Delivery Date
+PO1799,arrived late,False,GRN Received Date is not after PO Delivery Date
+PO1801,delivered late,True,GRN Received Date is after PO Delivery Date
+PO2290,delivered late,False,PO or GRN data not found
+PO2369,arrived late,False,PO or GRN data not found
+PO2907,late delivery,False,PO or GRN data not found
+PO2134,arrived late,False,PO or GRN data not found
+PO2460,arrived late,False,PO or GRN data not found
+PO2147,late delivery,False,PO or GRN data not found
+PO2137,delivered late,False,PO or GRN data not found
+PO2583,late delivery,False,PO or GRN data not found
+PO1002,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1007,more received,True,Total received quantity is greater than the ordered quantity.
+PO1023,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1041,more received,False,PO or GRN data missing for this PO_ID.
+PO1042,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1047,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1049,more received,False,Total received quantity is not greater than the ordered quantity.
+PO1062,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1069,less received,False,Total received quantity is not less than the ordered quantity.
+PO1071,less received,False,Total received quantity is not less than the ordered quantity.
+PO1074,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1076,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1090,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1096,more received,True,Total received quantity is greater than the ordered quantity.
+PO1113,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1118,less received,False,Total received quantity is not less than the ordered quantity.
+PO1121,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1122,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1123,more received,False,PO or GRN data missing for this PO_ID.
+PO1125,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1126,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO1128,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1129,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1145,more received,False,PO or GRN data missing for this PO_ID.
+PO1166,under delivered,False,PO or GRN data missing for this PO_ID.
+PO1192,less received,False,Total received quantity is not less than the ordered quantity.
+PO1193,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1210,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1223,less received,False,PO or GRN data missing for this PO_ID.
+PO1232,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1254,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1256,less received,False,PO or GRN data missing for this PO_ID.
+PO1264,over-delivery,False,Total received quantity is not greater than the ordered quantity.
+PO1265,less received,False,Total received quantity is not less than the ordered quantity.
+PO1272,less received,False,Total received quantity is not less than the ordered quantity.
+PO1278,over delivered,False,Total received quantity is not greater than the ordered quantity.
+PO1290,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1296,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1298,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1299,more received,False,Total received quantity is not greater than the ordered quantity.
+PO1315,more received,False,PO or GRN data missing for this PO_ID.
+PO1327,over delivered,False,Total received quantity is not greater than the ordered quantity.
+PO1341,under-delivery,True,Total received quantity is less than the ordered quantity.
+PO1345,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1355,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1368,less received,False,Total received quantity is not less than the ordered quantity.
+PO1372,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1385,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1392,less received,False,Total received quantity is not less than the ordered quantity.
+PO1395,over delivered,False,Total received quantity is not greater than the ordered quantity.
+PO1396,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1404,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1408,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1418,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1428,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1433,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1444,more received,False,PO or GRN data missing for this PO_ID.
+PO1449,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1458,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1472,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1478,less received,True,Total received quantity is less than the ordered quantity.
+PO1482,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1493,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1503,less received,False,PO or GRN data missing for this PO_ID.
+PO1512,under-delivery,True,Total received quantity is less than the ordered quantity.
+PO1527,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1531,over delivered,False,Total received quantity is not greater than the ordered quantity.
+PO1550,under-delivery,False,Total received quantity is not less than the ordered quantity.
+PO1559,over delivered,True,Total received quantity is greater than the ordered quantity.
+PO1581,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1612,under delivered,True,Total received quantity is less than the ordered quantity.
+PO1615,less received,False,PO or GRN data missing for this PO_ID.
+PO1619,over-delivery,False,Total received quantity is not greater than the ordered quantity.
+PO1654,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1659,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1670,under delivered,False,Total received quantity is not less than the ordered quantity.
+PO1673,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO1674,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO1682,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1687,more received,True,Total received quantity is greater than the ordered quantity.
+PO1705,less received,False,Total received quantity is not less than the ordered quantity.
+PO1714,under-delivery,True,Total received quantity is less than the ordered quantity.
+PO1719,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO1721,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1723,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO1728,under-delivery,True,Total received quantity is less than the ordered quantity.
+PO1738,over delivered,False,Total received quantity is not greater than the ordered quantity.
+PO1755,over-delivery,False,Total received quantity is not greater than the ordered quantity.
+PO1760,less received,True,Total received quantity is less than the ordered quantity.
+PO1785,under-delivery,True,Total received quantity is less than the ordered quantity.
+PO1798,less received,False,PO or GRN data missing for this PO_ID.
+PO1805,over-delivery,True,Total received quantity is greater than the ordered quantity.
+PO2698,over delivered,False,PO or GRN data missing for this PO_ID.
+PO2488,more received,False,PO or GRN data missing for this PO_ID.
+PO2064,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2520,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2433,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2099,over delivered,False,PO or GRN data missing for this PO_ID.
+PO2195,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2417,more received,False,PO or GRN data missing for this PO_ID.
+PO2538,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2555,less received,False,PO or GRN data missing for this PO_ID.
+PO2487,more received,False,PO or GRN data missing for this PO_ID.
+PO2069,under-delivery,False,PO or GRN data missing for this PO_ID.
+PO2406,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO2298,more received,False,PO or GRN data missing for this PO_ID.
+PO2120,over delivered,False,PO or GRN data missing for this PO_ID.
+PO2610,under delivered,False,PO or GRN data missing for this PO_ID.
+PO2634,over delivered,False,PO or GRN data missing for this PO_ID.
+PO2182,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO2091,more received,False,PO or GRN data missing for this PO_ID.
+PO2230,over-delivery,False,PO or GRN data missing for this PO_ID.
+PO2886,over delivered,False,PO or GRN data missing for this PO_ID.
+PO2153,less received,False,PO or GRN data missing for this PO_ID.
+PO2209,over delivered,False,PO or GRN data missing for this PO_ID.
+PO1006,multiple grns,False,Validation code did not produce results
+PO1044,multiple grns,False,Validation code did not produce results
+PO1050,partial shipments,False,Validation code did not produce results
+PO1057,multiple grns,False,Validation code did not produce results
+PO1075,partial shipments,False,Validation code did not produce results
+PO1077,multiple grns,False,Validation code did not produce results
+PO1078,multiple grns,False,Validation code did not produce results
+PO1087,split shipment,False,Validation code did not produce results
+PO1097,partial shipments,False,Validation code did not produce results
+PO1098,split shipment,False,Validation code did not produce results
+PO1124,split shipment,False,Validation code did not produce results
+PO1152,partial shipments,False,Validation code did not produce results
+PO1154,multiple grns,False,Validation code did not produce results
+PO1155,split shipment,False,Validation code did not produce results
+PO1164,partial shipments,False,Validation code did not produce results
+PO1182,partial shipments,False,Validation code did not produce results
+PO1191,split shipment,False,Validation code did not produce results
+PO1194,split shipment,False,Validation code did not produce results
+PO1196,multiple grns,False,Validation code did not produce results
+PO1200,partial shipments,False,Validation code did not produce results
+PO1201,split shipment,False,Validation code did not produce results
+PO1209,multiple grns,False,Validation code did not produce results
+PO1213,split shipment,False,Validation code did not produce results
+PO1218,partial shipments,False,Validation code did not produce results
+PO1230,partial shipments,False,Validation code did not produce results
+PO1236,split shipment,False,Validation code did not produce results
+PO1249,multiple grns,False,Validation code did not produce results
+PO1259,partial shipments,False,Validation code did not produce results
+PO1268,partial shipments,False,Validation code did not produce results
+PO1276,partial shipments,False,Validation code did not produce results
+PO1286,multiple grns,False,Validation code did not produce results
+PO1312,multiple grns,False,Validation code did not produce results
+PO1323,partial shipments,False,Validation code did not produce results
+PO1356,partial shipments,False,Validation code did not produce results
+PO1365,split shipment,False,Validation code did not produce results
+PO1414,partial shipments,False,Validation code did not produce results
+PO1470,multiple grns,False,Validation code did not produce results
+PO1484,split shipment,False,Validation code did not produce results
+PO1499,partial shipments,False,Validation code did not produce results
+PO1502,split shipment,False,Validation code did not produce results
+PO1506,partial shipments,False,Validation code did not produce results
+PO1528,multiple grns,False,Validation code did not produce results
+PO1534,partial shipments,False,Validation code did not produce results
+PO1537,split shipment,False,Validation code did not produce results
+PO1540,multiple grns,False,Validation code did not produce results
+PO1546,split shipment,False,Validation code did not produce results
+PO1553,split shipment,False,Validation code did not produce results
+PO1582,split shipment,False,Validation code did not produce results
+PO1601,split shipment,False,Validation code did not produce results
+PO1603,partial shipments,False,Validation code did not produce results
+PO1624,partial shipments,False,Validation code did not produce results
+PO1628,multiple grns,False,Validation code did not produce results
+PO1629,partial shipments,False,Validation code did not produce results
+PO1643,multiple grns,False,Validation code did not produce results
+PO1664,split shipment,False,Validation code did not produce results
+PO1667,split shipment,False,Validation code did not produce results
+PO1678,multiple grns,False,Validation code did not produce results
+PO1689,split shipment,False,Validation code did not produce results
+PO1692,multiple grns,False,Validation code did not produce results
+PO1702,split shipment,False,Validation code did not produce results
+PO1715,split shipment,False,Validation code did not produce results
+PO1718,multiple grns,False,Validation code did not produce results
+PO1725,split shipment,False,Validation code did not produce results
+PO1726,multiple grns,False,Validation code did not produce results
+PO1746,multiple grns,False,Validation code did not produce results
+PO1752,multiple grns,False,Validation code did not produce results
+PO1753,partial shipments,False,Validation code did not produce results
+PO1764,multiple grns,False,Validation code did not produce results
+PO1778,multiple grns,False,Validation code did not produce results
+PO1783,partial shipments,False,Validation code did not produce results
+PO1794,partial shipments,False,Validation code did not produce results
+PO1795,partial shipments,False,Validation code did not produce results
+PO1802,split shipment,False,Validation code did not produce results
+PO1804,partial shipments,False,Validation code did not produce results
+PO2279,partial shipments,False,Validation code did not produce results
+PO2676,multiple grns,False,Validation code did not produce results
+PO2181,split shipment,False,Validation code did not produce results
+PO2223,split shipment,False,Validation code did not produce results
+PO2777,partial shipments,False,Validation code did not produce results
+PO2337,partial shipments,False,Validation code did not produce results
+PO2781,multiple grns,False,Validation code did not produce results
+PO2722,split shipment,False,Validation code did not produce results
+PO2879,split shipment,False,Validation code did not produce results
+PO1001,no reason,True,Reason is explicitly stated as no reason
+PO1004,no reason,True,Reason is explicitly stated as no reason
+PO1008,no reason,True,Reason is explicitly stated as no reason
+PO1014,no reason,True,Reason is explicitly stated as no reason
+PO1018,no reason,True,Reason is explicitly stated as no reason
+PO1020,no reason,True,Reason is explicitly stated as no reason
+PO1026,no reason,True,Reason is explicitly stated as no reason
+PO1028,no reason,True,Reason is explicitly stated as no reason
+PO1030,no reason,True,Reason is explicitly stated as no reason
+PO1033,no reason,True,Reason is explicitly stated as no reason
+PO1034,no reason,True,Reason is explicitly stated as no reason
+PO1035,no reason,True,Reason is explicitly stated as no reason
+PO1036,no reason,True,Reason is explicitly stated as no reason
+PO1038,no reason,True,Reason is explicitly stated as no reason
+PO1039,no reason,True,Reason is explicitly stated as no reason
+PO1048,no reason,True,Reason is explicitly stated as no reason
+PO1053,no reason,True,Reason is explicitly stated as no reason
+PO1066,no reason,True,Reason is explicitly stated as no reason
+PO1068,no reason,True,Reason is explicitly stated as no reason
+PO1072,no reason,True,Reason is explicitly stated as no reason
+PO1079,no reason,True,Reason is explicitly stated as no reason
+PO1080,no reason,True,Reason is explicitly stated as no reason
+PO1088,no reason,True,Reason is explicitly stated as no reason
+PO1092,no reason,True,Reason is explicitly stated as no reason
+PO1093,no reason,True,Reason is explicitly stated as no reason
+PO1095,no reason,True,Reason is explicitly stated as no reason
+PO1104,no reason,True,Reason is explicitly stated as no reason
+PO1116,no reason,True,Reason is explicitly stated as no reason
+PO1137,no reason,True,Reason is explicitly stated as no reason
+PO1139,no reason,True,Reason is explicitly stated as no reason
+PO1143,no reason,True,Reason is explicitly stated as no reason
+PO1149,no reason,True,Reason is explicitly stated as no reason
+PO1150,no reason,True,Reason is explicitly stated as no reason
+PO1153,no reason,True,Reason is explicitly stated as no reason
+PO1159,no reason,True,Reason is explicitly stated as no reason
+PO1161,no reason,True,Reason is explicitly stated as no reason
+PO1162,no reason,True,Reason is explicitly stated as no reason
+PO1168,no reason,True,Reason is explicitly stated as no reason
+PO1170,no reason,True,Reason is explicitly stated as no reason
+PO1171,no reason,True,Reason is explicitly stated as no reason
+PO1178,no reason,True,Reason is explicitly stated as no reason
+PO1179,no reason,True,Reason is explicitly stated as no reason
+PO1185,no reason,True,Reason is explicitly stated as no reason
+PO1190,no reason,True,Reason is explicitly stated as no reason
+PO1195,no reason,True,Reason is explicitly stated as no reason
+PO1199,no reason,True,Reason is explicitly stated as no reason
+PO1211,no reason,True,Reason is explicitly stated as no reason
+PO1212,no reason,True,Reason is explicitly stated as no reason
+PO1214,no reason,True,Reason is explicitly stated as no reason
+PO1220,no reason,True,Reason is explicitly stated as no reason
+PO1222,no reason,True,Reason is explicitly stated as no reason
+PO1226,no reason,True,Reason is explicitly stated as no reason
+PO1227,no reason,True,Reason is explicitly stated as no reason
+PO1229,no reason,True,Reason is explicitly stated as no reason
+PO1234,no reason,True,Reason is explicitly stated as no reason
+PO1240,no reason,True,Reason is explicitly stated as no reason
+PO1245,no reason,True,Reason is explicitly stated as no reason
+PO1248,no reason,True,Reason is explicitly stated as no reason
+PO1252,no reason,True,Reason is explicitly stated as no reason
+PO1263,no reason,True,Reason is explicitly stated as no reason
+PO1269,no reason,True,Reason is explicitly stated as no reason
+PO1274,no reason,True,Reason is explicitly stated as no reason
+PO1282,no reason,True,Reason is explicitly stated as no reason
+PO1294,no reason,True,Reason is explicitly stated as no reason
+PO1295,no reason,True,Reason is explicitly stated as no reason
+PO1300,no reason,True,Reason is explicitly stated as no reason
+PO1302,no reason,True,Reason is explicitly stated as no reason
+PO1317,no reason,True,Reason is explicitly stated as no reason
+PO1321,no reason,True,Reason is explicitly stated as no reason
+PO1326,no reason,True,Reason is explicitly stated as no reason
+PO1329,no reason,True,Reason is explicitly stated as no reason
+PO1332,no reason,True,Reason is explicitly stated as no reason
+PO1333,no reason,True,Reason is explicitly stated as no reason
+PO1335,no reason,True,Reason is explicitly stated as no reason
+PO1340,no reason,True,Reason is explicitly stated as no reason
+PO1357,no reason,True,Reason is explicitly stated as no reason
+PO1359,no reason,True,Reason is explicitly stated as no reason
+PO1361,no reason,True,Reason is explicitly stated as no reason
+PO1370,no reason,True,Reason is explicitly stated as no reason
+PO1381,no reason,True,Reason is explicitly stated as no reason
+PO1383,no reason,True,Reason is explicitly stated as no reason
+PO1387,no reason,True,Reason is explicitly stated as no reason
+PO1388,no reason,True,Reason is explicitly stated as no reason
+PO1389,no reason,True,Reason is explicitly stated as no reason
+PO1391,no reason,True,Reason is explicitly stated as no reason
+PO1393,no reason,True,Reason is explicitly stated as no reason
+PO1394,no reason,True,Reason is explicitly stated as no reason
+PO1401,no reason,True,Reason is explicitly stated as no reason
+PO1415,no reason,True,Reason is explicitly stated as no reason
+PO1421,no reason,True,Reason is explicitly stated as no reason
+PO1424,no reason,True,Reason is explicitly stated as no reason
+PO1425,no reason,True,Reason is explicitly stated as no reason
+PO1426,no reason,True,Reason is explicitly stated as no reason
+PO1431,no reason,True,Reason is explicitly stated as no reason
+PO1437,no reason,True,Reason is explicitly stated as no reason
+PO1438,no reason,True,Reason is explicitly stated as no reason
+PO1441,no reason,True,Reason is explicitly stated as no reason
+PO1442,no reason,True,Reason is explicitly stated as no reason
+PO1452,no reason,True,Reason is explicitly stated as no reason
+PO1453,no reason,True,Reason is explicitly stated as no reason
+PO1456,no reason,True,Reason is explicitly stated as no reason
+PO1460,no reason,True,Reason is explicitly stated as no reason
+PO1461,no reason,True,Reason is explicitly stated as no reason
+PO1466,no reason,True,Reason is explicitly stated as no reason
+PO1468,no reason,True,Reason is explicitly stated as no reason
+PO1471,no reason,True,Reason is explicitly stated as no reason
+PO1473,no reason,True,Reason is explicitly stated as no reason
+PO1479,no reason,True,Reason is explicitly stated as no reason
+PO1486,no reason,True,Reason is explicitly stated as no reason
+PO1488,no reason,True,Reason is explicitly stated as no reason
+PO1491,no reason,True,Reason is explicitly stated as no reason
+PO1492,no reason,True,Reason is explicitly stated as no reason
+PO1495,no reason,True,Reason is explicitly stated as no reason
+PO1498,no reason,True,Reason is explicitly stated as no reason
+PO1501,no reason,True,Reason is explicitly stated as no reason
+PO1504,no reason,True,Reason is explicitly stated as no reason
+PO1509,no reason,True,Reason is explicitly stated as no reason
+PO1510,no reason,True,Reason is explicitly stated as no reason
+PO1515,no reason,True,Reason is explicitly stated as no reason
+PO1520,no reason,True,Reason is explicitly stated as no reason
+PO1526,no reason,True,Reason is explicitly stated as no reason
+PO1533,no reason,True,Reason is explicitly stated as no reason
+PO1536,no reason,True,Reason is explicitly stated as no reason
+PO1544,no reason,True,Reason is explicitly stated as no reason
+PO1551,no reason,True,Reason is explicitly stated as no reason
+PO1566,no reason,True,Reason is explicitly stated as no reason
+PO1567,no reason,True,Reason is explicitly stated as no reason
+PO1570,no reason,True,Reason is explicitly stated as no reason
+PO1573,no reason,True,Reason is explicitly stated as no reason
+PO1577,no reason,True,Reason is explicitly stated as no reason
+PO1583,no reason,True,Reason is explicitly stated as no reason
+PO1589,no reason,True,Reason is explicitly stated as no reason
+PO1595,no reason,True,Reason is explicitly stated as no reason
+PO1605,no reason,True,Reason is explicitly stated as no reason
+PO1616,no reason,True,Reason is explicitly stated as no reason
+PO1623,no reason,True,Reason is explicitly stated as no reason
+PO1633,no reason,True,Reason is explicitly stated as no reason
+PO1635,no reason,True,Reason is explicitly stated as no reason
+PO1644,no reason,True,Reason is explicitly stated as no reason
+PO1649,no reason,True,Reason is explicitly stated as no reason
+PO1650,no reason,True,Reason is explicitly stated as no reason
+PO1658,no reason,True,Reason is explicitly stated as no reason
+PO1672,no reason,True,Reason is explicitly stated as no reason
+PO1696,no reason,True,Reason is explicitly stated as no reason
+PO1700,no reason,True,Reason is explicitly stated as no reason
+PO1711,no reason,True,Reason is explicitly stated as no reason
+PO1713,no reason,True,Reason is explicitly stated as no reason
+PO1724,no reason,True,Reason is explicitly stated as no reason
+PO1729,no reason,True,Reason is explicitly stated as no reason
+PO1730,no reason,True,Reason is explicitly stated as no reason
+PO1731,no reason,True,Reason is explicitly stated as no reason
+PO1737,no reason,True,Reason is explicitly stated as no reason
+PO1741,no reason,True,Reason is explicitly stated as no reason
+PO1743,no reason,True,Reason is explicitly stated as no reason
+PO1756,no reason,True,Reason is explicitly stated as no reason
+PO1761,no reason,True,Reason is explicitly stated as no reason
+PO1774,no reason,True,Reason is explicitly stated as no reason
+PO1779,no reason,True,Reason is explicitly stated as no reason
+PO1784,no reason,True,Reason is explicitly stated as no reason
+PO1788,no reason,True,Reason is explicitly stated as no reason
+PO1796,no reason,True,Reason is explicitly stated as no reason
+PO1803,no reason,True,Reason is explicitly stated as no reason

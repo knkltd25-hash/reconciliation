@@ -1,0 +1,885 @@
+PO_ID,reason,penalty
+PO1000,arrived late,401.23
+PO1001,no reason,0.0
+PO1002,over-delivery,176.08
+PO1003,invoice/grn quantity mismatch,676.94
+PO1004,no reason,0.0
+PO1005,invoice quantity mismatch,383.44
+PO1006,multiple grns,322.08
+PO1007,more received,259.3
+PO1008,no reason,0.0
+PO1009,currency mismatch,816.93
+PO1010,invoice quantity mismatch,395.04
+PO1011,total price discrepancy,821.85
+PO1012,asn grn mismatch,969.13
+PO1013,price mismatch,891.42
+PO1014,no reason,0.0
+PO1015,missing grn,137.39
+PO1016,asn grn mismatch,724.07
+PO1017,price mismatch,690.41
+PO1018,no reason,0.0
+PO1019,currency mismatch,857.94
+PO1020,no reason,0.0
+PO1021,asn grn mismatch,587.63
+PO1022,currency mismatch,865.39
+PO1023,over delivered,731.84
+PO1024,invoice/grn quantity mismatch,986.12
+PO1025,currency mismatch,325.86
+PO1026,no reason,0.0
+PO1027,currency mismatch,114.11
+PO1028,no reason,0.0
+PO1029,late delivery,317.95
+PO1030,no reason,0.0
+PO1031,grn missing,189.34
+PO1032,grn missing,792.6
+PO1033,no reason,0.0
+PO1034,no reason,0.0
+PO1035,no reason,0.0
+PO1036,no reason,0.0
+PO1037,asn grn mismatch,975.37
+PO1038,no reason,0.0
+PO1039,no reason,0.0
+PO1040,currency mismatch,876.68
+PO1041,more received,767.43
+PO1042,over delivered,413.76
+PO1043,unit price mismatch,374.33
+PO1044,multiple grns,518.78
+PO1045,asn/grn mismatch,952.17
+PO1046,asn quantity mismatch,726.48
+PO1047,over-delivery,637.37
+PO1048,no reason,0.0
+PO1049,more received,600.53
+PO1050,partial shipments,238.89
+PO1051,price mismatch,940.86
+PO1052,grn missing,417.59
+PO1053,no reason,0.0
+PO1054,total price discrepancy,472.53
+PO1055,total price discrepancy,879.56
+PO1056,currency mismatch,263.94
+PO1057,multiple grns,869.36
+PO1058,asn quantity mismatch,792.56
+PO1059,asn quantity mismatch,323.39
+PO1060,late delivery,707.61
+PO1061,total price discrepancy,485.44
+PO1062,under delivered,352.5
+PO1063,currency mismatch,421.45
+PO1064,unit price mismatch,736.45
+PO1065,total price discrepancy,618.53
+PO1066,no reason,0.0
+PO1067,invoice quantity mismatch,639.51
+PO1068,no reason,0.0
+PO1069,less received,414.32
+PO1070,currency mismatch,976.15
+PO1071,less received,432.95
+PO1072,no reason,0.0
+PO1073,price mismatch,360.56
+PO1074,under-delivery,983.79
+PO1075,partial shipments,676.87
+PO1076,over delivered,562.87
+PO1077,multiple grns,889.82
+PO1078,multiple grns,410.6
+PO1079,no reason,0.0
+PO1080,no reason,0.0
+PO1081,arrived late,908.1
+PO1082,late delivery,149.71
+PO1083,invoice grn mismatch,650.64
+PO1084,total price discrepancy,428.93
+PO1085,asn quantity mismatch,811.6
+PO1086,currency mismatch,689.01
+PO1087,split shipment,280.32
+PO1088,no reason,0.0
+PO1089,currency mismatch,301.18
+PO1090,over delivered,752.66
+PO1091,delivered late,960.62
+PO1092,no reason,0.0
+PO1093,no reason,0.0
+PO1094,late delivery,430.73
+PO1095,no reason,0.0
+PO1096,more received,927.8
+PO1097,partial shipments,677.21
+PO1098,split shipment,478.41
+PO1099,invoice quantity mismatch,437.58
+PO1100,delivered late,190.21
+PO1101,delivered late,726.16
+PO1102,asn/grn mismatch,651.04
+PO1103,total price discrepancy,699.78
+PO1104,no reason,0.0
+PO1105,delivered late,699.27
+PO1106,price mismatch,671.59
+PO1107,missing grn,611.01
+PO1108,price mismatch,926.0
+PO1109,unit price mismatch,170.83
+PO1110,invoice/grn quantity mismatch,987.44
+PO1111,currency mismatch,206.22
+PO1112,total price discrepancy,260.67
+PO1113,over-delivery,615.49
+PO1114,currency mismatch,232.02
+PO1115,currency mismatch,272.0
+PO1116,no reason,0.0
+PO1117,price mismatch,783.45
+PO1118,less received,483.81
+PO1119,late delivery,715.01
+PO1120,arrived late,205.45
+PO1121,under-delivery,733.63
+PO1122,under-delivery,402.85
+PO1123,more received,310.57
+PO1124,split shipment,136.25
+PO1125,under-delivery,505.72
+PO1126,over-delivery,521.25
+PO1127,total price discrepancy,182.45
+PO1128,under delivered,427.09
+PO1129,under-delivery,846.26
+PO1130,asn grn mismatch,811.25
+PO1131,total price discrepancy,198.01
+PO1132,unit price mismatch,844.33
+PO1133,missing grn,710.79
+PO1134,late delivery,789.69
+PO1135,asn/grn mismatch,433.35
+PO1136,no grn,408.22
+PO1137,no reason,0.0
+PO1138,invoice/grn quantity mismatch,414.72
+PO1139,no reason,0.0
+PO1140,invoice quantity mismatch,226.62
+PO1141,currency mismatch,993.32
+PO1142,no grn,426.26
+PO1143,no reason,0.0
+PO1144,unit price mismatch,464.41
+PO1145,more received,970.45
+PO1146,total price discrepancy,315.17
+PO1147,grn missing,361.65
+PO1148,asn quantity mismatch,321.86
+PO1149,no reason,0.0
+PO1150,no reason,0.0
+PO1151,arrived late,424.21
+PO1152,partial shipments,311.75
+PO1153,no reason,0.0
+PO1154,multiple grns,877.51
+PO1155,split shipment,102.66
+PO1156,currency mismatch,962.1
+PO1157,invoice quantity mismatch,329.17
+PO1158,unit price mismatch,787.92
+PO1159,no reason,0.0
+PO1160,no grn,344.1
+PO1161,no reason,0.0
+PO1162,no reason,0.0
+PO1163,unit price mismatch,571.74
+PO1164,partial shipments,265.47
+PO1165,unit price mismatch,263.93
+PO1166,under delivered,733.5
+PO1167,unit price mismatch,533.96
+PO1168,no reason,0.0
+PO1169,arrived late,842.26
+PO1170,no reason,0.0
+PO1171,no reason,0.0
+PO1172,price mismatch,819.72
+PO1173,no grn,998.36
+PO1174,no grn,476.5
+PO1175,delivered late,921.04
+PO1176,price mismatch,970.37
+PO1177,asn quantity mismatch,310.11
+PO1178,no reason,0.0
+PO1179,no reason,0.0
+PO1180,price mismatch,515.08
+PO1181,asn quantity mismatch,321.95
+PO1182,partial shipments,584.63
+PO1183,currency mismatch,163.46
+PO1184,late delivery,407.96
+PO1185,no reason,0.0
+PO1186,no grn,253.25
+PO1187,late delivery,427.3
+PO1188,asn/grn mismatch,468.62
+PO1189,unit price mismatch,207.87
+PO1190,no reason,0.0
+PO1191,split shipment,314.61
+PO1192,less received,116.88
+PO1193,over delivered,385.38
+PO1194,split shipment,158.5
+PO1195,no reason,0.0
+PO1196,multiple grns,359.09
+PO1197,invoice/grn quantity mismatch,785.69
+PO1198,asn grn mismatch,164.86
+PO1199,no reason,0.0
+PO1200,partial shipments,386.31
+PO1201,split shipment,479.57
+PO1202,currency mismatch,870.02
+PO1203,currency mismatch,852.75
+PO1204,missing grn,680.48
+PO1205,total price discrepancy,482.43
+PO1206,unit price mismatch,585.67
+PO1207,unit price mismatch,790.19
+PO1208,unit price mismatch,718.07
+PO1209,multiple grns,594.79
+PO1210,over delivered,342.51
+PO1211,no reason,0.0
+PO1212,no reason,0.0
+PO1213,split shipment,724.93
+PO1214,no reason,0.0
+PO1215,missing grn,942.1
+PO1216,asn grn mismatch,806.86
+PO1217,unit price mismatch,240.1
+PO1218,partial shipments,381.31
+PO1219,currency mismatch,447.9
+PO1220,no reason,0.0
+PO1221,unit price mismatch,304.93
+PO1222,no reason,0.0
+PO1223,less received,589.33
+PO1224,asn grn mismatch,369.98
+PO1225,unit price mismatch,813.16
+PO1226,no reason,0.0
+PO1227,no reason,0.0
+PO1228,no grn,921.83
+PO1229,no reason,0.0
+PO1230,partial shipments,225.21
+PO1231,invoice quantity mismatch,254.16
+PO1232,under delivered,431.91
+PO1233,total price discrepancy,534.88
+PO1234,no reason,0.0
+PO1235,invoice quantity mismatch,923.3
+PO1236,split shipment,712.27
+PO1237,price mismatch,672.3
+PO1238,asn grn mismatch,194.66
+PO1239,currency mismatch,841.81
+PO1240,no reason,0.0
+PO1241,unit price mismatch,192.53
+PO1242,arrived late,982.47
+PO1243,invoice quantity mismatch,166.18
+PO1244,currency mismatch,656.11
+PO1245,no reason,0.0
+PO1246,invoice quantity mismatch,540.49
+PO1247,total price discrepancy,457.47
+PO1248,no reason,0.0
+PO1249,multiple grns,814.85
+PO1250,unit price mismatch,260.37
+PO1251,total price discrepancy,154.0
+PO1252,no reason,0.0
+PO1253,currency mismatch,439.16
+PO1254,over delivered,320.07
+PO1255,unit price mismatch,261.79
+PO1256,less received,917.26
+PO1257,delivered late,961.47
+PO1258,invoice grn mismatch,434.24
+PO1259,partial shipments,779.29
+PO1260,missing grn,124.32
+PO1261,no grn,586.87
+PO1262,unit price mismatch,793.57
+PO1263,no reason,0.0
+PO1264,over-delivery,448.12
+PO1265,less received,249.21
+PO1266,grn missing,613.53
+PO1267,late delivery,253.98
+PO1268,partial shipments,349.27
+PO1269,no reason,0.0
+PO1270,currency mismatch,602.23
+PO1271,late delivery,868.88
+PO1272,less received,892.36
+PO1273,grn missing,595.73
+PO1274,no reason,0.0
+PO1275,currency mismatch,823.61
+PO1276,partial shipments,769.34
+PO1277,arrived late,750.88
+PO1278,over delivered,154.77
+PO1279,arrived late,923.61
+PO1280,grn missing,786.81
+PO1281,no grn,123.41
+PO1282,no reason,0.0
+PO1283,unit price mismatch,465.97
+PO1284,currency mismatch,436.43
+PO1285,invoice quantity mismatch,141.45
+PO1286,multiple grns,893.33
+PO1287,invoice/grn quantity mismatch,916.83
+PO1288,delivered late,161.67
+PO1289,no grn,251.25
+PO1290,under-delivery,682.85
+PO1291,missing grn,285.16
+PO1292,invoice quantity mismatch,790.24
+PO1293,arrived late,612.01
+PO1294,no reason,0.0
+PO1295,no reason,0.0
+PO1296,over delivered,502.24
+PO1297,price mismatch,878.83
+PO1298,over delivered,806.11
+PO1299,more received,824.34
+PO1300,no reason,0.0
+PO1301,unit price mismatch,813.06
+PO1302,no reason,0.0
+PO1303,asn/grn mismatch,636.93
+PO1304,invoice/grn quantity mismatch,564.38
+PO1305,currency mismatch,708.68
+PO1306,missing grn,905.24
+PO1307,missing grn,548.13
+PO1308,asn/grn mismatch,359.54
+PO1309,asn grn mismatch,285.21
+PO1310,late delivery,941.78
+PO1311,unit price mismatch,201.41
+PO1312,multiple grns,426.49
+PO1313,late delivery,160.61
+PO1314,currency mismatch,235.17
+PO1315,more received,985.44
+PO1316,total price discrepancy,439.51
+PO1317,no reason,0.0
+PO1318,unit price mismatch,214.58
+PO1319,asn/grn mismatch,449.64
+PO1320,total price discrepancy,399.44
+PO1321,no reason,0.0
+PO1322,currency mismatch,350.6
+PO1323,partial shipments,942.52
+PO1324,unit price mismatch,942.3
+PO1325,unit price mismatch,244.71
+PO1326,no reason,0.0
+PO1327,over delivered,121.49
+PO1328,invoice grn mismatch,384.88
+PO1329,no reason,0.0
+PO1330,asn grn mismatch,414.06
+PO1331,total price discrepancy,463.44
+PO1332,no reason,0.0
+PO1333,no reason,0.0
+PO1334,asn/grn mismatch,794.95
+PO1335,no reason,0.0
+PO1336,late delivery,839.26
+PO1337,late delivery,888.35
+PO1338,asn quantity mismatch,434.51
+PO1339,invoice/grn quantity mismatch,783.74
+PO1340,no reason,0.0
+PO1341,under-delivery,816.14
+PO1342,price mismatch,376.66
+PO1343,asn/grn mismatch,225.11
+PO1344,currency mismatch,349.65
+PO1345,under-delivery,584.05
+PO1346,total price discrepancy,615.59
+PO1347,asn quantity mismatch,860.74
+PO1348,price mismatch,418.62
+PO1349,price mismatch,442.41
+PO1350,unit price mismatch,499.82
+PO1351,invoice grn mismatch,565.78
+PO1352,asn grn mismatch,321.23
+PO1353,asn/grn mismatch,373.53
+PO1354,arrived late,175.22
+PO1355,under delivered,367.31
+PO1356,partial shipments,616.06
+PO1357,no reason,0.0
+PO1358,arrived late,991.85
+PO1359,no reason,0.0
+PO1360,asn grn mismatch,488.88
+PO1361,no reason,0.0
+PO1362,price mismatch,940.12
+PO1363,total price discrepancy,965.42
+PO1364,arrived late,391.22
+PO1365,split shipment,237.92
+PO1366,missing grn,759.84
+PO1367,unit price mismatch,232.77
+PO1368,less received,109.95
+PO1369,asn grn mismatch,379.72
+PO1370,no reason,0.0
+PO1371,no grn,795.62
+PO1372,under-delivery,478.27
+PO1373,total price discrepancy,785.96
+PO1374,delivered late,157.9
+PO1375,asn quantity mismatch,611.33
+PO1376,currency mismatch,436.21
+PO1377,total price discrepancy,594.86
+PO1378,price mismatch,936.82
+PO1379,unit price mismatch,779.83
+PO1380,unit price mismatch,623.97
+PO1381,no reason,0.0
+PO1382,unit price mismatch,593.94
+PO1383,no reason,0.0
+PO1384,currency mismatch,778.07
+PO1385,under-delivery,249.54
+PO1386,unit price mismatch,879.23
+PO1387,no reason,0.0
+PO1388,no reason,0.0
+PO1389,no reason,0.0
+PO1390,currency mismatch,157.34
+PO1391,no reason,0.0
+PO1392,less received,315.53
+PO1393,no reason,0.0
+PO1394,no reason,0.0
+PO1395,over delivered,785.05
+PO1396,over-delivery,969.21
+PO1397,total price discrepancy,998.14
+PO1398,total price discrepancy,937.73
+PO1399,invoice/grn quantity mismatch,471.1
+PO1400,delivered late,274.8
+PO1401,no reason,0.0
+PO1402,grn missing,505.79
+PO1403,invoice/grn quantity mismatch,927.29
+PO1404,over-delivery,883.73
+PO1405,asn quantity mismatch,504.62
+PO1406,price mismatch,853.19
+PO1407,asn grn mismatch,870.61
+PO1408,under-delivery,619.34
+PO1409,price mismatch,293.02
+PO1410,currency mismatch,591.69
+PO1411,currency mismatch,703.04
+PO1412,total price discrepancy,788.68
+PO1413,unit price mismatch,827.31
+PO1414,partial shipments,798.67
+PO1415,no reason,0.0
+PO1416,currency mismatch,548.42
+PO1417,missing grn,714.48
+PO1418,under-delivery,904.09
+PO1419,currency mismatch,753.79
+PO1420,invoice/grn quantity mismatch,568.26
+PO1421,no reason,0.0
+PO1422,currency mismatch,825.25
+PO1423,total price discrepancy,319.18
+PO1424,no reason,0.0
+PO1425,no reason,0.0
+PO1426,no reason,0.0
+PO1427,unit price mismatch,205.14
+PO1428,under-delivery,286.22
+PO1429,currency mismatch,817.49
+PO1430,no grn,484.78
+PO1431,no reason,0.0
+PO1432,unit price mismatch,593.73
+PO1433,under-delivery,762.89
+PO1434,arrived late,234.46
+PO1435,asn quantity mismatch,849.03
+PO1436,currency mismatch,141.24
+PO1437,no reason,0.0
+PO1438,no reason,0.0
+PO1439,late delivery,220.28
+PO1440,unit price mismatch,704.1
+PO1441,no reason,0.0
+PO1442,no reason,0.0
+PO1443,delivered late,123.2
+PO1444,more received,679.49
+PO1445,currency mismatch,599.05
+PO1446,unit price mismatch,769.31
+PO1447,unit price mismatch,828.52
+PO1448,unit price mismatch,158.12
+PO1449,over delivered,914.06
+PO1450,unit price mismatch,922.9
+PO1451,asn/grn mismatch,382.31
+PO1452,no reason,0.0
+PO1453,no reason,0.0
+PO1454,currency mismatch,209.7
+PO1455,price mismatch,321.72
+PO1456,no reason,0.0
+PO1457,unit price mismatch,179.0
+PO1458,over delivered,620.44
+PO1459,missing grn,878.49
+PO1460,no reason,0.0
+PO1461,no reason,0.0
+PO1462,no grn,350.56
+PO1463,currency mismatch,104.84
+PO1464,grn missing,402.61
+PO1465,asn/grn mismatch,500.18
+PO1466,no reason,0.0
+PO1467,currency mismatch,907.65
+PO1468,no reason,0.0
+PO1469,asn quantity mismatch,910.69
+PO1470,multiple grns,275.95
+PO1471,no reason,0.0
+PO1472,under-delivery,502.3
+PO1473,no reason,0.0
+PO1474,late delivery,565.07
+PO1475,no grn,125.83
+PO1476,asn grn mismatch,513.67
+PO1477,invoice/grn quantity mismatch,177.09
+PO1478,less received,867.84
+PO1479,no reason,0.0
+PO1480,grn missing,979.14
+PO1481,currency mismatch,439.42
+PO1482,under-delivery,910.8
+PO1483,unit price mismatch,706.84
+PO1484,split shipment,937.62
+PO1485,price mismatch,524.22
+PO1486,no reason,0.0
+PO1487,asn/grn mismatch,754.12
+PO1488,no reason,0.0
+PO1489,invoice grn mismatch,528.3
+PO1490,unit price mismatch,594.12
+PO1491,no reason,0.0
+PO1492,no reason,0.0
+PO1493,under delivered,954.24
+PO1494,total price discrepancy,454.11
+PO1495,no reason,0.0
+PO1496,invoice/grn quantity mismatch,375.63
+PO1497,invoice quantity mismatch,550.94
+PO1498,no reason,0.0
+PO1499,partial shipments,187.83
+PO1500,asn/grn mismatch,871.72
+PO1501,no reason,0.0
+PO1502,split shipment,263.74
+PO1503,less received,904.98
+PO1504,no reason,0.0
+PO1505,missing grn,137.04
+PO1506,partial shipments,634.25
+PO1507,missing grn,599.56
+PO1508,no grn,475.57
+PO1509,no reason,0.0
+PO1510,no reason,0.0
+PO1511,missing grn,401.06
+PO1512,under-delivery,184.22
+PO1513,unit price mismatch,104.5
+PO1514,grn missing,323.23
+PO1515,no reason,0.0
+PO1516,total price discrepancy,472.15
+PO1517,total price discrepancy,440.44
+PO1518,invoice quantity mismatch,584.53
+PO1519,unit price mismatch,823.92
+PO1520,no reason,0.0
+PO1521,unit price mismatch,372.75
+PO1522,delivered late,501.55
+PO1523,total price discrepancy,821.23
+PO1524,total price discrepancy,909.03
+PO1525,late delivery,415.65
+PO1526,no reason,0.0
+PO1527,over delivered,235.33
+PO1528,multiple grns,143.79
+PO1529,asn quantity mismatch,324.96
+PO1530,currency mismatch,765.91
+PO1531,over delivered,482.51
+PO1532,invoice quantity mismatch,107.36
+PO1533,no reason,0.0
+PO1534,partial shipments,148.64
+PO1535,currency mismatch,137.52
+PO1536,no reason,0.0
+PO1537,split shipment,702.48
+PO1538,asn grn mismatch,157.01
+PO1539,total price discrepancy,421.71
+PO1540,multiple grns,940.89
+PO1541,arrived late,127.17
+PO1542,asn grn mismatch,560.26
+PO1543,arrived late,840.27
+PO1544,no reason,0.0
+PO1545,grn missing,519.84
+PO1546,split shipment,533.84
+PO1547,currency mismatch,738.83
+PO1548,currency mismatch,715.91
+PO1549,currency mismatch,394.06
+PO1550,under-delivery,509.8
+PO1551,no reason,0.0
+PO1552,currency mismatch,742.97
+PO1553,split shipment,806.73
+PO1554,unit price mismatch,357.3
+PO1555,currency mismatch,758.56
+PO1556,currency mismatch,599.39
+PO1557,late delivery,995.06
+PO1558,asn/grn mismatch,285.34
+PO1559,over delivered,163.57
+PO1560,arrived late,424.52
+PO1561,currency mismatch,807.71
+PO1562,late delivery,445.9
+PO1563,late delivery,302.6
+PO1564,grn missing,824.53
+PO1565,unit price mismatch,692.42
+PO1566,no reason,0.0
+PO1567,no reason,0.0
+PO1568,price mismatch,184.51
+PO1569,price mismatch,681.97
+PO1570,no reason,0.0
+PO1571,late delivery,750.18
+PO1572,asn grn mismatch,995.1
+PO1573,no reason,0.0
+PO1574,invoice/grn quantity mismatch,472.54
+PO1575,invoice grn mismatch,156.3
+PO1576,late delivery,990.61
+PO1577,no reason,0.0
+PO1578,invoice/grn quantity mismatch,821.65
+PO1579,arrived late,802.32
+PO1580,grn missing,538.49
+PO1581,over-delivery,271.93
+PO1582,split shipment,165.22
+PO1583,no reason,0.0
+PO1584,no grn,909.48
+PO1585,price mismatch,508.04
+PO1586,price mismatch,131.71
+PO1587,invoice quantity mismatch,891.4
+PO1588,asn quantity mismatch,802.46
+PO1589,no reason,0.0
+PO1590,invoice/grn quantity mismatch,489.67
+PO1591,no grn,470.29
+PO1592,invoice quantity mismatch,178.16
+PO1593,invoice quantity mismatch,186.82
+PO1594,total price discrepancy,510.47
+PO1595,no reason,0.0
+PO1596,arrived late,892.12
+PO1597,missing grn,641.56
+PO1598,asn grn mismatch,161.37
+PO1599,currency mismatch,324.74
+PO1600,unit price mismatch,686.1
+PO1601,split shipment,733.75
+PO1602,invoice quantity mismatch,379.46
+PO1603,partial shipments,546.96
+PO1604,currency mismatch,472.31
+PO1605,no reason,0.0
+PO1606,asn/grn mismatch,175.28
+PO1607,arrived late,894.98
+PO1608,invoice grn mismatch,773.3
+PO1609,currency mismatch,849.77
+PO1610,unit price mismatch,525.49
+PO1611,unit price mismatch,606.77
+PO1612,under delivered,631.12
+PO1613,asn quantity mismatch,429.64
+PO1614,asn grn mismatch,353.27
+PO1615,less received,727.78
+PO1616,no reason,0.0
+PO1617,invoice quantity mismatch,479.81
+PO1618,invoice grn mismatch,298.49
+PO1619,over-delivery,552.76
+PO1620,no grn,221.13
+PO1621,invoice/grn quantity mismatch,577.25
+PO1622,currency mismatch,886.46
+PO1623,no reason,0.0
+PO1624,partial shipments,142.81
+PO1625,no grn,980.84
+PO1626,price mismatch,457.65
+PO1627,grn missing,343.06
+PO1628,multiple grns,991.41
+PO1629,partial shipments,148.74
+PO1630,currency mismatch,274.55
+PO1631,no grn,300.36
+PO1632,invoice quantity mismatch,748.97
+PO1633,no reason,0.0
+PO1634,invoice grn mismatch,392.34
+PO1635,no reason,0.0
+PO1636,invoice grn mismatch,516.79
+PO1637,invoice quantity mismatch,925.31
+PO1638,asn/grn mismatch,864.6
+PO1639,invoice quantity mismatch,965.13
+PO1640,grn missing,567.98
+PO1641,unit price mismatch,849.86
+PO1642,asn quantity mismatch,787.21
+PO1643,multiple grns,127.68
+PO1644,no reason,0.0
+PO1645,invoice quantity mismatch,274.18
+PO1646,currency mismatch,852.08
+PO1647,total price discrepancy,545.24
+PO1648,asn grn mismatch,381.32
+PO1649,no reason,0.0
+PO1650,no reason,0.0
+PO1651,asn/grn mismatch,512.68
+PO1652,price mismatch,893.07
+PO1653,asn/grn mismatch,730.76
+PO1654,over-delivery,306.33
+PO1655,unit price mismatch,579.91
+PO1656,no grn,174.48
+PO1657,no grn,868.6
+PO1658,no reason,0.0
+PO1659,over-delivery,609.81
+PO1660,arrived late,719.75
+PO1661,price mismatch,897.59
+PO1662,late delivery,175.37
+PO1663,grn missing,407.38
+PO1664,split shipment,986.79
+PO1665,late delivery,954.94
+PO1666,currency mismatch,579.0
+PO1667,split shipment,399.41
+PO1668,price mismatch,540.81
+PO1669,asn grn mismatch,320.51
+PO1670,under delivered,236.41
+PO1671,invoice quantity mismatch,567.37
+PO1672,no reason,0.0
+PO1673,over-delivery,490.31
+PO1674,over-delivery,253.01
+PO1675,no grn,673.33
+PO1676,price mismatch,820.68
+PO1677,currency mismatch,261.82
+PO1678,multiple grns,503.78
+PO1679,currency mismatch,756.35
+PO1680,unit price mismatch,408.79
+PO1681,unit price mismatch,903.53
+PO1682,over delivered,290.35
+PO1683,grn missing,916.85
+PO1684,price mismatch,977.61
+PO1685,asn quantity mismatch,131.12
+PO1686,arrived late,674.25
+PO1687,more received,782.56
+PO1688,invoice/grn quantity mismatch,136.75
+PO1689,split shipment,837.78
+PO1690,invoice quantity mismatch,172.35
+PO1691,delivered late,329.5
+PO1692,multiple grns,503.49
+PO1693,no grn,903.08
+PO1694,asn/grn mismatch,117.73
+PO1695,missing grn,423.37
+PO1696,no reason,0.0
+PO1697,grn missing,780.13
+PO1698,unit price mismatch,978.14
+PO1699,asn/grn mismatch,946.42
+PO1700,no reason,0.0
+PO1701,asn quantity mismatch,792.84
+PO1702,split shipment,262.21
+PO1703,total price discrepancy,115.0
+PO1704,asn/grn mismatch,112.32
+PO1705,less received,846.97
+PO1706,price mismatch,755.08
+PO1707,delivered late,869.91
+PO1708,asn/grn mismatch,426.2
+PO1709,total price discrepancy,625.92
+PO1710,total price discrepancy,377.26
+PO1711,no reason,0.0
+PO1712,delivered late,632.96
+PO1713,no reason,0.0
+PO1714,under-delivery,237.77
+PO1715,split shipment,581.18
+PO1716,currency mismatch,481.94
+PO1717,delivered late,248.97
+PO1718,multiple grns,396.69
+PO1719,over-delivery,685.66
+PO1720,currency mismatch,127.2
+PO1721,under-delivery,140.87
+PO1722,asn grn mismatch,340.31
+PO1723,under-delivery,373.46
+PO1724,no reason,0.0
+PO1725,split shipment,616.28
+PO1726,multiple grns,583.57
+PO1727,unit price mismatch,776.1
+PO1728,under-delivery,659.74
+PO1729,no reason,0.0
+PO1730,no reason,0.0
+PO1731,no reason,0.0
+PO1732,invoice/grn quantity mismatch,258.5
+PO1733,unit price mismatch,196.98
+PO1734,unit price mismatch,445.29
+PO1735,asn grn mismatch,878.5
+PO1736,unit price mismatch,301.5
+PO1737,no reason,0.0
+PO1738,over delivered,684.14
+PO1739,invoice/grn quantity mismatch,447.11
+PO1740,delivered late,493.06
+PO1741,no reason,0.0
+PO1742,asn/grn mismatch,900.35
+PO1743,no reason,0.0
+PO1744,currency mismatch,779.69
+PO1745,total price discrepancy,536.06
+PO1746,multiple grns,109.17
+PO1747,invoice quantity mismatch,653.48
+PO1748,missing grn,796.96
+PO1749,invoice grn mismatch,141.28
+PO1750,invoice grn mismatch,121.15
+PO1751,missing grn,102.16
+PO1752,multiple grns,650.16
+PO1753,partial shipments,487.49
+PO1754,no grn,457.75
+PO1755,over-delivery,740.39
+PO1756,no reason,0.0
+PO1757,unit price mismatch,355.0
+PO1758,invoice quantity mismatch,829.05
+PO1759,price mismatch,453.35
+PO1760,less received,189.87
+PO1761,no reason,0.0
+PO1762,asn/grn mismatch,418.09
+PO1763,unit price mismatch,618.6
+PO1764,multiple grns,129.98
+PO1765,price mismatch,446.51
+PO1766,asn/grn mismatch,911.02
+PO1767,unit price mismatch,988.58
+PO1768,currency mismatch,498.61
+PO1769,currency mismatch,617.89
+PO1770,unit price mismatch,972.37
+PO1771,asn/grn mismatch,374.52
+PO1772,grn missing,538.45
+PO1773,currency mismatch,918.84
+PO1774,no reason,0.0
+PO1775,currency mismatch,214.1
+PO1776,currency mismatch,225.85
+PO1777,arrived late,310.45
+PO1778,multiple grns,189.03
+PO1779,no reason,0.0
+PO1780,delivered late,143.99
+PO1781,asn grn mismatch,401.93
+PO1782,missing grn,235.94
+PO1783,partial shipments,293.44
+PO1784,no reason,0.0
+PO1785,under-delivery,220.13
+PO1786,grn missing,786.74
+PO1787,total price discrepancy,509.01
+PO1788,no reason,0.0
+PO1789,invoice quantity mismatch,579.25
+PO1790,currency mismatch,988.33
+PO1791,unit price mismatch,805.63
+PO1792,unit price mismatch,106.29
+PO1793,asn quantity mismatch,184.74
+PO1794,partial shipments,615.15
+PO1795,partial shipments,417.98
+PO1796,no reason,0.0
+PO1797,unit price mismatch,249.98
+PO1798,less received,755.53
+PO1799,arrived late,477.96
+PO1800,asn grn mismatch,678.26
+PO1801,delivered late,709.04
+PO1802,split shipment,231.92
+PO1803,no reason,0.0
+PO1804,partial shipments,647.26
+PO1805,over-delivery,762.31
+PO1806,no grn,479.58
+PO1807,grn missing,405.59
+PO2016,invoice/grn quantity mismatch,197.0
+PO2447,unit price mismatch,733.75
+PO2188,total price discrepancy,590.24
+PO2698,over delivered,556.78
+PO2488,more received,138.84
+PO2845,no grn,285.39
+PO2605,unit price mismatch,918.6
+PO2143,unit price mismatch,271.17
+PO2812,unit price mismatch,544.33
+PO2064,under-delivery,198.61
+PO2520,under-delivery,609.05
+PO2290,delivered late,157.1
+PO2271,invoice/grn quantity mismatch,620.62
+PO2433,under-delivery,317.03
+PO2355,unit price mismatch,405.1
+PO2279,partial shipments,315.21
+PO2099,over delivered,385.98
+PO2676,multiple grns,272.85
+PO2953,invoice grn mismatch,324.91
+PO2369,arrived late,358.0
+PO2195,under-delivery,349.33
+PO2872,currency mismatch,336.01
+PO2490,invoice/grn quantity mismatch,236.72
+PO2907,late delivery,962.86
+PO2417,more received,164.24
+PO2338,currency mismatch,661.31
+PO2507,currency mismatch,735.14
+PO2181,split shipment,192.28
+PO2893,asn/grn mismatch,857.75
+PO2134,arrived late,666.12
+PO2681,price mismatch,721.57
+PO2538,under-delivery,537.52
+PO2555,less received,757.63
+PO2876,total price discrepancy,786.05
+PO2487,more received,892.13
+PO2223,split shipment,476.75
+PO2838,unit price mismatch,600.35
+PO2069,under-delivery,652.42
+PO2803,price mismatch,306.82
+PO2741,total price discrepancy,824.93
+PO2460,arrived late,234.24
+PO2406,over-delivery,214.81
+PO2151,price mismatch,393.96
+PO2127,asn grn mismatch,645.82
+PO2863,asn grn mismatch,807.93
+PO2777,partial shipments,934.77
+PO2337,partial shipments,779.75
+PO2298,more received,649.61
+PO2220,asn quantity mismatch,871.58
+PO2147,late delivery,453.67
+PO2120,over delivered,855.76
+PO2781,multiple grns,822.2
+PO2610,under delivered,216.97
+PO2802,no grn,283.77
+PO2634,over delivered,697.81
+PO2182,over-delivery,356.03
+PO2180,invoice quantity mismatch,701.62
+PO2722,split shipment,366.75
+PO2837,unit price mismatch,690.84
+PO2383,unit price mismatch,322.45
+PO2091,more received,554.06
+PO2144,asn quantity mismatch,850.88
+PO2137,delivered late,685.81
+PO2176,asn grn mismatch,529.47
+PO2230,over-delivery,345.2
+PO2365,price mismatch,567.45
+PO2259,grn missing,439.24
+PO2866,price mismatch,979.86
+PO2986,invoice grn mismatch,837.65
+PO2886,over delivered,299.19
+PO2724,invoice/grn quantity mismatch,291.62
+PO2153,less received,132.19
+PO2084,currency mismatch,657.85
+PO2583,late delivery,707.8
+PO2879,split shipment,717.18
+PO2209,over delivered,549.74

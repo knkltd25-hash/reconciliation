@@ -1,0 +1,30 @@
+PO_ID,reason,comments
+PO1000,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1000,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1000,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1001,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1001,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1001,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1002,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1002,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1002,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1003,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1003,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1003,Under-delivery,Total received quantity is less than the ordered quantity.
+PO1004,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1004,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1004,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1005,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1005,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1005,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1006,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1006,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1007,Late delivery,The earliest GRN Received_Date is after the PO's Delivery_Date.
+PO1007,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1007,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.
+PO1008,Missing GRN,No GRN record found for this PO.
+PO1009,Missing GRN,No GRN record found for this PO.
+PO1010,Missing GRN,No GRN record found for this PO.
+PO1011,Missing GRN,No GRN record found for this PO.
+PO1012,Over-delivery,Total received quantity is greater than the ordered quantity.
+PO1012,Total price discrepancy,Quantity * Unit_Price in PO does not match Invoice_Amount in Invoice.

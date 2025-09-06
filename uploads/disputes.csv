@@ -1,0 +1,12 @@
+Dispute_ID,Penalty_ID,Dispute_Reason,Dispute_Status,Filed_Date
+DIS1007,PNLT1028,Not Our Fault,Resolved,2025-08-16
+DIS1008,PNLT1033,Proof Submitted,Rejected,2025-08-22
+DIS1009,PNLT1040,Not Our Fault,Resolved,2025-08-16
+DIS1010,PNLT1041,Not Our Fault,Resolved,2025-08-26
+DIS1011,PNLT1044,Proof Submitted,Open,2025-08-16
+DIS1013,PNLT1048,Proof Submitted,Open,2025-08-19
+DIS1014,PNLT1056,Not Our Fault,Rejected,2025-08-20
+DIS1015,PNLT1059,Proof Submitted,Rejected,2025-08-17
+DIS1016,PNLT1072,Not Our Fault,Open,2025-08-18
+DIS1017,PNLT1074,Proof Submitted,Open,2025-08-20
+DIS1018,PNLT1095,Proof Submitted,Resolved,2025-08-16
