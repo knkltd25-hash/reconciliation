@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: pipeline_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: pipeline_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./uploads:/app/frontend/uploads
+    restart: unless-stopped
+
+# Both services share the uploads folder for input/output CSVs
