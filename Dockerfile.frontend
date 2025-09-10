@@ -9,6 +9,7 @@ COPY frontend/ ./frontend/
 # Install dependencies
 WORKDIR /app/frontend
 RUN npm install
+RUN chmod +x node_modules/.bin/react-scripts
 
 # Expose frontend port (adjust if needed)
 EXPOSE 3000

@@ -1,0 +1,10 @@
+.git
+__pycache__/
+*.csv
+*.json
+uploads/
+*.md
+*.log
+node_modules/
+*.env
+*.db
