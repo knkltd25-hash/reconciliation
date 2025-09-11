@@ -5,6 +5,7 @@ WORKDIR /app
 COPY frontend/package*.json ./
 RUN npm install --only=production && npm cache clean --force
 COPY frontend/ ./
+RUN chmod -R 755 ./
 RUN GENERATE_SOURCEMAP=false npm run build
 
 # Serve static files with Nginx
