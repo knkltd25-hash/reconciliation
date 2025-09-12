@@ -181,26 +181,14 @@ function PenaltyTable({ validationData, reasonsData }) {
                   </TableCell>
                   <TableCell>
                     <Box sx={{
-                      position: 'relative',
                       display: 'inline-block',
                       padding: '4px 8px',
                       borderRadius: '4px',
-                      backgroundColor: row.saveable ? 'rgba(255, 0, 0, 0.05)' : 'transparent',
-                      boxShadow: row.saveable
-                        ? row.penalty >= 500 ? '0 0 8px 2px rgba(255, 0, 0, 0.3)' 
-                        : row.penalty >= 100 ? '0 0 6px 1px rgba(255, 0, 0, 0.2)'
-                        : '0 0 4px rgba(255, 0, 0, 0.15)'
-                        : 'none',
-                      animation: row.saveable && row.penalty >= 500 ? 'pulse 2s infinite' : 'none',
-                      '@keyframes pulse': {
-                        '0%': { boxShadow: '0 0 8px 2px rgba(255, 0, 0, 0.3)' },
-                        '50%': { boxShadow: '0 0 12px 4px rgba(255, 0, 0, 0.5)' },
-                        '100%': { boxShadow: '0 0 8px 2px rgba(255, 0, 0, 0.3)' },
-                      },
+                      backgroundColor: row.saveable ? 'rgba(255, 0, 0, 0.08)' : 'transparent',
                     }}>
                       <Typography
                         component="span"
-                        fontWeight={row.saveable ? 700 : 400}
+                        fontWeight={row.saveable ? 600 : 400}
                         color={row.saveable ? "error.main" : "text.primary"}
                       >
                         ${row.penalty.toFixed(2)}

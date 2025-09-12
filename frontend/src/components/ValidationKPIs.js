@@ -149,8 +149,11 @@ function ValidationKPIs({ refresh }) {
   ];
   const reasonDist = Object.entries(reasonCounts).map(([name, value]) => ({ name, value }));
 
-  // Show only top 5 reasons for better visibility
-  const topReasons = reasonDist.slice().sort((a, b) => b.value - a.value).slice(0, 5);
+  // Filter out 'no reason' (case-insensitive)
+  const filteredReasonDist = reasonDist.filter(r => r.name.trim().toLowerCase() !== "no reason");
+
+  // Show only top 5 actionable reasons
+  const topReasons = filteredReasonDist.slice().sort((a, b) => b.value - a.value).slice(0, 5);
   
   // Calculate penalty metrics
   const totalPenaltyAmount = penaltyMetrics?.total_penalty_claimed || 
