@@ -183,8 +183,9 @@ function PenaltyTable({ validationData, reasonsData }) {
                     <Box sx={{
                       display: 'inline-block',
                       padding: '4px 8px',
-                      borderRadius: '4px',
-                      backgroundColor: row.saveable ? 'rgba(255, 0, 0, 0.08)' : 'transparent',
+                      borderRadius: '4px'
+                      // Removed backgroundColor, boxShadow, animation, and keyframes for subtle style
+>>>>>>> c48f34e1340fa853651fc249774b86097998bea0
                     }}>
                       <Typography
                         component="span"
