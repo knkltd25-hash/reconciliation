@@ -639,24 +639,23 @@ result_df['Comments'] = result_df['Comments'].fillna('No validation result')
         'unique_po_count': final_df['PO_ID'].nunique(),
     }
     
-    # Create reason-wise summary
-    reason_summary = pd.DataFrame({
-        'reason': final_df['stated_reason'].unique()
-    })
+    # Create reason-wise summary, excluding 'no reason'
+    actionable_reasons = [r for r in final_df['stated_reason'].unique() if str(r).strip().lower() != 'no reason']
+    reason_summary = pd.DataFrame({'reason': actionable_reasons})
     reason_summary['total_occurrences'] = reason_summary['reason'].map(final_df['stated_reason'].value_counts())
     reason_summary['matched_count'] = reason_summary['reason'].apply(
         lambda r: len(final_df[(final_df['stated_reason'] == r) & (final_df['Match/Not'] == True)])
     )
     reason_summary['match_rate'] = (reason_summary['matched_count'] / reason_summary['total_occurrences'] * 100).round(2)
-    
+
     final_df.to_csv("final_reason_validation_results.csv", index=False)
     print("✓ Validation results saved")
     print("=== Completed run-validation successfully ===\n")
-    
+
     # Convert DataFrames to dict for JSON serialization
     final_df_dict = final_df.to_dict(orient='records')
     reason_summary_dict = reason_summary.to_dict(orient='records')
-    
+
     return {
         "status": "success", 
         "final_df": final_df_dict,
