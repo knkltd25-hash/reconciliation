@@ -125,9 +125,8 @@ def run_tagging():
     load_dotenv()
     print("✓ Environment loaded")
     current_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory containing main.py
-    parent_dir = os.path.dirname(current_dir)  # Go up one level
-    base_dir = os.path.dirname(parent_dir)  # Go up another level to e:\backend
-    UPLOADS_PATH = os.path.join(base_dir, "pipeline_v2", "uploads")
+    parent_dir = os.path.dirname(current_dir)  # Go up one level to pipeline_v2
+    UPLOADS_PATH = os.path.join(parent_dir, "uploads")  # Use pipeline_v2/uploads
     print(f"Using uploads path: {UPLOADS_PATH}")
     
     BUSINESS_DOCS_PATH = os.path.join(UPLOADS_PATH, "business_docs.md")
