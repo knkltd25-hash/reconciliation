@@ -22,7 +22,7 @@ services:
     ports:
       - "3000:80"
     volumes:
-      - ./uploads:/app/frontend/uploads
+      - ./uploads:/app/uploads
     restart: unless-stopped
 
 # Both services share the uploads folder for input/output CSVs
