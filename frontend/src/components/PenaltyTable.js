@@ -185,7 +185,6 @@ function PenaltyTable({ validationData, reasonsData }) {
                       padding: '4px 8px',
                       borderRadius: '4px'
                       // Removed backgroundColor, boxShadow, animation, and keyframes for subtle style
->>>>>>> c48f34e1340fa853651fc249774b86097998bea0
                     }}>
                       <Typography
                         component="span"
