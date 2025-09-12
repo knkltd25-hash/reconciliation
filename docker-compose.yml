@@ -20,7 +20,7 @@ services:
       dockerfile: Dockerfile.frontend
     container_name: pipeline_frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
     volumes:
       - ./uploads:/app/frontend/uploads
     restart: unless-stopped
