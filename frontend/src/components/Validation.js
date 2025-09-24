@@ -23,14 +23,99 @@ function Validation() {
   };
 
   return (
-    <Box>
-      <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, justifyContent: 'space-between' }}>
-  <Typography variant="h5" fontWeight={600}>Discrepancy Validator</Typography>
-        <Button variant="contained" color="primary" onClick={handleRunWorkflow} disabled={running}>
-          {running ? "Running..." : "Run Workflow"}
+    <Box sx={{ 
+      minHeight: '29vh',
+      backgroundColor: '#f8f9fa',
+      p: 3
+    }}>
+      {/* Header Section */}
+      <Box sx={{ 
+        backgroundColor: 'white',
+        borderRadius: '8px',
+        p: 3,
+        mb: 3,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+        border: '1px solid #dadce0'
+      }}>
+        <Box>
+          <Typography 
+            variant="h4" 
+            sx={{ 
+              color: '#202124', 
+              fontWeight: 400,
+              mb: 0.5,
+              fontFamily: 'Google Sans, Roboto, sans-serif',
+              letterSpacing: '-0.02em'
+            }}
+          >
+            Discrepancy Validator
+          </Typography>
+          <Typography 
+            variant="subtitle1" 
+            sx={{ 
+              color: '#5f6368', 
+              fontWeight: 400,
+              fontFamily: 'Google Sans, Roboto, sans-serif'
+            }}
+          >
+            AI-Powered Financial Discrepancy Detection & Validation
+          </Typography>
+        </Box>
+        
+        <Button 
+          variant="contained"
+          onClick={handleRunWorkflow} 
+          disabled={running}
+          sx={{
+            backgroundColor: '#1a73e8',
+            color: 'white',
+            borderRadius: '4px',
+            px: 3,
+            py: 1,
+            fontFamily: 'Google Sans, Roboto, sans-serif',
+            fontWeight: 500,
+            fontSize: '14px',
+            textTransform: 'none',
+            boxShadow: '0 1px 2px rgba(60,64,67,.3), 0 1px 3px rgba(60,64,67,.15)',
+            '&:hover': {
+              backgroundColor: '#1557b0',
+              boxShadow: '0 1px 3px rgba(60,64,67,.3), 0 4px 8px rgba(60,64,67,.15)'
+            },
+            '&:disabled': {
+              backgroundColor: '#f8f9fa',
+              color: '#5f6368',
+              boxShadow: 'none'
+            }
+          }}
+        >
+          {running ? 'Running...' : 'Run Analysis'}
         </Button>
       </Box>
-      {runMsg && <Typography color="secondary" mb={2}>{runMsg}</Typography>}
+      
+      {runMsg && (
+        <Box sx={{ 
+          backgroundColor: '#e6f4ea',
+          border: '1px solid #c8e6c9',
+          borderRadius: '4px',
+          p: 2,
+          mb: 3,
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+          <Typography sx={{ 
+            color: '#137333', 
+            fontFamily: 'Google Sans, Roboto, sans-serif',
+            fontWeight: 400, 
+            fontSize: '14px' 
+          }}>
+            ✓ {runMsg}
+          </Typography>
+        </Box>
+      )}
+      
       <ValidationKPIs refresh={refresh} />
     </Box>
   );

@@ -75,107 +75,254 @@ function TaggingKPIs({ refresh }) {
   if (selectedReasons.length > 0) filteredComments = filteredComments.filter(row => selectedReasons.includes(row.reason));
 
   return (
-    <Box>
+    <Box sx={{ 
+      bgcolor: '#f8f9fa',
+      minHeight: '100vh',
+      p: 2
+    }}>
       <Grid container spacing={2}>
-        {/* Enhanced Risk KPI Row */}
+        {/* Header */}
         <Grid item xs={12}>
-          <Card sx={{ 
-            mb: 2, 
-            boxShadow: '0 4px 15px rgba(0,0,0,0.08)', 
-            borderRadius: '12px',
-            background: 'linear-gradient(to right, #ffffff, #fafafa)'
-          }}>
-            <CardContent sx={{ py: 3 }}>
-              <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <Box sx={{ 
-                  width: '5px', 
-                  height: '24px', 
-                  backgroundColor: '#1976d2', 
-                  borderRadius: '3px',
-                  mr: 2
-                }}/>
-                <Typography variant="h6" fontWeight="bold">Risk Analysis Intelligence Dashboard</Typography>
-              </Box>
-              
-              <Grid container spacing={3}>
-                <Grid item xs={6} md={3}>
-                  <Box sx={{ 
-                    p: 2, 
-                    bgcolor: 'rgba(25,118,210,0.05)', 
-                    borderRadius: '10px', 
-                    border: '1px solid rgba(25,118,210,0.2)',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}>
-                    <Typography variant="subtitle2" color="text.secondary">Flagged Transactions</Typography>
-                    <Typography variant="h4" color="primary" fontWeight="bold" sx={{ my: 1 }}>{totalPOs}</Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      Identified by AI risk detection
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={6} md={3}>
-                  <Box sx={{ 
-                    p: 2, 
-                    bgcolor: 'rgba(156,39,176,0.05)', 
-                    borderRadius: '10px', 
-                    border: '1px solid rgba(156,39,176,0.2)',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}>
-                    <Typography variant="subtitle2" color="text.secondary">Multi-Risk Transactions</Typography>
-                    <Typography variant="h4" color="secondary" fontWeight="bold" sx={{ my: 1 }}>{multiReasonPOs}</Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      {((multiReasonPOs / totalPOs) * 100).toFixed(1)}% with multiple flags
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={6} md={3}>
-                  <Box sx={{ 
-                    p: 2, 
-                    bgcolor: 'rgba(76,175,80,0.05)', 
-                    borderRadius: '10px', 
-                    border: '1px solid rgba(76,175,80,0.2)',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}>
-                    <Typography variant="subtitle2" color="text.secondary">Average Risks per PO</Typography>
-                    <Typography variant="h4" color="success.main" fontWeight="bold" sx={{ my: 1 }}>
-                      {(reasonDist.reduce((sum, reason) => sum + reason.value, 0) / Math.max(1, totalPOs)).toFixed(1)}
-                    </Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      Risk flags per transaction
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={6} md={3}>
-                  <Box sx={{ 
-                    p: 2, 
-                    bgcolor: 'rgba(255,152,0,0.05)', 
-                    borderRadius: '10px', 
-                    border: '1px solid rgba(255,152,0,0.2)',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}>
-                    <Typography variant="subtitle2" color="text.secondary">Primary Risk Factor</Typography>
-                    <Typography variant="h6" color="warning.main" fontWeight="bold" sx={{ my: 1 }}>{mostFrequentReason}</Typography>
-                    <Typography variant="caption" color="text.secondary">
-                      {top5Reasons.length > 0 ? 
-                        `${top5Reasons[0].value} occurrences (${((top5Reasons[0].value / totalPOs) * 100).toFixed(1)}%)` : 
-                        'No data'}
-                    </Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-              
-              {/* Removed risk summary section */}
-            </CardContent>
-          </Card>
+          <Typography 
+            variant="h5" 
+            sx={{ 
+              fontWeight: 400,
+              color: '#202124',
+              mb: 0.5,
+              fontFamily: 'Google Sans, Roboto, sans-serif'
+            }}
+          >
+            Risk Intelligence Dashboard
+          </Typography>
+          <Typography 
+            variant="body2" 
+            sx={{ 
+              color: '#5f6368',
+              mb: 2,
+              fontFamily: 'Google Sans, Roboto, sans-serif'
+            }}
+          >
+            AI-powered transaction risk analysis and detection
+          </Typography>
         </Grid>
+
+        {/* KPI Cards Row */}
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            {/* Flagged Transactions Card */}
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ 
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+                border: '1px solid #dadce0',
+                p: 2,
+                height: '100px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}>
+                <Box>
+                  <Typography 
+                    variant="caption" 
+                    sx={{ 
+                      color: '#5f6368',
+                      fontWeight: 500,
+                      mb: 0.5,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px'
+                    }}
+                  >
+                    Flagged Transactions
+                  </Typography>
+                  <Typography 
+                    variant="h4" 
+                    sx={{ 
+                      color: '#1a73e8',
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif'
+                    }}
+                  >
+                    {totalPOs}
+                  </Typography>
+                </Box>
+                <Typography 
+                  variant="caption" 
+                  sx={{ 
+                    color: '#5f6368',
+                    fontFamily: 'Google Sans, Roboto, sans-serif',
+                    fontSize: '11px'
+                  }}
+                >
+                  AI Risk Detection
+                </Typography>
+              </Card>
+            </Grid>
+
+            {/* Multi-Risk Orders Card */}
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ 
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+                border: '1px solid #dadce0',
+                p: 2,
+                height: '100px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}>
+                <Box>
+                  <Typography 
+                    variant="caption" 
+                    sx={{ 
+                      color: '#5f6368',
+                      fontWeight: 500,
+                      mb: 0.5,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px'
+                    }}
+                  >
+                    Multi-Risk Orders
+                  </Typography>
+                  <Typography 
+                    variant="h4" 
+                    sx={{ 
+                      color: '#ea4335',
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif'
+                    }}
+                  >
+                    {multiReasonPOs}
+                  </Typography>
+                </Box>
+                <Typography 
+                  variant="caption" 
+                  sx={{ 
+                    color: '#5f6368',
+                    fontFamily: 'Google Sans, Roboto, sans-serif',
+                    fontSize: '11px'
+                  }}
+                >
+                  {((multiReasonPOs / totalPOs) * 100).toFixed(1)}% Multiple Flags
+                </Typography>
+              </Card>
+            </Grid>
+
+            {/* Average Risk Density Card */}
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ 
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+                border: '1px solid #dadce0',
+                p: 2,
+                height: '100px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}>
+                <Box>
+                  <Typography 
+                    variant="caption" 
+                    sx={{ 
+                      color: '#5f6368',
+                      fontWeight: 500,
+                      mb: 0.5,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px'
+                    }}
+                  >
+                    Avg Risk Density
+                  </Typography>
+                  <Typography 
+                    variant="h4" 
+                    sx={{ 
+                      color: '#34a853',
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif'
+                    }}
+                  >
+                    {(reasonDist.reduce((sum, reason) => sum + reason.value, 0) / Math.max(1, totalPOs)).toFixed(1)}
+                  </Typography>
+                </Box>
+                <Typography 
+                  variant="caption" 
+                  sx={{ 
+                    color: '#5f6368',
+                    fontFamily: 'Google Sans, Roboto, sans-serif',
+                    fontSize: '11px'
+                  }}
+                >
+                  Flags per Transaction
+                </Typography>
+              </Card>
+            </Grid>
+
+            {/* Top Risk Factor Card */}
+            <Grid item xs={12} sm={6} md={3}>
+              <Card sx={{ 
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+                border: '1px solid #dadce0',
+                p: 2,
+                height: '100px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}>
+                <Box>
+                  <Typography 
+                    variant="caption" 
+                    sx={{ 
+                      color: '#5f6368',
+                      fontWeight: 500,
+                      mb: 0.5,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px'
+                    }}
+                  >
+                    Top Risk Factor
+                  </Typography>
+                  <Typography 
+                    variant="body1" 
+                    sx={{ 
+                      color: '#fbbc04',
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      lineHeight: 1.2,
+                      fontSize: '14px',
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      wordBreak: 'break-word',
+                      textOverflow: 'ellipsis'
+                    }}
+                  >
+                    {mostFrequentReason}
+                  </Typography>
+                </Box>
+                <Typography 
+                  variant="caption" 
+                  sx={{ 
+                    color: '#5f6368',
+                    fontFamily: 'Google Sans, Roboto, sans-serif',
+                    fontSize: '11px'
+                  }}
+                >
+                  {top5Reasons.length > 0 ? 
+                    `${top5Reasons[0].value} occurrences (${((top5Reasons[0].value / totalPOs) * 100).toFixed(1)}%)` : 
+                    'No data'}
+                </Typography>
+              </Card>
+            </Grid>
+          </Grid>
+        </Grid>
+
+
+        
         {/* Slicers */}
         <Grid item xs={12} md={6}>
           <FormControl fullWidth sx={{ mb: 2 }}>

@@ -1,0 +1,21 @@
+PO_ID,stated_reason,Match/Not,Comments
+PO1003,invoice/grn quantity mismatch,True,Invoice quantity does not match GRN quantity.
+PO1005,invoice quantity mismatch,True,Invoice quantity does not match PO quantity.
+PO1010,invoice quantity mismatch,False,Could not retrieve invoice or po quantity.
+PO1012,asn grn mismatch,True,ASN quantity does not match GRN quantity.
+PO1015,missing grn,True,No GRN found for this PO.
+PO1016,asn grn mismatch,True,ASN quantity does not match GRN quantity.
+PO1021,asn grn mismatch,True,ASN quantity does not match GRN quantity.
+PO1024,invoice/grn quantity mismatch,False,Could not retrieve invoice or grn quantity.
+PO1031,grn missing,False,GRN found for this PO.
+PO1032,grn missing,False,GRN found for this PO.
+PO1037,asn grn mismatch,True,ASN quantity does not match GRN quantity.
+PO1045,asn/grn mismatch,True,ASN quantity does not match GRN quantity.
+PO1046,asn quantity mismatch,True,ASN quantity does not match PO quantity.
+PO1052,grn missing,False,GRN found for this PO.
+PO1058,asn quantity mismatch,True,ASN quantity does not match PO quantity.
+PO1059,asn quantity mismatch,True,ASN quantity does not match PO quantity.
+PO1067,invoice quantity mismatch,True,Invoice quantity does not match PO quantity.
+PO1083,invoice grn mismatch,True,Invoice quantity does not match GRN quantity.
+PO1085,asn quantity mismatch,True,ASN quantity does not match PO quantity.
+PO1099,invoice quantity mismatch,True,Invoice quantity does not match PO quantity.

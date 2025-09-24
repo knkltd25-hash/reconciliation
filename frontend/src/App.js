@@ -21,7 +21,7 @@ function App() {
   // Example usage of BACKEND_URL (remove this in production)
   // console.log("Backend URL:", BACKEND_URL);
   return (
-    <Box sx={{ display: "flex", height: "100vh" }}>
+    <Box sx={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <Sidebar selected={selected} onSelect={handleSidebarSelect} />
       <Box sx={{ flex: 1, p: 3, background: "#f7f8fa", overflowY: 'auto' }}>
         {selected === "summary" && <Summary />}

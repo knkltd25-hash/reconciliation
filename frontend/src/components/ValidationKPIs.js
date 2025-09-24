@@ -218,76 +218,146 @@ function ValidationKPIs({ refresh }) {
 
   return (
     <Box>
-  <Typography variant="h5" align="center" sx={{ mb: 3, fontWeight: 700 }}>Discrepancy Validator</Typography>
       <Grid container spacing={2}>
         {/* KPI Row at top - Revamped */}
         <Grid item xs={12}>
           <Card sx={{ mb: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}>
             <CardContent>
-              <Typography variant="h6" align="center" sx={{ mb: 2, color: '#1565c0', fontWeight: 600 }}>
+              <Typography variant="h5" align="center" sx={{ 
+                mb: 1, 
+                color: '#202124', 
+                fontWeight: 400,
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
                 Financial Reconciliation Dashboard
+              </Typography>
+              <Typography variant="body2" align="center" sx={{ 
+                mb: 2, 
+                color: '#5f6368',
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
+                AI-powered discrepancy validation and cost recovery analysis
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={6} md={3}>
-                  <Card sx={{ boxShadow: 'none', bgcolor: '#f3f8ff', height: '100%', border: '1px solid #e0e0e0' }}>
+                  <Card sx={{ 
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.1)', 
+                    bgcolor: '#ffffff', 
+                    height: '100px',
+                    border: '1px solid #dadce0',
+                    borderRadius: '8px'
+                  }}>
                     <CardContent sx={{ textAlign: 'center', p: 2 }}>
-                      <Typography variant="subtitle2" fontWeight={500} color="text.secondary">
-                        Total Validations
-                      </Typography>
-                      <Typography variant="h4" color="#1565c0" fontWeight={700} sx={{ mt: 1 }}>
+                      <Typography variant="h5" sx={{ 
+                        color: '#1976d2',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontWeight: 600,
+                        lineHeight: 1.2
+                      }}>
                         {total.toLocaleString()}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1, fontSize: '0.75rem' }}>
-                        Financial Transactions Analyzed
+                      <Typography variant="caption" sx={{ 
+                        color: '#5f6368',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontSize: '0.7rem',
+                        fontWeight: 400,
+                        mt: 0.5
+                      }}>
+                        Total Validations
                       </Typography>
                     </CardContent>
                   </Card>
                 </Grid>
                 <Grid item xs={6} md={3}>
-                  <Card sx={{ boxShadow: 'none', bgcolor: '#f4f8f3', height: '100%', border: '1px solid #e0e0e0' }}>
+                  <Card sx={{ 
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.1)', 
+                    bgcolor: '#ffffff', 
+                    height: '100px',
+                    border: '1px solid #dadce0',
+                    borderRadius: '8px'
+                  }}>
                     <CardContent sx={{ textAlign: 'center', p: 2 }}>
-                      <Typography variant="subtitle2" fontWeight={500} color="text.secondary">
-                        Match Accuracy
-                      </Typography>
-                      <Typography variant="h4" color="#2e7d32" fontWeight={700} sx={{ mt: 1 }}>
+                      <Typography variant="h5" sx={{ 
+                        color: '#2e7d32',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontWeight: 600,
+                        lineHeight: 1.2
+                      }}>
                         {total ? ((match / total) * 100).toFixed(1) : 0}%
                       </Typography>
-                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1, fontSize: '0.75rem' }}>
-                        Validated PO to Invoice Alignment
+                      <Typography variant="caption" sx={{ 
+                        color: '#5f6368',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontSize: '0.7rem',
+                        fontWeight: 400,
+                        mt: 0.5
+                      }}>
+                        Match Accuracy
                       </Typography>
                     </CardContent>
                   </Card>
                 </Grid>
                 <Grid item xs={6} md={3}>
-                  <Card sx={{ boxShadow: 'none', bgcolor: '#fef7f7', height: '100%', border: '1px solid #e0e0e0' }}>
+                  <Card sx={{ 
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.1)', 
+                    bgcolor: '#ffffff', 
+                    height: '100px',
+                    border: '1px solid #dadce0',
+                    borderRadius: '8px'
+                  }}>
                     <CardContent sx={{ textAlign: 'center', p: 2 }}>
-                      <Typography variant="subtitle2" fontWeight={500} color="text.secondary">
-                        POs with Discrepancy
-                      </Typography>
-                      <Typography variant="h4" color="#c62828" fontWeight={700} sx={{ mt: 1 }}>
+                      <Typography variant="h5" sx={{ 
+                        color: '#d32f2f',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontWeight: 600,
+                        lineHeight: 1.2
+                      }}>
                         {notMatch.toLocaleString()}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1, fontSize: '0.75rem' }}>
-                        Identified for Resolution
+                      <Typography variant="caption" sx={{ 
+                        color: '#5f6368',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontSize: '0.7rem',
+                        fontWeight: 400,
+                        mt: 0.5
+                      }}>
+                        POs with Discrepancy
                       </Typography>
                     </CardContent>
                   </Card>
                 </Grid>
                 <Grid item xs={6} md={3}>
-                  <Card sx={{ boxShadow: 'none', bgcolor: '#f7f7ff', height: '100%', border: '1px solid #e0e0e0' }}>
+                  <Card sx={{ 
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.1)', 
+                    bgcolor: '#ffffff', 
+                    height: '100px',
+                    border: '1px solid #dadce0',
+                    borderRadius: '8px'
+                  }}>
                     <CardContent sx={{ textAlign: 'center', p: 2 }}>
-                      <Typography variant="subtitle2" fontWeight={500} color="text.secondary">
+                      <Typography variant="body1" sx={{ 
+                        color: '#1976d2',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontWeight: 600,
+                        lineHeight: 1.2,
+                        fontSize: '14px',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        wordBreak: 'break-word',
+                        textOverflow: 'ellipsis'
+                      }}>
+                        {topReasons.length > 0 ? topReasons[0].name : '-'}
+                      </Typography>
+                      <Typography variant="caption" sx={{ 
+                        color: '#5f6368',
+                        fontFamily: 'Google Sans, sans-serif',
+                        fontSize: '0.7rem',
+                        fontWeight: 400,
+                        mt: 0.5
+                      }}>
                         Top Discrepancy Reason
-                      </Typography>
-                      <Typography variant="h6" color="#5c6bc0" fontWeight={600} sx={{ mt: 1, fontSize: '1.1rem' }}>
-                        {topReasons.length > 0 ? (
-                          topReasons[0].name.length > 20 
-                            ? topReasons[0].name.substring(0, 18) + '...' 
-                            : topReasons[0].name
-                        ) : '-'}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary" sx={{ mt: 1, fontSize: '0.75rem' }}>
-                        {topReasons.length > 0 ? `${topReasons[0].value} Occurrences` : '-'}
                       </Typography>
                     </CardContent>
                   </Card>
@@ -301,59 +371,93 @@ function ValidationKPIs({ refresh }) {
         <Grid item xs={12}>
           <Card sx={{ mb: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}>
             <CardContent>
-              <Typography variant="h6" align="center" sx={{ mb: 2, color: '#1565c0', fontWeight: 600 }}>
+              <Typography variant="h6" align="center" sx={{ 
+                mb: 2, 
+                color: '#202124', 
+                fontWeight: 400,
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
                 Financial Impact Analysis
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
                   <Box sx={{ 
-                    height: '100%', 
+                    height: '120px', 
                     borderRadius: '8px',
                     backgroundColor: 'rgba(30, 136, 229, 0.1)',
                     border: '1px solid rgba(30, 136, 229, 0.2)',
-                    p: 3,
+                    p: 2,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center'
                   }}>
-                    <Typography variant="h6" fontWeight={600} color="#1976D2" textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      fontWeight: 500, 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px',
+                      mb: 0.5
+                    }}>
                       Total Penalty Exposure
                     </Typography>
-                    <Typography variant="h3" color="#1976D2" fontWeight={700} sx={{ 
-                      my: 2,
-                      fontSize: '2.6rem',
+                    <Typography variant="h5" sx={{ 
+                      color: '#1976d2', 
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      mb: 0.5
                     }}>
                       ${penaltyMetrics?.total_penalty_claimed?.toLocaleString() || '0'}
                     </Typography>
-                    <Typography variant="body2" sx={{ color: '#1976D2', opacity: 0.9 }} textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '11px'
+                    }}>
                       Across {validationData.length} validated transactions
                     </Typography>
                   </Box>
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Box sx={{ 
-                    height: '100%', 
+                    height: '120px', 
                     borderRadius: '8px',
                     backgroundColor: 'rgba(46, 125, 50, 0.1)',
                     border: '1px solid rgba(46, 125, 50, 0.2)',
-                    p: 3,
+                    p: 2,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
                     position: 'relative'
                   }}>
-                    <Typography variant="h6" fontWeight={600} color="#2E7D32" textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      fontWeight: 500, 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px',
+                      mb: 0.5
+                    }}>
                       Potential Cost Recovery
                     </Typography>
-                    <Typography variant="h3" color="#2E7D32" fontWeight={700} sx={{ 
-                      my: 2,
-                      fontSize: '2.6rem'
+                    <Typography variant="h5" sx={{ 
+                      color: '#2e7d32', 
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      mb: 0.5
                     }}>
                       ${penaltyMetrics?.penalty_that_can_be_saved?.toLocaleString() || '0'}
                     </Typography>
-                    <Typography variant="body2" sx={{ color: '#2E7D32', opacity: 0.9, mb: 2 }} textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '11px',
+                      mb: 1
+                    }}>
                       From {notMatch} disputable transactions
                     </Typography>
                     <Button
@@ -379,26 +483,40 @@ function ValidationKPIs({ refresh }) {
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Box sx={{ 
-                    height: '100%', 
+                    height: '120px', 
                     borderRadius: '8px',
                     backgroundColor: 'rgba(230, 81, 0, 0.1)',
                     border: '1px solid rgba(230, 81, 0, 0.2)',
-                    p: 3,
+                    p: 2,
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center'
                   }}>
-                    <Typography variant="h6" fontWeight={600} color="#E65100" textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      fontWeight: 500, 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '12px',
+                      mb: 0.5
+                    }}>
                       Savings Opportunity Rate
                     </Typography>
-                    <Typography variant="h3" color="#E65100" fontWeight={700} sx={{ 
-                      my: 2,
-                      fontSize: '2.8rem'
+                    <Typography variant="h5" sx={{ 
+                      color: '#ff9800', 
+                      fontWeight: 600,
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      mb: 0.5
                     }}>
                       {penaltyMetrics?.percentage_saveable || '0'}%
                     </Typography>
-                    <Typography variant="body2" sx={{ color: '#E65100', opacity: 0.9 }} textAlign="center">
+                    <Typography variant="caption" sx={{ 
+                      color: '#5f6368', 
+                      textAlign: 'center',
+                      fontFamily: 'Google Sans, Roboto, sans-serif',
+                      fontSize: '11px'
+                    }}>
                       ROI on validation process
                     </Typography>
                   </Box>
@@ -407,145 +525,17 @@ function ValidationKPIs({ refresh }) {
             </CardContent>
           </Card>
         </Grid>
-        {/* Validation Performance Dashboard with various charts */}
+        {/* Key Validation Insights - Side by Side Layout */}
         <Grid item xs={12} md={6}>
           <Card sx={{ mb: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.08)', height: '100%' }}>
             <CardContent>
-              <Typography variant="h6" align="center" mb={3} sx={{ fontWeight: 600, color: '#1565C0' }}>
-                Validation Performance Dashboard
+              <Typography variant="h6" align="center" mb={2} sx={{ 
+                fontWeight: 400, 
+                color: '#202124',
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
+                Key Validation Insights
               </Typography>
-              
-
-              
-              {/* Main Visualization - Average Penalty by Reason (Pie Chart) */}
-              <Typography variant="h6" align="center" mb={3} sx={{ fontWeight: 600, color: '#1565C0' }}>
-                Average Penalty Amount by Reason
-              </Typography>
-              <Box sx={{ width: '100%', height: 350, mb: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={topReasons.slice(0, 5).map(r => {
-                        // Get all penalties for this reason
-                        const penaltyAmounts = reasonsData
-                          .filter(item => 
-                            item.reason && r.name && 
-                            item.reason.trim().toLowerCase() === r.name.trim().toLowerCase()
-                          )
-                          .map(item => parseFloat(item.penalty || 0))
-                          .filter(p => !isNaN(p));
-                        
-                        const avgPenalty = penaltyAmounts.length > 0 
-                          ? penaltyAmounts.reduce((sum, p) => sum + p, 0) / penaltyAmounts.length 
-                          : 0;
-                        
-                        return {
-                          name: r.name,
-                          value: parseFloat(avgPenalty.toFixed(2)),
-                          count: penaltyAmounts.length,
-                          total: penaltyAmounts.reduce((sum, p) => sum + p, 0),
-                          color: COLORS[topReasons.indexOf(r) % COLORS.length]
-                        };
-                      }).filter(item => item.value > 0).sort((a, b) => b.value - a.value)}
-                      cx="50%"
-                      cy="50%"
-                      labelLine={false}
-                      outerRadius={130}
-                      innerRadius={70}
-                      paddingAngle={2}
-                      dataKey="value"
-                      nameKey="name"
-                      label={({
-                        cx, cy, midAngle, innerRadius, outerRadius, percent, index, name, value
-                      }) => {
-                        const RADIAN = Math.PI / 180;
-                        const radius = 25 + innerRadius + (outerRadius - innerRadius);
-                        const x = cx + radius * Math.cos(-midAngle * RADIAN);
-                        const y = cy + radius * Math.sin(-midAngle * RADIAN);
-                        
-                        return (
-                          <text 
-                            x={x} 
-                            y={y} 
-                            fill="#333333" 
-                            textAnchor={x > cx ? 'start' : 'end'} 
-                            dominantBaseline="central"
-                          >
-                            ${value}
-                          </text>
-                        );
-                      }}
-                    >
-                      {topReasons.slice(0, 5).map((r, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                      ))}
-                    </Pie>
-                    <Tooltip
-                      formatter={(value, name) => [`$${value.toLocaleString()}`, 'Avg Penalty']}
-                      content={({ active, payload }) => {
-                        if (active && payload && payload.length) {
-                          const data = payload[0].payload;
-                          return (
-                            <div style={{ 
-                              background: 'white', 
-                              padding: '12px 15px', 
-                              border: '1px solid #ccc', 
-                              borderRadius: '8px',
-                              boxShadow: '0 3px 14px rgba(0,0,0,0.15)'
-                            }}>
-                              <p style={{ 
-                                fontWeight: 'bold', 
-                                borderBottom: '1px solid #eee', 
-                                paddingBottom: '8px',
-                                marginTop: 0,
-                                marginBottom: '10px',
-                                fontSize: '15px',
-                                color: '#1565C0'
-                              }}>{data.name}</p>
-                              <div style={{ fontSize: '14px' }}>
-                                <p style={{ margin: '5px 0', fontWeight: 'bold', color: '#333' }}>
-                                  Average Penalty: <span style={{ color: '#1976D2', float: 'right', marginLeft: '15px' }}>${data.value.toLocaleString()}</span>
-                                </p>
-                                <p style={{ margin: '5px 0', color: '#555' }}>
-                                  Transaction Count: <span style={{ fontWeight: '500', float: 'right', marginLeft: '15px' }}>{data.count}</span>
-                                </p>
-                                <p style={{ margin: '5px 0', color: '#555' }}>
-                                  Total Impact: <span style={{ fontWeight: '500', float: 'right', marginLeft: '15px' }}>${data.total.toLocaleString()}</span>
-                                </p>
-                              </div>
-                            </div>
-                          );
-                        }
-                        return null;
-                      }}
-                    />
-                    <Legend 
-                      layout="horizontal"
-                      verticalAlign="bottom"
-                      align="center"
-                      iconSize={12}
-                      iconType="circle"
-                      formatter={(value, entry, index) => (
-                        <span style={{ color: '#333333', fontSize: '0.875rem', padding: '0 10px' }}>
-                          {value}
-                        </span>
-                      )}
-                    />
-                    <text 
-                      x="50%" 
-                      y="50%" 
-                      textAnchor="middle" 
-                      dominantBaseline="middle"
-                      style={{ fontWeight: 'bold', fontSize: '16px', fill: '#333333' }}
-                    >
-                      Avg Penalty
-                    </text>
-                  </PieChart>
-                </ResponsiveContainer>
-              </Box>
-              
-              {/* Key Findings Table */}
-              <Typography variant="subtitle1" fontWeight={600} mb={1}>Key Validation Insights</Typography>
               <TableContainer component={Paper} sx={{ 
                 boxShadow: '0 3px 10px rgba(0,0,0,0.08)', 
                 border: '1px solid #e0e0e0',
@@ -685,11 +675,15 @@ function ValidationKPIs({ refresh }) {
           </Card>
         </Grid>
         
-        {/* Horizontal Bar Chart: Top 5 Reason Frequency - Revamped */}
+        {/* Top Discrepancy Drivers - Side by Side Layout */}
         <Grid item xs={12} md={6}>
           <Card sx={{ mb: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}>
             <CardContent>
-              <Typography variant="h6" align="center" mb={2} sx={{ fontWeight: 600, color: '#1565C0' }}>
+              <Typography variant="h6" align="center" mb={2} sx={{ 
+                fontWeight: 400, 
+                color: '#202124',
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
                 Top Discrepancy Drivers
               </Typography>
               <ResponsiveContainer width="100%" height={280}>
@@ -783,8 +777,12 @@ function ValidationKPIs({ refresh }) {
         <Grid item xs={12} md={12}>
           <Card sx={{ mb: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.08)', borderRadius: '8px' }}>
             <CardContent>
-              <Typography variant="h6" align="center" mb={2} sx={{ fontWeight: 600, color: '#1565C0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ marginRight: '8px' }}>💰</span> Financial Recovery Opportunity by Reason <span style={{ marginLeft: '8px' }}>💰</span>
+              <Typography variant="h6" align="center" mb={2} sx={{ 
+                fontWeight: 400, 
+                color: '#202124',
+                fontFamily: 'Google Sans, Roboto, sans-serif'
+              }}>
+                Financial Recovery Opportunity by Reason
               </Typography>
               <ResponsiveContainer width="100%" height={400}>
                 <BarChart 
@@ -976,7 +974,7 @@ function ValidationKPIs({ refresh }) {
                               <tbody>
                                 <tr>
                                   <td style={{ padding: '4px 0', color: '#555' }}>Total Penalty:</td>
-                                  <td style={{ padding: '4px 0', fontWeight: 'bold', color: '#1976d2', textAlign: 'right' }}>
+                                  <td style={{ padding: '4px 0', fontWeight: 'bold', color: '#2E7D32', textAlign: 'right' }}>
                                     ${data.totalPenalty.toLocaleString()}
                                   </td>
                                 </tr>
@@ -1010,25 +1008,32 @@ function ValidationKPIs({ refresh }) {
                     yAxisId="left"
                     name="Regular Penalties" 
                     dataKey="regularPenalty" 
-                    fill="#64B5F6" 
+                    fill="#A5D6A7" 
                     barSize={40} 
                     stackId="a"
                     radius={[4, 4, 0, 0]}
+                    label={{
+                      position: 'inside',
+                      formatter: (value) => value > 1000 ? `$${(value/1000).toFixed(0)}k` : (value > 0 ? `$${value.toLocaleString()}` : ''),
+                      fill: '#2E7D32',
+                      fontSize: 11,
+                      fontWeight: 700
+                    }}
                   />
                   <Bar 
                     yAxisId="left"
                     name="Recoverable Amount" 
                     dataKey="saveablePenalty" 
-                    fill="#EF5350" 
+                    fill="#FFCDD2" 
                     barSize={40} 
                     stackId="a"
                     radius={[4, 4, 0, 0]}
                     label={{
                       position: 'top',
-                      formatter: (value) => value > 0 ? `$${value.toLocaleString()}` : '',
-                      fill: '#333',
+                      formatter: (value) => value > 1000 ? `$${(value/1000).toFixed(0)}k` : (value > 0 ? `$${value.toLocaleString()}` : ''),
+                      fill: '#C62828',
                       fontSize: 12,
-                      fontWeight: 500,
+                      fontWeight: 700,
                       dy: -8
                     }}
                   />
@@ -1064,7 +1069,7 @@ function ValidationKPIs({ refresh }) {
                   borderRadius: '3px',
                   mr: 2
                 }}/>
-                <Typography variant="h6" fontWeight="bold">PO-wise Reasons & Comments</Typography>
+                <Typography variant="h6" fontWeight="bold" color="#000">PO-wise Reasons & Comments</Typography>
               </Box>
               <TableContainer sx={{ 
                 maxHeight: 350,
