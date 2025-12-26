@@ -69,13 +69,13 @@ class ChatResponse(BaseModel):
 
 # Helper functions (define before init_db)
 def hash_password(password: str) -> str:
-    # Bcrypt has a 72-byte limit, truncate if necessary
-    password_truncated = password[:72]
+    # Truncate password to 20 bytes for bcrypt compatibility
+    password_truncated = password[:20]
     return pwd_context.hash(password_truncated)
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    # Bcrypt has a 72-byte limit, truncate if necessary
-    plain_password_truncated = plain_password[:72]
+    # Truncate password to 20 bytes for bcrypt compatibility
+    plain_password_truncated = plain_password[:20]
     return pwd_context.verify(plain_password_truncated, hashed_password)
 
 # Database initialization
@@ -104,8 +104,8 @@ def init_db():
     # Seed default admin user
     cursor.execute("SELECT id FROM users WHERE username = ?", ("admin",))
     if not cursor.fetchone():
-        # Truncate password to 72 bytes for bcrypt compatibility
-        admin_password = hash_password("admin"[:72])
+        # Truncate password to 20 bytes for bcrypt compatibility
+        admin_password = hash_password("admin"[:20])
         cursor.execute(
             "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
             ("admin", "admin@reconciliation.local", admin_password, "admin")
