@@ -12,8 +12,8 @@ ENV REACT_APP_BACKEND_URL=$REACT_APP_BACKEND_URL
 # Copy package files
 COPY frontend/package*.json ./
 
-# Install dependencies
-RUN npm ci --frozen-lockfile && npm cache clean --force
+# Install dependencies (use npm install if package-lock.json doesn't exist)
+RUN if [ -f package-lock.json ]; then npm ci --frozen-lockfile; else npm install; fi && npm cache clean --force
 
 # Copy frontend source
 COPY frontend/src ./src
