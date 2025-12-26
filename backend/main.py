@@ -943,6 +943,11 @@ def new_chat_session(username: str = Depends(verify_token)):
         "message": "New chat session created"
     }
 
+@app.get("/health")
+def health_check():
+    """Public health check endpoint (no authentication required)"""
+    return {"status": "ok"}
+
 @app.get("/chat/health")
 def chat_health_check(username: str = Depends(verify_token)):
     """Check if chat system is healthy"""
