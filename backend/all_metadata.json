@@ -1,0 +1,179 @@
+[
+  {
+    "dataset": "purchase_orders",
+    "columns": [
+      "PO_ID",
+      "Vendor_ID",
+      "Item_ID",
+      "Quantity",
+      "Unit_Price",
+      "PO_Date",
+      "Delivery_Date"
+    ],
+    "sample": [
+      {
+        "PO_ID": "PO1000",
+        "Vendor_ID": "V28",
+        "Item_ID": "ITEM230",
+        "Quantity": 71,
+        "Unit_Price": 164.64,
+        "PO_Date": "2025-07-01 00:00:00",
+        "Delivery_Date": "2025-07-06 00:00:00"
+      },
+      {
+        "PO_ID": "PO1001",
+        "Vendor_ID": "V19",
+        "Item_ID": "ITEM991",
+        "Quantity": 97,
+        "Unit_Price": 418.21,
+        "PO_Date": "2025-06-19 00:00:00",
+        "Delivery_Date": "2025-07-01 00:00:00"
+      },
+      {
+        "PO_ID": "PO1002",
+        "Vendor_ID": "V20",
+        "Item_ID": "ITEM801",
+        "Quantity": 199,
+        "Unit_Price": 416.58,
+        "PO_Date": "2025-06-14 00:00:00",
+        "Delivery_Date": "2025-07-01 00:00:00"
+      }
+    ]
+  },
+  {
+    "dataset": "advance_shipping_notices",
+    "columns": [
+      "PO_ID",
+      "ASN_ID",
+      "Shipment_Date",
+      "Carrier",
+      "Quantity_Shipped"
+    ],
+    "sample": [
+      {
+        "PO_ID": "PO1496",
+        "ASN_ID": "ASN7759",
+        "Shipment_Date": "2025-07-29 00:00:00",
+        "Carrier": "Case Group",
+        "Quantity_Shipped": 77
+      },
+      {
+        "PO_ID": "PO1112",
+        "ASN_ID": "ASN8251",
+        "Shipment_Date": "2025-07-30 00:00:00",
+        "Carrier": "Cooper-Reynolds",
+        "Quantity_Shipped": 74
+      },
+      {
+        "PO_ID": "PO1543",
+        "ASN_ID": "ASN9013",
+        "Shipment_Date": "2025-07-19 00:00:00",
+        "Carrier": "Sanford Group",
+        "Quantity_Shipped": 54
+      }
+    ]
+  },
+  {
+    "dataset": "goods_receipts",
+    "columns": [
+      "PO_ID",
+      "GRN_ID",
+      "Item_ID",
+      "Received_Date",
+      "Quantity_Received",
+      "Warehouse"
+    ],
+    "sample": [
+      {
+        "PO_ID": "PO1496",
+        "GRN_ID": "GRN4075",
+        "Item_ID": "ITEM210",
+        "Received_Date": "2025-07-29 00:00:00",
+        "Quantity_Received": 175,
+        "Warehouse": "Danielton"
+      },
+      {
+        "PO_ID": "PO1112",
+        "GRN_ID": "GRN8036",
+        "Item_ID": "ITEM560",
+        "Received_Date": "2025-08-13 00:00:00",
+        "Quantity_Received": 170,
+        "Warehouse": "Garciamouth"
+      },
+      {
+        "PO_ID": "PO1543",
+        "GRN_ID": "GRN2163",
+        "Item_ID": "ITEM437",
+        "Received_Date": "2025-08-14 00:00:00",
+        "Quantity_Received": 213,
+        "Warehouse": "West Brittanyhaven"
+      }
+    ]
+  },
+  {
+    "dataset": "invoices",
+    "columns": [
+      "PO_ID",
+      "Invoice_ID",
+      "Invoice_Date",
+      "Invoice_Amount",
+      "Currency"
+    ],
+    "sample": [
+      {
+        "PO_ID": "PO1496",
+        "Invoice_ID": "INV7712",
+        "Invoice_Date": "2025-08-10 00:00:00",
+        "Invoice_Amount": 3307.77,
+        "Currency": "INR"
+      },
+      {
+        "PO_ID": "PO1112",
+        "Invoice_ID": "INV3517",
+        "Invoice_Date": "2025-08-14 00:00:00",
+        "Invoice_Amount": 7283.74,
+        "Currency": "USD"
+      },
+      {
+        "PO_ID": "PO1543",
+        "Invoice_ID": "INV3918",
+        "Invoice_Date": "2025-08-07 00:00:00",
+        "Invoice_Amount": 5996.81,
+        "Currency": "USD"
+      }
+    ]
+  },
+  {
+    "dataset": "payments",
+    "columns": [
+      "PO_ID",
+      "Payment_ID",
+      "Payment_Date",
+      "Amount_Paid",
+      "Payment_Mode"
+    ],
+    "sample": [
+      {
+        "PO_ID": "PO1496",
+        "Payment_ID": "PAY3396",
+        "Payment_Date": "2025-08-14 00:00:00",
+        "Amount_Paid": 8631.82,
+        "Payment_Mode": "Bank Transfer"
+      },
+      {
+        "PO_ID": "PO1112",
+        "Payment_ID": "PAY1237",
+        "Payment_Date": "2025-08-08 00:00:00",
+        "Amount_Paid": 2892.85,
+        "Payment_Mode": "Card"
+      },
+      {
+        "PO_ID": "PO1543",
+        "Payment_ID": "PAY9354",
+        "Payment_Date": "2025-08-07 00:00:00",
+        "Amount_Paid": 2816.43,
+        "Payment_Mode": "Card"
+      }
+    ]
+  }
+]

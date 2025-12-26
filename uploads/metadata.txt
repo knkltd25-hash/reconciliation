@@ -1,0 +1,26 @@
+POs (Purchase Orders)
+Records of what was ordered from vendors (item, quantity, price, dates). Acts as the starting point of the supply chain.
+
+ASNs (Advanced Shipment Notices)
+Vendor’s confirmation of what they shipped, when, and via which carrier — sent before goods arrive.
+
+GRNs (Goods Received Notes)
+Proof from warehouse/DC of what was actually received (quantity, date, location).
+
+Invoices
+Bills raised by vendors against the POs/shipments, with amounts and currency.
+
+Payments
+Actual money transfers made against invoices (amount, date, mode like UPI/RTGS).
+
+⚡Together, these datasets simulate the core lifecycle of supply chain transactions → from order → shipment → receipt → billing → payment.
+
+---
+
+# Columns per dataset (from all_metadata.json)
+
+POs: PO_ID, Vendor_ID, Item_ID, Quantity, Unit_Price, PO_Date, Delivery_Date
+ASNs: ASN_ID, PO_ID, Shipped_Quantity, Shipment_Date, Carrier
+GRNs: GRN_ID, PO_ID, Received_Quantity, Received_Date, Warehouse_Location
+Invoices: Invoice_ID, PO_ID, Invoice_Date, Invoice_Amount, Currency
+Payments: Payment_ID, Invoice_ID, Paid_Amount, Payment_Date, Payment_Mode

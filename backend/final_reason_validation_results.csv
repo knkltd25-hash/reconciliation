@@ -1,0 +1,885 @@
+PO_ID,stated_reason,Match/Not,Comments
+PO1000,arrived late,True,On time delivery
+PO1001,no reason,True,No discrepancy
+PO1002,no reason,True,No discrepancy
+PO1003,no reason,True,No discrepancy
+PO1004,no reason,True,No discrepancy
+PO1005,no reason,True,No discrepancy
+PO1006,multiple grns,False,"ASN/GRN mismatch: ASN=122, GRN=149"
+PO1007,no reason,True,No discrepancy
+PO1008,no reason,True,No discrepancy
+PO1009,no reason,True,No discrepancy
+PO1010,no reason,True,No discrepancy
+PO1011,total price discrepancy,False,PO or Invoice data not found
+PO1012,no reason,True,No discrepancy
+PO1013,no reason,True,No discrepancy
+PO1014,no reason,True,No discrepancy
+PO1015,missing grn,False,ASN or GRN data not found
+PO1016,no reason,True,No discrepancy
+PO1017,no reason,True,No discrepancy
+PO1018,no reason,True,No discrepancy
+PO1019,no reason,True,No discrepancy
+PO1020,no reason,True,No discrepancy
+PO1021,no reason,True,No discrepancy
+PO1022,no reason,True,No discrepancy
+PO1023,no reason,True,No discrepancy
+PO1024,no reason,True,No discrepancy
+PO1025,no reason,True,No discrepancy
+PO1026,no reason,True,No discrepancy
+PO1027,no reason,True,No discrepancy
+PO1028,no reason,True,No discrepancy
+PO1029,no reason,True,No discrepancy
+PO1030,no reason,True,No discrepancy
+PO1031,no reason,True,No discrepancy
+PO1032,no reason,True,No discrepancy
+PO1033,no reason,True,No discrepancy
+PO1034,no reason,True,No discrepancy
+PO1035,no reason,True,No discrepancy
+PO1036,no reason,True,No discrepancy
+PO1037,no reason,True,No discrepancy
+PO1038,no reason,True,No discrepancy
+PO1039,no reason,True,No discrepancy
+PO1040,currency mismatch,True,Qty match: 56
+PO1041,no reason,True,No discrepancy
+PO1042,no reason,True,No discrepancy
+PO1043,no reason,True,No discrepancy
+PO1044,no reason,True,No discrepancy
+PO1045,no reason,True,No discrepancy
+PO1046,no reason,True,No discrepancy
+PO1047,no reason,True,No discrepancy
+PO1048,no reason,True,No discrepancy
+PO1049,no reason,True,No discrepancy
+PO1050,no reason,True,No discrepancy
+PO1051,no reason,True,No discrepancy
+PO1052,no reason,True,No discrepancy
+PO1053,no reason,True,No discrepancy
+PO1054,total price discrepancy,False,Price data incomplete
+PO1055,total price discrepancy,False,Price data incomplete
+PO1056,no reason,True,No discrepancy
+PO1057,multiple grns,False,ASN or GRN data not found
+PO1058,no reason,True,No discrepancy
+PO1059,no reason,True,No discrepancy
+PO1060,late delivery,False,Late delivery: GRN date 2025-07-30 > PO date 2025-05-30
+PO1061,total price discrepancy,False,Price data incomplete
+PO1062,no reason,True,No discrepancy
+PO1063,no reason,True,No discrepancy
+PO1064,unit price mismatch,False,"Qty mismatch: PO=69, GRN=30"
+PO1065,total price discrepancy,False,Price data incomplete
+PO1066,no reason,True,No discrepancy
+PO1067,no reason,True,No discrepancy
+PO1068,no reason,True,No discrepancy
+PO1069,no reason,True,No discrepancy
+PO1070,no reason,True,No discrepancy
+PO1071,less received,True,Normal delivery: 90
+PO1072,no reason,True,No discrepancy
+PO1073,no reason,True,No discrepancy
+PO1074,under-delivery,False,PO or GRN data not found
+PO1075,no reason,True,No discrepancy
+PO1076,over delivered,True,On time delivery
+PO1077,no reason,True,No discrepancy
+PO1078,no reason,True,No discrepancy
+PO1079,no reason,True,No discrepancy
+PO1080,no reason,True,No discrepancy
+PO1081,no reason,True,No discrepancy
+PO1082,no reason,True,No discrepancy
+PO1083,no reason,True,No discrepancy
+PO1084,no reason,True,No discrepancy
+PO1085,no reason,True,No discrepancy
+PO1086,currency mismatch,True,Qty match: 69
+PO1087,split shipment,False,ASN or GRN data not found
+PO1088,no reason,True,No discrepancy
+PO1089,no reason,True,No discrepancy
+PO1090,no reason,True,No discrepancy
+PO1091,delivered late,False,Late delivery: GRN date 2025-07-28 > PO date 2025-06-22
+PO1092,no reason,True,No discrepancy
+PO1093,no reason,True,No discrepancy
+PO1094,no reason,True,No discrepancy
+PO1095,no reason,True,No discrepancy
+PO1096,no reason,True,No discrepancy
+PO1097,no reason,True,No discrepancy
+PO1098,no reason,True,No discrepancy
+PO1099,invoice quantity mismatch,True,Qty match: 66
+PO1100,no reason,True,No discrepancy
+PO1101,no reason,True,No discrepancy
+PO1102,asn/grn mismatch,False,PO or GRN data not found
+PO1103,total price discrepancy,False,Price data incomplete
+PO1104,no reason,True,No discrepancy
+PO1105,no reason,True,No discrepancy
+PO1106,no reason,True,No discrepancy
+PO1107,no reason,True,No discrepancy
+PO1108,no reason,True,No discrepancy
+PO1109,no reason,True,No discrepancy
+PO1110,invoice/grn quantity mismatch,False,"Qty mismatch: PO=178, GRN=205"
+PO1111,no reason,True,No discrepancy
+PO1112,total price discrepancy,False,Price data incomplete
+PO1113,no reason,True,No discrepancy
+PO1114,currency mismatch,False,"Qty mismatch: PO=173, GRN=98"
+PO1115,no reason,True,No discrepancy
+PO1116,no reason,True,No discrepancy
+PO1117,no reason,True,No discrepancy
+PO1118,less received,True,Normal delivery: 93
+PO1119,no reason,True,No discrepancy
+PO1120,arrived late,True,On time delivery
+PO1121,under-delivery,False,"Under-delivery: PO=183, GRN=167"
+PO1122,under-delivery,True,Normal delivery: 193
+PO1123,no reason,True,No discrepancy
+PO1124,no reason,True,No discrepancy
+PO1125,no reason,True,No discrepancy
+PO1126,no reason,True,No discrepancy
+PO1127,total price discrepancy,False,Price data incomplete
+PO1128,under delivered,False,Late delivery: GRN date 2025-08-08 > PO date 2025-06-17
+PO1129,under-delivery,False,"Under-delivery: PO=196, GRN=62"
+PO1130,no reason,True,No discrepancy
+PO1131,no reason,True,No discrepancy
+PO1132,unit price mismatch,False,"Qty mismatch: PO=91, GRN=109"
+PO1133,no reason,True,No discrepancy
+PO1134,no reason,True,No discrepancy
+PO1135,no reason,True,No discrepancy
+PO1136,no reason,True,No discrepancy
+PO1137,no reason,True,No discrepancy
+PO1138,no reason,True,No discrepancy
+PO1139,no reason,True,No discrepancy
+PO1140,no reason,True,No discrepancy
+PO1141,no reason,True,No discrepancy
+PO1142,no reason,True,No discrepancy
+PO1143,no reason,True,No discrepancy
+PO1144,no reason,True,No discrepancy
+PO1145,no reason,True,No discrepancy
+PO1146,total price discrepancy,False,PO or Invoice data not found
+PO1147,grn missing,False,"ASN/GRN mismatch: ASN=122, GRN=111"
+PO1148,no reason,True,No discrepancy
+PO1149,no reason,True,No discrepancy
+PO1150,no reason,True,No discrepancy
+PO1151,no reason,True,No discrepancy
+PO1152,no reason,True,No discrepancy
+PO1153,no reason,True,No discrepancy
+PO1154,no reason,True,No discrepancy
+PO1155,no reason,True,No discrepancy
+PO1156,no reason,True,No discrepancy
+PO1157,no reason,True,No discrepancy
+PO1158,no reason,True,No discrepancy
+PO1159,no reason,True,No discrepancy
+PO1160,no reason,True,No discrepancy
+PO1161,no reason,True,No discrepancy
+PO1162,no reason,True,No discrepancy
+PO1163,no reason,True,No discrepancy
+PO1164,partial shipments,False,"ASN/GRN mismatch: ASN=112, GRN=159"
+PO1165,no reason,True,No discrepancy
+PO1166,no reason,True,No discrepancy
+PO1167,no reason,True,No discrepancy
+PO1168,no reason,True,No discrepancy
+PO1169,no reason,True,No discrepancy
+PO1170,no reason,True,No discrepancy
+PO1171,no reason,True,No discrepancy
+PO1172,no reason,True,No discrepancy
+PO1173,no grn,False,"ASN/GRN mismatch: ASN=140, GRN=129"
+PO1174,no grn,False,"ASN/GRN mismatch: ASN=92, GRN=151"
+PO1175,no reason,True,No discrepancy
+PO1176,no reason,True,No discrepancy
+PO1177,no reason,True,No discrepancy
+PO1178,no reason,True,No discrepancy
+PO1179,no reason,True,No discrepancy
+PO1180,no reason,True,No discrepancy
+PO1181,no reason,True,No discrepancy
+PO1182,partial shipments,False,"ASN/GRN mismatch: ASN=91, GRN=144"
+PO1183,no reason,True,No discrepancy
+PO1184,no reason,True,No discrepancy
+PO1185,no reason,True,No discrepancy
+PO1186,no grn,False,ASN or GRN data not found
+PO1187,no reason,True,No discrepancy
+PO1188,no reason,True,No discrepancy
+PO1189,no reason,True,No discrepancy
+PO1190,no reason,True,No discrepancy
+PO1191,no reason,True,No discrepancy
+PO1192,no reason,True,No discrepancy
+PO1193,no reason,True,No discrepancy
+PO1194,no reason,True,No discrepancy
+PO1195,no reason,True,No discrepancy
+PO1196,multiple grns,False,"ASN/GRN mismatch: ASN=178, GRN=214"
+PO1197,no reason,True,No discrepancy
+PO1198,asn grn mismatch,False,PO or GRN data not found
+PO1199,no reason,True,No discrepancy
+PO1200,no reason,True,No discrepancy
+PO1201,split shipment,False,ASN or GRN data not found
+PO1202,no reason,True,No discrepancy
+PO1203,no reason,True,No discrepancy
+PO1204,no reason,True,No discrepancy
+PO1205,no reason,True,No discrepancy
+PO1206,no reason,True,No discrepancy
+PO1207,no reason,True,No discrepancy
+PO1208,no reason,True,No discrepancy
+PO1209,multiple grns,False,ASN or GRN data not found
+PO1210,no reason,True,No discrepancy
+PO1211,no reason,True,No discrepancy
+PO1212,no reason,True,No discrepancy
+PO1213,no reason,True,No discrepancy
+PO1214,no reason,True,No discrepancy
+PO1215,missing grn,False,"ASN/GRN mismatch: ASN=136, GRN=210"
+PO1216,no reason,True,No discrepancy
+PO1217,unit price mismatch,True,Qty match: 60
+PO1218,no reason,True,No discrepancy
+PO1219,no reason,True,No discrepancy
+PO1220,no reason,True,No discrepancy
+PO1221,unit price mismatch,False,"Qty mismatch: PO=139, GRN=66"
+PO1222,no reason,True,No discrepancy
+PO1223,no reason,True,No discrepancy
+PO1224,no reason,True,No discrepancy
+PO1225,unit price mismatch,False,"Qty mismatch: PO=100, GRN=135"
+PO1226,no reason,True,No discrepancy
+PO1227,no reason,True,No discrepancy
+PO1228,no reason,True,No discrepancy
+PO1229,no reason,True,No discrepancy
+PO1230,no reason,True,No discrepancy
+PO1231,no reason,True,No discrepancy
+PO1232,under delivered,False,Late delivery: GRN date 2025-08-04 > PO date 2025-07-16
+PO1233,total price discrepancy,False,Price data incomplete
+PO1234,no reason,True,No discrepancy
+PO1235,no reason,True,No discrepancy
+PO1236,no reason,True,No discrepancy
+PO1237,no reason,True,No discrepancy
+PO1238,no reason,True,No discrepancy
+PO1239,no reason,True,No discrepancy
+PO1240,no reason,True,No discrepancy
+PO1241,unit price mismatch,False,"Qty mismatch: PO=115, GRN=178"
+PO1242,no reason,True,No discrepancy
+PO1243,no reason,True,No discrepancy
+PO1244,no reason,True,No discrepancy
+PO1245,no reason,True,No discrepancy
+PO1246,no reason,True,No discrepancy
+PO1247,no reason,True,No discrepancy
+PO1248,no reason,True,No discrepancy
+PO1249,no reason,True,No discrepancy
+PO1250,no reason,True,No discrepancy
+PO1251,no reason,True,No discrepancy
+PO1252,no reason,True,No discrepancy
+PO1253,no reason,True,No discrepancy
+PO1254,no reason,True,No discrepancy
+PO1255,unit price mismatch,False,"Qty mismatch: PO=58, GRN=176"
+PO1256,no reason,True,No discrepancy
+PO1257,no reason,True,No discrepancy
+PO1258,no reason,True,No discrepancy
+PO1259,no reason,True,No discrepancy
+PO1260,no reason,True,No discrepancy
+PO1261,no grn,False,ASN or GRN data not found
+PO1262,no reason,True,No discrepancy
+PO1263,no reason,True,No discrepancy
+PO1264,no reason,True,No discrepancy
+PO1265,less received,False,"Under-delivery: PO=133, GRN=95"
+PO1266,grn missing,False,"ASN/GRN mismatch: ASN=43, GRN=102"
+PO1267,no reason,True,No discrepancy
+PO1268,no reason,True,No discrepancy
+PO1269,no reason,True,No discrepancy
+PO1270,currency mismatch,True,Qty match: 141
+PO1271,no reason,True,No discrepancy
+PO1272,no reason,True,No discrepancy
+PO1273,no reason,True,No discrepancy
+PO1274,no reason,True,No discrepancy
+PO1275,no reason,True,No discrepancy
+PO1276,no reason,True,No discrepancy
+PO1277,no reason,True,No discrepancy
+PO1278,no reason,True,No discrepancy
+PO1279,no reason,True,No discrepancy
+PO1280,no reason,True,No discrepancy
+PO1281,no reason,True,No discrepancy
+PO1282,no reason,True,No discrepancy
+PO1283,no reason,True,No discrepancy
+PO1284,no reason,True,No discrepancy
+PO1285,invoice quantity mismatch,False,PO or GRN data not found
+PO1286,multiple grns,False,ASN or GRN data not found
+PO1287,no reason,True,No discrepancy
+PO1288,no reason,True,No discrepancy
+PO1289,no reason,True,No discrepancy
+PO1290,no reason,True,No discrepancy
+PO1291,no reason,True,No discrepancy
+PO1292,invoice quantity mismatch,False,"Qty mismatch: PO=128, GRN=155"
+PO1293,no reason,True,No discrepancy
+PO1294,no reason,True,No discrepancy
+PO1295,no reason,True,No discrepancy
+PO1296,no reason,True,No discrepancy
+PO1297,no reason,True,No discrepancy
+PO1298,no reason,True,No discrepancy
+PO1299,more received,True,Normal delivery: 43
+PO1300,no reason,True,No discrepancy
+PO1301,unit price mismatch,False,PO or GRN data not found
+PO1302,no reason,True,No discrepancy
+PO1303,no reason,True,No discrepancy
+PO1304,no reason,True,No discrepancy
+PO1305,no reason,True,No discrepancy
+PO1306,no reason,True,No discrepancy
+PO1307,missing grn,False,"ASN/GRN mismatch: ASN=146, GRN=86"
+PO1308,no reason,True,No discrepancy
+PO1309,asn grn mismatch,True,Qty match: 173
+PO1310,late delivery,False,No GRN found for this PO
+PO1311,no reason,True,No discrepancy
+PO1312,no reason,True,No discrepancy
+PO1313,no reason,True,No discrepancy
+PO1314,no reason,True,No discrepancy
+PO1315,more received,False,PO or GRN data not found
+PO1316,no reason,True,No discrepancy
+PO1317,no reason,True,No discrepancy
+PO1318,no reason,True,No discrepancy
+PO1319,no reason,True,No discrepancy
+PO1320,no reason,True,No discrepancy
+PO1321,no reason,True,No discrepancy
+PO1322,no reason,True,No discrepancy
+PO1323,no reason,True,No discrepancy
+PO1324,no reason,True,No discrepancy
+PO1325,unit price mismatch,False,PO or GRN data not found
+PO1326,no reason,True,No discrepancy
+PO1327,over delivered,True,On time delivery
+PO1328,invoice grn mismatch,True,Qty match: 179
+PO1329,no reason,True,No discrepancy
+PO1330,no reason,True,No discrepancy
+PO1331,no reason,True,No discrepancy
+PO1332,no reason,True,No discrepancy
+PO1333,no reason,True,No discrepancy
+PO1334,asn/grn mismatch,False,PO or GRN data not found
+PO1335,no reason,True,No discrepancy
+PO1336,no reason,True,No discrepancy
+PO1337,late delivery,False,No GRN found for this PO
+PO1338,no reason,True,No discrepancy
+PO1339,no reason,True,No discrepancy
+PO1340,no reason,True,No discrepancy
+PO1341,no reason,True,No discrepancy
+PO1342,no reason,True,No discrepancy
+PO1343,no reason,True,No discrepancy
+PO1344,no reason,True,No discrepancy
+PO1345,no reason,True,No discrepancy
+PO1346,no reason,True,No discrepancy
+PO1347,no reason,True,No discrepancy
+PO1348,no reason,True,No discrepancy
+PO1349,no reason,True,No discrepancy
+PO1350,no reason,True,No discrepancy
+PO1351,invoice grn mismatch,True,Qty match: 55
+PO1352,asn grn mismatch,False,"Qty mismatch: PO=169, GRN=195"
+PO1353,no reason,True,No discrepancy
+PO1354,arrived late,False,Late delivery: GRN date 2025-08-10 > PO date 2025-05-25
+PO1355,no reason,True,No discrepancy
+PO1356,partial shipments,False,ASN or GRN data not found
+PO1357,no reason,True,No discrepancy
+PO1358,no reason,True,No discrepancy
+PO1359,no reason,True,No discrepancy
+PO1360,asn grn mismatch,True,Qty match: 129
+PO1361,no reason,True,No discrepancy
+PO1362,no reason,True,No discrepancy
+PO1363,total price discrepancy,False,Price data incomplete
+PO1364,no reason,True,No discrepancy
+PO1365,split shipment,False,ASN or GRN data not found
+PO1366,no reason,True,No discrepancy
+PO1367,unit price mismatch,True,Qty match: 134
+PO1368,no reason,True,No discrepancy
+PO1369,no reason,True,No discrepancy
+PO1370,no reason,True,No discrepancy
+PO1371,no reason,True,No discrepancy
+PO1372,under-delivery,False,PO or GRN data not found
+PO1373,no reason,True,No discrepancy
+PO1374,no reason,True,No discrepancy
+PO1375,no reason,True,No discrepancy
+PO1376,no reason,True,No discrepancy
+PO1377,no reason,True,No discrepancy
+PO1378,no reason,True,No discrepancy
+PO1379,unit price mismatch,True,Qty match: 104
+PO1380,no reason,True,No discrepancy
+PO1381,no reason,True,No discrepancy
+PO1382,no reason,True,No discrepancy
+PO1383,no reason,True,No discrepancy
+PO1384,no reason,True,No discrepancy
+PO1385,no reason,True,No discrepancy
+PO1386,no reason,True,No discrepancy
+PO1387,no reason,True,No discrepancy
+PO1388,no reason,True,No discrepancy
+PO1389,no reason,True,No discrepancy
+PO1390,currency mismatch,True,Qty match: 144
+PO1391,no reason,True,No discrepancy
+PO1392,no reason,True,No discrepancy
+PO1393,no reason,True,No discrepancy
+PO1394,no reason,True,No discrepancy
+PO1395,no reason,True,No discrepancy
+PO1396,no reason,True,No discrepancy
+PO1397,no reason,True,No discrepancy
+PO1398,total price discrepancy,False,PO or Invoice data not found
+PO1399,no reason,True,No discrepancy
+PO1400,no reason,True,No discrepancy
+PO1401,no reason,True,No discrepancy
+PO1402,no reason,True,No discrepancy
+PO1403,invoice/grn quantity mismatch,False,"Qty mismatch: PO=174, GRN=101"
+PO1404,no reason,True,No discrepancy
+PO1405,no reason,True,No discrepancy
+PO1406,no reason,True,No discrepancy
+PO1407,asn grn mismatch,False,"Qty mismatch: PO=96, GRN=185"
+PO1408,no reason,True,No discrepancy
+PO1409,no reason,True,No discrepancy
+PO1410,no reason,True,No discrepancy
+PO1411,no reason,True,No discrepancy
+PO1412,no reason,True,No discrepancy
+PO1413,no reason,True,No discrepancy
+PO1414,no reason,True,No discrepancy
+PO1415,no reason,True,No discrepancy
+PO1416,no reason,True,No discrepancy
+PO1417,no reason,True,No discrepancy
+PO1418,under-delivery,False,"Under-delivery: PO=165, GRN=78"
+PO1419,no reason,True,No discrepancy
+PO1420,no reason,True,No discrepancy
+PO1421,no reason,True,No discrepancy
+PO1422,no reason,True,No discrepancy
+PO1423,total price discrepancy,False,Price data incomplete
+PO1424,no reason,True,No discrepancy
+PO1425,no reason,True,No discrepancy
+PO1426,no reason,True,No discrepancy
+PO1427,no reason,True,No discrepancy
+PO1428,no reason,True,No discrepancy
+PO1429,currency mismatch,False,"Qty mismatch: PO=73, GRN=92"
+PO1430,no reason,True,No discrepancy
+PO1431,no reason,True,No discrepancy
+PO1432,no reason,True,No discrepancy
+PO1433,under-delivery,False,"Under-delivery: PO=70, GRN=32"
+PO1434,no reason,True,No discrepancy
+PO1435,no reason,True,No discrepancy
+PO1436,no reason,True,No discrepancy
+PO1437,no reason,True,No discrepancy
+PO1438,no reason,True,No discrepancy
+PO1439,late delivery,False,No GRN found for this PO
+PO1440,no reason,True,No discrepancy
+PO1441,no reason,True,No discrepancy
+PO1442,no reason,True,No discrepancy
+PO1443,no reason,True,No discrepancy
+PO1444,no reason,True,No discrepancy
+PO1445,no reason,True,No discrepancy
+PO1446,no reason,True,No discrepancy
+PO1447,unit price mismatch,False,"Qty mismatch: PO=123, GRN=162"
+PO1448,no reason,True,No discrepancy
+PO1449,over delivered,False,No GRN found for this PO
+PO1450,no reason,True,No discrepancy
+PO1451,asn/grn mismatch,True,Qty match: 57
+PO1452,no reason,True,No discrepancy
+PO1453,no reason,True,No discrepancy
+PO1454,no reason,True,No discrepancy
+PO1455,no reason,True,No discrepancy
+PO1456,no reason,True,No discrepancy
+PO1457,no reason,True,No discrepancy
+PO1458,no reason,True,No discrepancy
+PO1459,no reason,True,No discrepancy
+PO1460,no reason,True,No discrepancy
+PO1461,no reason,True,No discrepancy
+PO1462,no reason,True,No discrepancy
+PO1463,no reason,True,No discrepancy
+PO1464,no reason,True,No discrepancy
+PO1465,no reason,True,No discrepancy
+PO1466,no reason,True,No discrepancy
+PO1467,currency mismatch,False,"Qty mismatch: PO=70, GRN=180"
+PO1468,no reason,True,No discrepancy
+PO1469,no reason,True,No discrepancy
+PO1470,no reason,True,No discrepancy
+PO1471,no reason,True,No discrepancy
+PO1472,no reason,True,No discrepancy
+PO1473,no reason,True,No discrepancy
+PO1474,no reason,True,No discrepancy
+PO1475,no reason,True,No discrepancy
+PO1476,asn grn mismatch,False,"Qty mismatch: PO=137, GRN=103"
+PO1477,invoice/grn quantity mismatch,False,PO or GRN data not found
+PO1478,less received,False,"Under-delivery: PO=157, GRN=145"
+PO1479,no reason,True,No discrepancy
+PO1480,no reason,True,No discrepancy
+PO1481,no reason,True,No discrepancy
+PO1482,no reason,True,No discrepancy
+PO1483,unit price mismatch,True,Qty match: 107
+PO1484,no reason,True,No discrepancy
+PO1485,no reason,True,No discrepancy
+PO1486,no reason,True,No discrepancy
+PO1487,asn/grn mismatch,False,"Qty mismatch: PO=63, GRN=143"
+PO1488,no reason,True,No discrepancy
+PO1489,no reason,True,No discrepancy
+PO1490,no reason,True,No discrepancy
+PO1491,no reason,True,No discrepancy
+PO1492,no reason,True,No discrepancy
+PO1493,no reason,True,No discrepancy
+PO1494,no reason,True,No discrepancy
+PO1495,no reason,True,No discrepancy
+PO1496,no reason,True,No discrepancy
+PO1497,no reason,True,No discrepancy
+PO1498,no reason,True,No discrepancy
+PO1499,no reason,True,No discrepancy
+PO1500,no reason,True,No discrepancy
+PO1501,no reason,True,No discrepancy
+PO1502,no reason,True,No discrepancy
+PO1503,less received,False,PO or GRN data not found
+PO1504,no reason,True,No discrepancy
+PO1505,missing grn,False,ASN or GRN data not found
+PO1506,no reason,True,No discrepancy
+PO1507,no reason,True,No discrepancy
+PO1508,no reason,True,No discrepancy
+PO1509,no reason,True,No discrepancy
+PO1510,no reason,True,No discrepancy
+PO1511,no reason,True,No discrepancy
+PO1512,under-delivery,False,"Under-delivery: PO=197, GRN=184"
+PO1513,no reason,True,No discrepancy
+PO1514,grn missing,False,"ASN/GRN mismatch: ASN=176, GRN=146"
+PO1515,no reason,True,No discrepancy
+PO1516,no reason,True,No discrepancy
+PO1517,no reason,True,No discrepancy
+PO1518,no reason,True,No discrepancy
+PO1519,unit price mismatch,True,Qty match: 197
+PO1520,no reason,True,No discrepancy
+PO1521,no reason,True,No discrepancy
+PO1522,no reason,True,No discrepancy
+PO1523,no reason,True,No discrepancy
+PO1524,total price discrepancy,False,Price data incomplete
+PO1525,no reason,True,No discrepancy
+PO1526,no reason,True,No discrepancy
+PO1527,no reason,True,No discrepancy
+PO1528,no reason,True,No discrepancy
+PO1529,no reason,True,No discrepancy
+PO1530,no reason,True,No discrepancy
+PO1531,no reason,True,No discrepancy
+PO1532,invoice quantity mismatch,False,"Qty mismatch: PO=163, GRN=212"
+PO1533,no reason,True,No discrepancy
+PO1534,no reason,True,No discrepancy
+PO1535,currency mismatch,True,Qty match: 190
+PO1536,no reason,True,No discrepancy
+PO1537,split shipment,False,"ASN/GRN mismatch: ASN=191, GRN=89"
+PO1538,no reason,True,No discrepancy
+PO1539,no reason,True,No discrepancy
+PO1540,no reason,True,No discrepancy
+PO1541,no reason,True,No discrepancy
+PO1542,no reason,True,No discrepancy
+PO1543,no reason,True,No discrepancy
+PO1544,no reason,True,No discrepancy
+PO1545,no reason,True,No discrepancy
+PO1546,no reason,True,No discrepancy
+PO1547,no reason,True,No discrepancy
+PO1548,no reason,True,No discrepancy
+PO1549,no reason,True,No discrepancy
+PO1550,no reason,True,No discrepancy
+PO1551,no reason,True,No discrepancy
+PO1552,no reason,True,No discrepancy
+PO1553,no reason,True,No discrepancy
+PO1554,unit price mismatch,False,"Qty mismatch: PO=99, GRN=31"
+PO1555,currency mismatch,False,PO or GRN data not found
+PO1556,no reason,True,No discrepancy
+PO1557,late delivery,False,Late delivery: GRN date 2025-08-05 > PO date 2025-06-14
+PO1558,asn/grn mismatch,False,PO or GRN data not found
+PO1559,no reason,True,No discrepancy
+PO1560,no reason,True,No discrepancy
+PO1561,no reason,True,No discrepancy
+PO1562,no reason,True,No discrepancy
+PO1563,no reason,True,No discrepancy
+PO1564,grn missing,False,"ASN/GRN mismatch: ASN=47, GRN=55"
+PO1565,unit price mismatch,True,Qty match: 166
+PO1566,no reason,True,No discrepancy
+PO1567,no reason,True,No discrepancy
+PO1568,price mismatch,True,Qty match: 73
+PO1569,price mismatch,True,Qty match: 122
+PO1570,no reason,True,No discrepancy
+PO1571,no reason,True,No discrepancy
+PO1572,no reason,True,No discrepancy
+PO1573,no reason,True,No discrepancy
+PO1574,no reason,True,No discrepancy
+PO1575,no reason,True,No discrepancy
+PO1576,no reason,True,No discrepancy
+PO1577,no reason,True,No discrepancy
+PO1578,no reason,True,No discrepancy
+PO1579,arrived late,False,Late delivery: GRN date 2025-08-12 > PO date 2025-07-02
+PO1580,no reason,True,No discrepancy
+PO1581,over-delivery,False,"Over-delivery: PO=77, GRN=178"
+PO1582,no reason,True,No discrepancy
+PO1583,no reason,True,No discrepancy
+PO1584,no grn,False,ASN or GRN data not found
+PO1585,no reason,True,No discrepancy
+PO1586,no reason,True,No discrepancy
+PO1587,no reason,True,No discrepancy
+PO1588,no reason,True,No discrepancy
+PO1589,no reason,True,No discrepancy
+PO1590,no reason,True,No discrepancy
+PO1591,no reason,True,No discrepancy
+PO1592,no reason,True,No discrepancy
+PO1593,invoice quantity mismatch,False,"Qty mismatch: PO=130, GRN=192"
+PO1594,no reason,True,No discrepancy
+PO1595,no reason,True,No discrepancy
+PO1596,no reason,True,No discrepancy
+PO1597,no reason,True,No discrepancy
+PO1598,no reason,True,No discrepancy
+PO1599,currency mismatch,True,Qty match: 79
+PO1600,no reason,True,No discrepancy
+PO1601,split shipment,False,"ASN/GRN mismatch: ASN=174, GRN=70"
+PO1602,no reason,True,No discrepancy
+PO1603,partial shipments,False,"ASN/GRN mismatch: ASN=50, GRN=186"
+PO1604,currency mismatch,True,Qty match: 119
+PO1605,no reason,True,No discrepancy
+PO1606,no reason,True,No discrepancy
+PO1607,arrived late,True,On time delivery
+PO1608,no reason,True,No discrepancy
+PO1609,no reason,True,No discrepancy
+PO1610,no reason,True,No discrepancy
+PO1611,no reason,True,No discrepancy
+PO1612,no reason,True,No discrepancy
+PO1613,no reason,True,No discrepancy
+PO1614,no reason,True,No discrepancy
+PO1615,no reason,True,No discrepancy
+PO1616,no reason,True,No discrepancy
+PO1617,no reason,True,No discrepancy
+PO1618,no reason,True,No discrepancy
+PO1619,no reason,True,No discrepancy
+PO1620,no reason,True,No discrepancy
+PO1621,no reason,True,No discrepancy
+PO1622,no reason,True,No discrepancy
+PO1623,no reason,True,No discrepancy
+PO1624,partial shipments,False,"ASN/GRN mismatch: ASN=170, GRN=36"
+PO1625,no reason,True,No discrepancy
+PO1626,no reason,True,No discrepancy
+PO1627,no reason,True,No discrepancy
+PO1628,no reason,True,No discrepancy
+PO1629,no reason,True,No discrepancy
+PO1630,no reason,True,No discrepancy
+PO1631,no reason,True,No discrepancy
+PO1632,no reason,True,No discrepancy
+PO1633,no reason,True,No discrepancy
+PO1634,no reason,True,No discrepancy
+PO1635,no reason,True,No discrepancy
+PO1636,no reason,True,No discrepancy
+PO1637,no reason,True,No discrepancy
+PO1638,no reason,True,No discrepancy
+PO1639,no reason,True,No discrepancy
+PO1640,grn missing,False,ASN or GRN data not found
+PO1641,no reason,True,No discrepancy
+PO1642,asn quantity mismatch,True,Qty match: 196
+PO1643,no reason,True,No discrepancy
+PO1644,no reason,True,No discrepancy
+PO1645,no reason,True,No discrepancy
+PO1646,currency mismatch,False,"Qty mismatch: PO=112, GRN=37"
+PO1647,total price discrepancy,False,Price data incomplete
+PO1648,no reason,True,No discrepancy
+PO1649,no reason,True,No discrepancy
+PO1650,no reason,True,No discrepancy
+PO1651,no reason,True,No discrepancy
+PO1652,price mismatch,False,"Qty mismatch: PO=195, GRN=188"
+PO1653,no reason,True,No discrepancy
+PO1654,over-delivery,True,Normal delivery: 69
+PO1655,no reason,True,No discrepancy
+PO1656,no reason,True,No discrepancy
+PO1657,no reason,True,No discrepancy
+PO1658,no reason,True,No discrepancy
+PO1659,no reason,True,No discrepancy
+PO1660,no reason,True,No discrepancy
+PO1661,no reason,True,No discrepancy
+PO1662,late delivery,False,No GRN found for this PO
+PO1663,no reason,True,No discrepancy
+PO1664,no reason,True,No discrepancy
+PO1665,late delivery,True,On time delivery
+PO1666,no reason,True,No discrepancy
+PO1667,no reason,True,No discrepancy
+PO1668,no reason,True,No discrepancy
+PO1669,no reason,True,No discrepancy
+PO1670,no reason,True,No discrepancy
+PO1671,no reason,True,No discrepancy
+PO1672,no reason,True,No discrepancy
+PO1673,no reason,True,No discrepancy
+PO1674,no reason,True,No discrepancy
+PO1675,no reason,True,No discrepancy
+PO1676,no reason,True,No discrepancy
+PO1677,no reason,True,No discrepancy
+PO1678,no reason,True,No discrepancy
+PO1679,no reason,True,No discrepancy
+PO1680,no reason,True,No discrepancy
+PO1681,no reason,True,No discrepancy
+PO1682,no reason,True,No discrepancy
+PO1683,no reason,True,No discrepancy
+PO1684,no reason,True,No discrepancy
+PO1685,no reason,True,No discrepancy
+PO1686,arrived late,True,On time delivery
+PO1687,no reason,True,No discrepancy
+PO1688,no reason,True,No discrepancy
+PO1689,no reason,True,No discrepancy
+PO1690,no reason,True,No discrepancy
+PO1691,no reason,True,No discrepancy
+PO1692,multiple grns,False,ASN or GRN data not found
+PO1693,no grn,False,"ASN/GRN mismatch: ASN=188, GRN=106"
+PO1694,asn/grn mismatch,True,Qty match: 132
+PO1695,no reason,True,No discrepancy
+PO1696,no reason,True,No discrepancy
+PO1697,grn missing,False,"ASN/GRN mismatch: ASN=153, GRN=112"
+PO1698,no reason,True,No discrepancy
+PO1699,no reason,True,No discrepancy
+PO1700,no reason,True,No discrepancy
+PO1701,asn quantity mismatch,False,PO or GRN data not found
+PO1702,split shipment,False,ASN or GRN data not found
+PO1703,no reason,True,No discrepancy
+PO1704,no reason,True,No discrepancy
+PO1705,no reason,True,No discrepancy
+PO1706,price mismatch,False,"Qty mismatch: PO=189, GRN=107"
+PO1707,delivered late,False,No GRN found for this PO
+PO1708,no reason,True,No discrepancy
+PO1709,no reason,True,No discrepancy
+PO1710,total price discrepancy,False,Price data incomplete
+PO1711,no reason,True,No discrepancy
+PO1712,delivered late,True,On time delivery
+PO1713,no reason,True,No discrepancy
+PO1714,no reason,True,No discrepancy
+PO1715,no reason,True,No discrepancy
+PO1716,no reason,True,No discrepancy
+PO1717,no reason,True,No discrepancy
+PO1718,no reason,True,No discrepancy
+PO1719,no reason,True,No discrepancy
+PO1720,no reason,True,No discrepancy
+PO1721,no reason,True,No discrepancy
+PO1722,asn grn mismatch,False,"Qty mismatch: PO=177, GRN=78"
+PO1723,under-delivery,False,PO or GRN data not found
+PO1724,no reason,True,No discrepancy
+PO1725,split shipment,False,"ASN/GRN mismatch: ASN=77, GRN=100"
+PO1726,no reason,True,No discrepancy
+PO1727,no reason,True,No discrepancy
+PO1728,no reason,True,No discrepancy
+PO1729,no reason,True,No discrepancy
+PO1730,no reason,True,No discrepancy
+PO1731,no reason,True,No discrepancy
+PO1732,no reason,True,No discrepancy
+PO1733,no reason,True,No discrepancy
+PO1734,no reason,True,No discrepancy
+PO1735,asn grn mismatch,False,PO or GRN data not found
+PO1736,no reason,True,No discrepancy
+PO1737,no reason,True,No discrepancy
+PO1738,no reason,True,No discrepancy
+PO1739,no reason,True,No discrepancy
+PO1740,delivered late,False,No GRN found for this PO
+PO1741,no reason,True,No discrepancy
+PO1742,no reason,True,No discrepancy
+PO1743,no reason,True,No discrepancy
+PO1744,no reason,True,No discrepancy
+PO1745,total price discrepancy,False,Price data incomplete
+PO1746,no reason,True,No discrepancy
+PO1747,invoice quantity mismatch,False,PO or GRN data not found
+PO1748,no reason,True,No discrepancy
+PO1749,no reason,True,No discrepancy
+PO1750,no reason,True,No discrepancy
+PO1751,no reason,True,No discrepancy
+PO1752,no reason,True,No discrepancy
+PO1753,no reason,True,No discrepancy
+PO1754,no reason,True,No discrepancy
+PO1755,over-delivery,True,Normal delivery: 55
+PO1756,no reason,True,No discrepancy
+PO1757,no reason,True,No discrepancy
+PO1758,no reason,True,No discrepancy
+PO1759,no reason,True,No discrepancy
+PO1760,no reason,True,No discrepancy
+PO1761,no reason,True,No discrepancy
+PO1762,asn/grn mismatch,False,"Qty mismatch: PO=159, GRN=204"
+PO1763,no reason,True,No discrepancy
+PO1764,multiple grns,False,"ASN/GRN mismatch: ASN=156, GRN=75"
+PO1765,price mismatch,True,Qty match: 58
+PO1766,no reason,True,No discrepancy
+PO1767,no reason,True,No discrepancy
+PO1768,no reason,True,No discrepancy
+PO1769,currency mismatch,False,"Qty mismatch: PO=57, GRN=178"
+PO1770,unit price mismatch,False,"Qty mismatch: PO=115, GRN=48"
+PO1771,no reason,True,No discrepancy
+PO1772,no reason,True,No discrepancy
+PO1773,no reason,True,No discrepancy
+PO1774,no reason,True,No discrepancy
+PO1775,no reason,True,No discrepancy
+PO1776,currency mismatch,False,"Qty mismatch: PO=145, GRN=140"
+PO1777,arrived late,False,No GRN found for this PO
+PO1778,no reason,True,No discrepancy
+PO1779,no reason,True,No discrepancy
+PO1780,no reason,True,No discrepancy
+PO1781,no reason,True,No discrepancy
+PO1782,missing grn,False,"ASN/GRN mismatch: ASN=190, GRN=49"
+PO1783,partial shipments,False,"ASN/GRN mismatch: ASN=155, GRN=181"
+PO1784,no reason,True,No discrepancy
+PO1785,under-delivery,False,"Under-delivery: PO=130, GRN=84"
+PO1786,no reason,True,No discrepancy
+PO1787,no reason,True,No discrepancy
+PO1788,no reason,True,No discrepancy
+PO1789,no reason,True,No discrepancy
+PO1790,no reason,True,No discrepancy
+PO1791,unit price mismatch,True,Qty match: 56
+PO1792,no reason,True,No discrepancy
+PO1793,no reason,True,No discrepancy
+PO1794,no reason,True,No discrepancy
+PO1795,partial shipments,True,ASN/GRN match: 176
+PO1796,no reason,True,No discrepancy
+PO1797,no reason,True,No discrepancy
+PO1798,no reason,True,No discrepancy
+PO1799,arrived late,False,Late delivery: GRN date 2025-08-01 > PO date 2025-06-01
+PO1800,no reason,True,No discrepancy
+PO1801,no reason,True,No discrepancy
+PO1802,no reason,True,No discrepancy
+PO1803,no reason,True,No discrepancy
+PO1804,no reason,True,No discrepancy
+PO1805,no reason,True,No discrepancy
+PO1806,no reason,True,No discrepancy
+PO1807,no reason,True,No discrepancy
+PO2016,no reason,True,No discrepancy
+PO2447,no reason,True,No discrepancy
+PO2188,no reason,True,No discrepancy
+PO2698,no reason,True,No discrepancy
+PO2488,no reason,True,No discrepancy
+PO2845,no grn,False,ASN or GRN data not found
+PO2605,no reason,True,No discrepancy
+PO2143,no reason,True,No discrepancy
+PO2812,no reason,True,No discrepancy
+PO2064,no reason,True,No discrepancy
+PO2520,no reason,True,No discrepancy
+PO2290,no reason,True,No discrepancy
+PO2271,invoice/grn quantity mismatch,False,PO or GRN data not found
+PO2433,no reason,True,No discrepancy
+PO2355,unit price mismatch,False,PO or GRN data not found
+PO2279,partial shipments,False,ASN or GRN data not found
+PO2099,no reason,True,No discrepancy
+PO2676,no reason,True,No discrepancy
+PO2953,no reason,True,No discrepancy
+PO2369,no reason,True,No discrepancy
+PO2195,no reason,True,No discrepancy
+PO2872,currency mismatch,False,PO or GRN data not found
+PO2490,invoice/grn quantity mismatch,False,PO or GRN data not found
+PO2907,no reason,True,No discrepancy
+PO2417,no reason,True,No discrepancy
+PO2338,no reason,True,No discrepancy
+PO2507,currency mismatch,False,PO or GRN data not found
+PO2181,no reason,True,No discrepancy
+PO2893,no reason,True,No discrepancy
+PO2134,no reason,True,No discrepancy
+PO2681,no reason,True,No discrepancy
+PO2538,no reason,True,No discrepancy
+PO2555,no reason,True,No discrepancy
+PO2876,no reason,True,No discrepancy
+PO2487,no reason,True,No discrepancy
+PO2223,split shipment,False,ASN or GRN data not found
+PO2838,no reason,True,No discrepancy
+PO2069,under-delivery,False,PO or GRN data not found
+PO2803,no reason,True,No discrepancy
+PO2741,no reason,True,No discrepancy
+PO2460,no reason,True,No discrepancy
+PO2406,over-delivery,False,PO or GRN data not found
+PO2151,price mismatch,False,PO or GRN data not found
+PO2127,no reason,True,No discrepancy
+PO2863,no reason,True,No discrepancy
+PO2777,partial shipments,False,ASN or GRN data not found
+PO2337,no reason,True,No discrepancy
+PO2298,more received,False,PO or GRN data not found
+PO2220,asn quantity mismatch,False,PO or GRN data not found
+PO2147,no reason,True,No discrepancy
+PO2120,no reason,True,No discrepancy
+PO2781,no reason,True,No discrepancy
+PO2610,no reason,True,No discrepancy
+PO2802,no reason,True,No discrepancy
+PO2634,over delivered,False,No PO data found
+PO2182,over-delivery,False,PO or GRN data not found
+PO2180,no reason,True,No discrepancy
+PO2722,split shipment,False,ASN or GRN data not found
+PO2837,no reason,True,No discrepancy
+PO2383,no reason,True,No discrepancy
+PO2091,no reason,True,No discrepancy
+PO2144,asn quantity mismatch,False,PO or GRN data not found
+PO2137,no reason,True,No discrepancy
+PO2176,asn grn mismatch,False,PO or GRN data not found
+PO2230,no reason,True,No discrepancy
+PO2365,no reason,True,No discrepancy
+PO2259,no reason,True,No discrepancy
+PO2866,no reason,True,No discrepancy
+PO2986,no reason,True,No discrepancy
+PO2886,no reason,True,No discrepancy
+PO2724,no reason,True,No discrepancy
+PO2153,no reason,True,No discrepancy
+PO2084,no reason,True,No discrepancy
+PO2583,no reason,True,No discrepancy
+PO2879,no reason,True,No discrepancy
+PO2209,over delivered,False,No PO data found

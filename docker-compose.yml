@@ -1,0 +1,94 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: pipeline_backend
+    image: pipeline:backend-latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./backend:/app/backend
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - NODE_ENV=production
+      - CORS_ORIGINS=http://54.145.92.198:3000,http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000
+    depends_on:
+      - db
+    restart: unless-stopped
+    networks:
+      - pipeline-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/chat/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: pipeline_frontend
+    image: pipeline:frontend-latest
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_BACKEND_URL=http://54.145.92.198:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - pipeline-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  db:
+    image: sqlite:latest
+    container_name: pipeline_db
+    volumes:
+      - db-data:/data
+    networks:
+      - pipeline-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "test", "-f", "/data/pipeline.db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  db-data:
+    driver: local
+
+networks:
+  pipeline-network:
+    driver: bridge
+
+# Configuration Summary:
+# - Backend: FastAPI with 2-worker setup for production
+# - Frontend: React SPA with Nginx (SPA routing, gzip, caching)
+# - Database: SQLite for user management
+# - Networking: Internal pipeline-network for service communication
+# - Logging: Structured JSON logging with rotation (10MB max, 3 files)
+# - Volumes: Shared uploads folder + persistent database
+# - Health Checks: All services monitored
+# - Environment: Production-ready configuration
