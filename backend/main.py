@@ -104,7 +104,8 @@ def init_db():
     # Seed default admin user
     cursor.execute("SELECT id FROM users WHERE username = ?", ("admin",))
     if not cursor.fetchone():
-        admin_password = hash_password("admin")
+        # Truncate password to 72 bytes for bcrypt compatibility
+        admin_password = hash_password("admin"[:72])
         cursor.execute(
             "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
             ("admin", "admin@reconciliation.local", admin_password, "admin")
