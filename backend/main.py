@@ -30,11 +30,11 @@ CONTEXT_WINDOW = 10  # Keep last 10 messages in context
 CHAT_HISTORY_FILE = "chat_history.csv"
 
 # Security configuration
-SECRET_KEY = os.getenv("SECRET_KEY", "RaoChJQYyYtuvO7-MzhI8nvRkBRcArbXdvEKcwE6WQA")
+SECRET_KEY = os.getenv("SECRET_KEY", "pipeline_secret_key_2024")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 1440  # 24 hours
 
-# Password hashing
+# Password hashing - truncate passwords to 72 bytes for bcrypt compatibility
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 security = HTTPBearer()
 
@@ -69,10 +69,14 @@ class ChatResponse(BaseModel):
 
 # Helper functions (define before init_db)
 def hash_password(password: str) -> str:
-    return pwd_context.hash(password)
+    # Bcrypt has a 72-byte limit, truncate if necessary
+    password_truncated = password[:72]
+    return pwd_context.hash(password_truncated)
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    return pwd_context.verify(plain_password, hashed_password)
+    # Bcrypt has a 72-byte limit, truncate if necessary
+    plain_password_truncated = plain_password[:72]
+    return pwd_context.verify(plain_password_truncated, hashed_password)
 
 # Database initialization
 def init_db():
