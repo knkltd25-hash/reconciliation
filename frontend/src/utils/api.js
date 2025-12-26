@@ -1,5 +1,6 @@
 export const apiCall = async (endpoint, options = {}) => {
   const token = localStorage.getItem('access_token');
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
   
   const headers = {
     'Content-Type': 'application/json',
@@ -10,7 +11,7 @@ export const apiCall = async (endpoint, options = {}) => {
     headers['Authorization'] = `Bearer ${token}`;
   }
 
-  const response = await fetch(`http://localhost:8000${endpoint}`, {
+  const response = await fetch(`${backendUrl}${endpoint}`, {
     ...options,
     headers,
   });

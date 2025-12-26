@@ -6,7 +6,7 @@ FROM node:20-alpine as builder
 WORKDIR /app
 
 # Accept build argument for backend URL
-ARG REACT_APP_BACKEND_URL=http://localhost:8000
+ARG REACT_APP_BACKEND_URL=http://54.145.92.198:8000
 ENV REACT_APP_BACKEND_URL=$REACT_APP_BACKEND_URL
 
 # Copy package files
