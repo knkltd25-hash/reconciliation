@@ -34,8 +34,8 @@ SECRET_KEY = os.getenv("SECRET_KEY", "pipeline_secret_key_2024")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 1440  # 24 hours
 
-# Password hashing - truncate passwords to 72 bytes for bcrypt compatibility
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Password hashing - Use argon2 instead of bcrypt to avoid 72-byte limit
+pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 security = HTTPBearer()
 
 # Pydantic models
@@ -69,14 +69,12 @@ class ChatResponse(BaseModel):
 
 # Helper functions (define before init_db)
 def hash_password(password: str) -> str:
-    # Truncate password to 20 bytes for bcrypt compatibility
-    password_truncated = password[:20]
-    return pwd_context.hash(password_truncated)
+    # Argon2 handles long passwords automatically
+    return pwd_context.hash(password)
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    # Truncate password to 20 bytes for bcrypt compatibility
-    plain_password_truncated = plain_password[:20]
-    return pwd_context.verify(plain_password_truncated, hashed_password)
+    # Argon2 handles long passwords automatically
+    return pwd_context.verify(plain_password, hashed_password)
 
 # Database initialization
 def init_db():
@@ -104,8 +102,7 @@ def init_db():
     # Seed default admin user
     cursor.execute("SELECT id FROM users WHERE username = ?", ("admin",))
     if not cursor.fetchone():
-        # Truncate password to 20 bytes for bcrypt compatibility
-        admin_password = hash_password("admin"[:20])
+        admin_password = hash_password("admin")
         cursor.execute(
             "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
             ("admin", "admin@reconciliation.local", admin_password, "admin")
