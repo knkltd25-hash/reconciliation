@@ -22,89 +22,71 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
-// Mock PO data with risk scenarios
-const mockPOs = [
-	{
-		po_id: "PO1001",
-		product: "Product A",
-		ordered_qty: 15000,
-		available_qty: 13000,
-		source_dc: "DC-A",
-		dest_dc: "WH-1",
-		dispatch_time: "2026-02-24T15:00:00Z",
-		required_delivery: "2026-02-25T12:00:00Z",
-		transit_hours: 35,
-		dock_available: true,
-		can_transfer: true,
-		risk: "Late Delivery",
-		action: "Ask driver to fasten vehicle",
-		risk_level: "High"
-	},
-	{
-		po_id: "PO1002",
-		product: "Product B",
-		ordered_qty: 8000,
-		available_qty: 8000,
-		source_dc: "DC-B",
-		dest_dc: "WH-2",
-		dispatch_time: "2026-02-24T10:00:00Z",
-		required_delivery: "2026-02-25T18:00:00Z",
-		transit_hours: 8,
-		dock_available: false,
-		can_transfer: false,
-		risk: "Truck Detention",
-		action: "Alert: Gate-in not possible, risk of detention penalty",
-		risk_level: "Medium"
-	},
-	{
-		po_id: "PO1003",
-		product: "Product C",
-		ordered_qty: 15000,
-		available_qty: 3000,
-		source_dc: "DC-C",
-		dest_dc: "WH-3",
-		dispatch_time: "2026-02-24T09:00:00Z",
-		required_delivery: "2026-02-25T20:00:00Z",
-		transit_hours: 10,
-		dock_available: true,
-		can_transfer: false,
-		risk: "Not In-Full",
-		action: "No stock transfer possible. Only 3K will be delivered.",
-		risk_level: "High"
-	},
-	{
-		po_id: "PO1004",
-		product: "Product D",
-		ordered_qty: 12000,
-		available_qty: 12000,
-		source_dc: "DC-D",
-		dest_dc: "WH-4",
-		dispatch_time: "2026-02-24T08:00:00Z",
-		required_delivery: "2026-02-25T10:00:00Z",
-		transit_hours: 6,
-		dock_available: true,
-		can_transfer: true,
-		risk: "None",
-		action: "On track",
-		risk_level: "Low"
-	},
-	{
-		po_id: "PO1005",
-		product: "Product E",
-		ordered_qty: 9000,
-		available_qty: 7000,
-		source_dc: "DC-E",
-		dest_dc: "WH-5",
-		dispatch_time: "2026-02-24T07:00:00Z",
-		required_delivery: "2026-02-25T15:00:00Z",
-		transit_hours: 12,
-		dock_available: true,
-		can_transfer: true,
-		risk: "Not In-Full",
-		action: "Do stock transfer from nearest DC",
-		risk_level: "Medium"
-	}
-];
+// Expanded mock PO data for SaaS demo
+const mockPOs = Array.from({ length: 25 }, (_, i) => {
+	const base = [
+		{
+			risk: "Late Delivery",
+			action: "Ask driver to fasten vehicle",
+			risk_level: "High",
+			dock_available: true,
+			can_transfer: true,
+			ordered_qty: 15000,
+			available_qty: 13000,
+			transit_hours: 35,
+		},
+		{
+			risk: "Truck Detention",
+			action: "Alert: Gate-in not possible, risk of detention penalty",
+			risk_level: "Medium",
+			dock_available: false,
+			can_transfer: false,
+			ordered_qty: 8000,
+			available_qty: 8000,
+			transit_hours: 8,
+		},
+		{
+			risk: "Not In-Full",
+			action: "No stock transfer possible. Only 3K will be delivered.",
+			risk_level: "High",
+			dock_available: true,
+			can_transfer: false,
+			ordered_qty: 15000,
+			available_qty: 3000,
+			transit_hours: 10,
+		},
+		{
+			risk: "None",
+			action: "On track",
+			risk_level: "Low",
+			dock_available: true,
+			can_transfer: true,
+			ordered_qty: 12000,
+			available_qty: 12000,
+			transit_hours: 6,
+		},
+		{
+			risk: "Not In-Full",
+			action: "Do stock transfer from nearest DC",
+			risk_level: "Medium",
+			dock_available: true,
+			can_transfer: true,
+			ordered_qty: 9000,
+			available_qty: 7000,
+			transit_hours: 12,
+		},
+	];
+	const b = base[i % base.length];
+	return {
+		po_id: `PO${1001 + i}`,
+		product: `Product ${String.fromCharCode(65 + (i % 5))}`,
+		source_dc: `DC-${String.fromCharCode(65 + (i % 5))}`,
+		dest_dc: `WH-${1 + (i % 5)}`,
+		dispatch_time: `2026-02-24T${String(7 + (i % 12)).padStart(2, '0')}:00:00Z`,
+		required_delivery: `2026-02-25T${String(10 + (i % 12)).padStart(2, '0')}:00:00Z`,
+		...b,
+	};
+});
 
 const riskColors = {
 	High: "#ef4444",
@@ -116,12 +98,19 @@ const riskColors = {
 const RiskAnalysis = () => {
 	const [pos] = useState(mockPOs);
 
-	// Risk summary for visualization
-	const riskSummary = [
-		{ name: "High", count: pos.filter(po => po.risk_level === "High").length },
-		{ name: "Medium", count: pos.filter(po => po.risk_level === "Medium").length },
-		{ name: "Low", count: pos.filter(po => po.risk_level === "Low").length },
-		{ name: "None", count: pos.filter(po => po.risk_level === "None").length }
+	// SaaS-style actionable summary
+	const totalPOs = pos.length;
+	const highRisk = pos.filter(po => po.risk_level === "High").length;
+	const mediumRisk = pos.filter(po => po.risk_level === "Medium").length;
+	const lowRisk = pos.filter(po => po.risk_level === "Low").length;
+	const noRisk = pos.filter(po => po.risk_level === "None").length;
+
+	// Funnel data for supply chain risk
+	const funnelData = [
+		{ stage: "All POs", value: totalPOs },
+		{ stage: "At Risk (Any)", value: highRisk + mediumRisk },
+		{ stage: "High Risk", value: highRisk },
+		{ stage: "Actionable", value: pos.filter(po => po.risk_level === "High" && po.action !== "On track").length },
 	];
 
 	return (
@@ -130,26 +119,62 @@ const RiskAnalysis = () => {
 				PO Risk Analysis
 			</Typography>
 			<Typography variant="body1" sx={{ color: '#64748b', mb: 3 }}>
-				Automated risk detection and action recommendations for each PO in the supply chain.
+				Automated risk detection and action recommendations for every PO. Prioritize, act, and reduce penalties across your supply chain.
 			</Typography>
 
-			{/* Risk Level Bar Chart */}
-			<Card sx={{ mb: 4, p: 2 }}>
+			{/* SaaS-style summary cards */}
+			<Stack direction={{ xs: 'column', md: 'row' }} spacing={3} sx={{ mb: 4 }}>
+				<Card sx={{ flex: 1, background: '#f5f3ff', borderLeft: '6px solid #7c3aed' }}>
+					<CardContent>
+						<Typography sx={{ fontWeight: 700, color: '#7c3aed', fontSize: '1.1rem' }}>Total POs</Typography>
+						<Typography sx={{ fontWeight: 900, fontSize: '2.2rem', color: '#0f172a' }}>{totalPOs}</Typography>
+					</CardContent>
+				</Card>
+				<Card sx={{ flex: 1, background: '#fef2f2', borderLeft: '6px solid #ef4444' }}>
+					<CardContent>
+						<Typography sx={{ fontWeight: 700, color: '#ef4444', fontSize: '1.1rem' }}>High Risk</Typography>
+						<Typography sx={{ fontWeight: 900, fontSize: '2.2rem', color: '#ef4444' }}>{highRisk}</Typography>
+					</CardContent>
+				</Card>
+				<Card sx={{ flex: 1, background: '#fff7ed', borderLeft: '6px solid #f59e0b' }}>
+					<CardContent>
+						<Typography sx={{ fontWeight: 700, color: '#f59e0b', fontSize: '1.1rem' }}>Medium Risk</Typography>
+						<Typography sx={{ fontWeight: 900, fontSize: '2.2rem', color: '#f59e0b' }}>{mediumRisk}</Typography>
+					</CardContent>
+				</Card>
+				<Card sx={{ flex: 1, background: '#f0fdf4', borderLeft: '6px solid #10b981' }}>
+					<CardContent>
+						<Typography sx={{ fontWeight: 700, color: '#10b981', fontSize: '1.1rem' }}>Low/No Risk</Typography>
+						<Typography sx={{ fontWeight: 900, fontSize: '2.2rem', color: '#10b981' }}>{lowRisk + noRisk}</Typography>
+					</CardContent>
+				</Card>
+			</Stack>
+
+			{/* Supply Chain Risk Funnel Visualization */}
+			<Card sx={{ mb: 4, background: '#f8fafc', border: '1px solid #e0e7ef' }}>
 				<CardContent>
-					<Typography sx={{ fontWeight: 600, mb: 2 }}>Risk Level Distribution</Typography>
-					<ResponsiveContainer width="100%" height={180}>
-						<BarChart data={riskSummary} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-							<CartesianGrid strokeDasharray="3 3" />
-							<XAxis dataKey="name" />
-							<YAxis allowDecimals={false} />
-							<Tooltip />
-							<Bar dataKey="count">
-								{riskSummary.map((entry, idx) => (
-									<Cell key={entry.name} fill={riskColors[entry.name]} />
-								))}
-							</Bar>
-						</BarChart>
-					</ResponsiveContainer>
+					<Typography sx={{ fontWeight: 700, mb: 2, color: '#0f172a' }}>Supply Chain Risk Funnel</Typography>
+					<Box sx={{ display: 'flex', alignItems: 'flex-end', gap: 2, height: 120, mt: 2 }}>
+						{funnelData.map((stage, idx) => (
+							<Box key={stage.stage} sx={{ flex: 1, textAlign: 'center' }}>
+								<Box sx={{
+									height: 30 + (idx === 0 ? 60 : idx === 1 ? 40 : idx === 2 ? 25 : 15),
+									background: idx === 0 ? '#7c3aed' : idx === 1 ? '#f59e0b' : idx === 2 ? '#ef4444' : '#10b981',
+									borderRadius: 2,
+									mb: 1,
+									transition: 'height 0.3s',
+									color: '#fff',
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+									fontWeight: 700,
+									fontSize: '1.1rem',
+									boxShadow: '0 2px 8px rgba(0,0,0,0.07)'
+								}}>{stage.value}</Box>
+								<Typography sx={{ fontSize: '0.95rem', color: '#334155', fontWeight: 600 }}>{stage.stage}</Typography>
+							</Box>
+						))}
+					</Box>
 				</CardContent>
 			</Card>
 
