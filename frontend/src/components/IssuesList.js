@@ -42,6 +42,7 @@ const IssuesList = () => {
   const [filterStatus, setFilterStatus] = useState("all");
   const [filterAlignment, setFilterAlignment] = useState("all");
 
+
   const assignees = ["Clay", "Moore", "Elizabeth"];
   const categories = [
     "Invoice Issue",
@@ -51,6 +52,10 @@ const IssuesList = () => {
     "Late Delivery Issue",
     "Unspecified Issue",
   ];
+
+  // Unique PO IDs for filter dropdown
+  const uniquePOIDs = Array.from(new Set(issues.map(issue => issue.po_id))).sort();
+  const [filterPOID, setFilterPOID] = useState("all");
 
   // Assign random assignee
   const getRandomAssignee = () => {
@@ -123,12 +128,13 @@ const IssuesList = () => {
 
   // Filter issues based on search and filter criteria
   const filteredIssues = issues.filter((issue) => {
-    const matchesPOID = issue.po_id.toLowerCase().includes(searchPOID.toLowerCase());
+    const matchesPOID =
+      (filterPOID === "all" || issue.po_id === filterPOID) &&
+      issue.po_id.toLowerCase().includes(searchPOID.toLowerCase());
     const matchesCategory = filterCategory === "all" || issue.category === filterCategory;
     const matchesAssignee = filterAssignee === "all" || issue.assignee === filterAssignee;
     const matchesStatus = filterStatus === "all" || issue.status === filterStatus;
     const matchesAlignment = filterAlignment === "all" || issue.alignment === filterAlignment;
-    
     return matchesPOID && matchesCategory && matchesAssignee && matchesStatus && matchesAlignment;
   });
 
@@ -165,7 +171,23 @@ const IssuesList = () => {
             </Stack>
             
             <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ flexWrap: "wrap" }}>
-              {/* Search by PO ID */}
+
+              {/* PO ID Filter Dropdown */}
+              <TextField
+                select
+                label="PO ID"
+                value={filterPOID}
+                onChange={(e) => setFilterPOID(e.target.value)}
+                size="small"
+                sx={{ minWidth: "180px" }}
+              >
+                <MenuItem value="all">All PO IDs</MenuItem>
+                {uniquePOIDs.map((poid) => (
+                  <MenuItem key={poid} value={poid}>{poid}</MenuItem>
+                ))}
+              </TextField>
+
+              {/* Search by PO ID (text) */}
               <TextField
                 placeholder="Search by PO ID..."
                 size="small"
