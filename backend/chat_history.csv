@@ -98,3 +98,633 @@ Here is the complete list of reasons and their corresponding frequencies:
 1a161d50-b394-4ef9-b1ed-f1c67b7ff07d,who are you,"I am a helpful assistant for the Reconciliation system.
 
 My function is to analyze the purchase order validation results you provided, help you understand the discrepancies found (such as price mismatches, delivery issues, and missing documentation), identify specific affected POs, and explain potential reconciliation issues and penalties.",2025-12-26T06:45:21.149425
+077e42e4-27de-4a78-b8a8-5fb73ff62e86,What are the discrepancy reasons with frequency?,"Based on the validation results, there are **24 unique discrepancy reasons** across 144 records. Here is the frequency distribution:
+
+**High Frequency Issues (9+ occurrences):**
+*   **total price discrepancy:** 17
+*   **unit price mismatch:** 12",2026-02-23T09:10:59.534980
+97b09ae1-0e5a-4a92-ac94-91f870050c71,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the full list of reasons and their occurrences:
+
+*   **total price discrepancy:** 17
+*   **unit price mismatch:** 12
+*   **under-delivery",2026-02-23T09:21:44.839536
+e0cefcfa-c8be-4eae-8eda-bf4cd773d74f,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 problematic Purchase Orders. Here is the complete list categorized by frequency:
+
+**High Frequency (10+ occurrences):**
+*   **total price discrepancy:** 17
+*   **unit price mismatch:** 12
+*   **under-delivery:** 10
+
+**Medium Frequency (5–9 occurrences):**
+*   **currency mismatch:** 9
+*   **split shipment:** 9
+*   **partial shipments:** 8
+*   **multiple grns:** ",2026-02-23T09:24:37.587223
+637ffab7-edf3-4cf2-87db-45bcddda20e9,Show all discrepancy reasons,Here are all **24 unique discrepancy reasons** identified across the 144 flagged purchase orders,2026-02-23T09:51:50.942336
+88d6d1f1-c39f-479e-b0f5-c36e555be9ad,What are the discrepancy reasons with frequency?,There are **24 unique discrepancy reasons** identified across 144 purchase orders,2026-02-23T10:09:44.028379
+d5a6526a-8539-436b-8b49-ffa2093266ae,What are the discrepancy reasons with frequency?,There are **24 unique discrepancy reasons** across the 144 flagged purchase orders.,2026-02-23T10:14:05.526668
+cfd55a9c-3036-4e54-9576-061092a27e1e,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list with their frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/",2026-02-23T10:34:13.944765
+d62caecc-1f98-4cf8-9c61-161b7ca95f95,What are the discrepancy reasons with frequency?,There were a total of **144 discrepancies** identified across 24 unique reasons. Here,2026-02-23T10:40:10.157590
+3235251f-ddfb-47c9-aa72-0ae6d14a0321,What are the discrepancy reasons with frequency?,There are **144 total discrepancies** identified across **24 unique reasons**. Here is the,2026-02-23T10:44:37.975643
+6099600e-04fa-410f-8f83-80f640f587ec,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across the 144 problematic Purchase Orders. Here is the complete list categorized by frequency:
+
+### **Pricing & Currency Issues**
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:**",2026-02-23T12:18:12.812365
+8093a290-93a9-48fe-b0ce-3d74f72dc766,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list, ordered by frequency:
+
+1.  **total price discrepancy:** 17 occurrences
+2.  **unit price mismatch:** 12 occurrences
+3.  **under-delivery:** 10 occurrences
+4.  **currency mismatch:** 9 occurrences
+5.  **split",2026-02-23T12:26:41.285918
+428a425b-0525-49dd-8e92-5dc2831362cd,What is the recovery rate?,"The recovery rate is **83.7%**. 
+
+This is based on 740 valid records out of a total of 884 purchase orders processed.",2026-02-23T12:55:29.542736
+428a425b-0525-49dd-8e92-5dc2831362cd,discrepancy reasons distributions?,There are **144 total discrepancies** across **24 unique reasons**. The distribution is led,2026-02-23T12:57:14.866727
+428a425b-0525-49dd-8e92-5dc2831362cd,show the distribution,The distribution of the **144 discrepancies** across 24 unique reason types is,2026-02-23T12:57:53.709724
+b7cb2de0-36ef-4017-b410-71f433661287,What is the recovery rate?,"The recovery rate is **83.7%**. 
+
+This is based on 740 valid records out of a total of 884 purchase orders.",2026-02-23T13:05:29.893508
+b7cb2de0-36ef-4017-b410-71f433661287,reason distribution?,"There are **144 total discrepancies** (16.3% of all POs) distributed across 24 unique reason types. 
+
+The top 5 reasons for discrepancies are",2026-02-23T13:06:07.426210
+9f71fa2e-a2c1-4357-8c2e-a32921dba623,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across the 144 flagged purchase orders. Here is the full list of reasons and their frequencies:
+
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:** 12 occurrences
+*   **under-delivery:** 10 occurrences
+*   **currency mismatch:** 9 occurrences
+*   **split shipment:** 9 occurrences
+*   **partial shipments:** 8 occurrences
+",2026-02-23T13:09:11.213923
+e19fdfe2-c6d4-41d4-99f7-694e26a0a680,What is the recovery rate?,"The recovery rate is **83.7%**, based on 740 valid records out of a total of 884 purchase orders.",2026-02-23T13:33:42.523284
+1c7a55cc-5a4f-4849-b2a1-5a668d241eea,Show all discrepancy reasons,There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is,2026-02-23T14:24:12.505832
+79d27466-1c30-4212-b46e-ca8f57a34e31,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the full list of reasons and their frequency:
+
+### Price & Currency Issues (41 occurrences)
+*   **total price discrepancy:** 17
+*   **unit price mismatch:** 12
+*   **currency mismatch:** 9
+*   **price mismatch:** 3
+
+### Quantity & Delivery Issues (50 occurrences)
+*   **under-delivery / under delivered:** 12
+*   **split shipment:** 9
+*   **partial shipments:** 8
+*   **late delivery / arrived late / delivered late:** 13
+*   **over-delivery / over delivered:** 6
+*   **less received:** 2
+
+### Documentation & GRN Issues (53 occurrences)
+*   **multiple grns:** 7
+*   **asn grn mismatch / asn/grn mismatch:** 12
+*   **no grn / grn missing / missing grn:** 18
+*   **invoice/grn quantity mismatch:** 5
+*   **invoice quantity mismatch:** 5
+*   **asn quantity mismatch:** 3
+*   **more received:** 2
+
+**Summary Note:** The most frequent issue is **total price discrepancy** (17 occurrences), followed by **unit price mismatch** (12). Together, price-related issues account for nearly 30% of all discrepancies.",2026-02-23T17:15:01.436627
+28b9ba27-53ad-47c7-81d5-c459428be8a6,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across the 144 flagged purchase orders. Here they are, ranked by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+**Key Insight:** Pricing issues (Total Price and Unit Price) and Delivery/GRN issues (Under-delivery and Missing GRNs) represent the largest portion of the discrepancies.",2026-02-23T17:19:26.384651
+07fccf23-bb72-4d92-a48c-7697e60900d3,Show all discrepancy reasons,"Here are all **24 unique discrepancy reasons** identified across the 144 flagged purchase orders, listed by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+**Summary Note:** Financial discrepancies (Price/Currency) and Quantity/Logistics issues (Delivery/GRN/ASN mismatches) represent the bulk of the reconciliation errors.",2026-02-23T17:22:35.710913
+f7b6f29b-8ade-468a-8a57-039ab924f204,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list categorized by frequency:
+
+**High Frequency (10+ occurrences):**
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:** 12 occurrences
+*   **under-delivery:** 10 occurrences
+
+**Medium Frequency (5–9 occurrences):**
+*   **currency mismatch:** 9 occurrences
+*   **split shipment:** 9 occurrences
+*   **partial shipments:** 8 occurrences
+*   **multiple grns:** 7 occurrences
+*   **asn grn mismatch:** 7 occurrences
+*   **no grn:** 7 occurrences
+*   **grn missing:** 6 occurrences
+*   **late delivery:** 6 occurrences
+*   **invoice/grn quantity mismatch:** 5 occurrences
+*   **asn/grn mismatch:** 5 occurrences
+*   **missing grn:** 5 occurrences
+*   **invoice quantity mismatch:** 5 occurrences
+
+**Low Frequency (2–4 occurrences):**
+*   **arrived late:** 4 occurrences
+*   **delivered late:** 3 occurrences
+*   **less received:** 3 occurrences
+*   **over delivered:** 3 occurrences
+*   **over-delivery:** 3 occurrences
+*   **price mismatch:** 3 occurrences
+*   **asn quantity mismatch:** 3 occurrences
+*   **under delivered:** 2 occurrences
+*   **more received:** 2 occurrences",2026-02-24T03:58:20.305610
+ca52bde9-8b64-40fb-9040-b398fd1dd44a,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified in the validation results. Here they are, ordered by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+These reasons fall into broader categories such as **Invoice Issues**, **GRN Issues**, **Quantity Mismatches**, **Shipping Issues**, and **Late Delivery Issues**. Would you like to see the breakdown for a specific category?",2026-02-24T04:05:49.438502
+ca52bde9-8b64-40fb-9040-b398fd1dd44a,show me the top po's with high number of discrepancies,"Based on the validation results, the ""top"" POs are categorized by the most frequent discrepancy reasons found in the system. While the sample provides individual records, the following POs are associated with the most prevalent issues:
+
+### 1. Invoice & Price Discrepancies (Most Frequent: 17 occurrences)
+These POs are flagged for **total price discrepancies** or **unit price mismatches**, which are the leading causes of reconciliation failure:
+*   **PO1011, PO1054, PO1055, PO1061, PO1065**: All flagged for ""total price discrepancy"" due to incomplete price data or PO/Invoice mismatches.
+*   **PO1064**: Flagged for ""unit price mismatch"" with a significant quantity gap (PO=69 vs. GRN=30).
+
+### 2. GRN & Quantity Mismatches (High Impact)
+These POs involve complex **Multiple GRN** or **Missing GRN** issues, which often lead to payment delays:
+*   **PO1006**: High-priority discrepancy involving multiple GRNs and a significant ASN/GRN mismatch (ASN=122, GRN=149).
+*   **PO1057**: Flagged for ""multiple grns"" where data is incomplete.
+*   **PO1015**: Flagged for ""missing grn"" where neither ASN nor GRN data could be found.
+
+### 3. Delivery & Penalty Issues
+*   **PO1060**: A primary example of a **late delivery** discrepancy. The delivery occurred on 2025-07-30, two months after the PO date of 2025-05-30, likely triggering a penalty.
+
+### Summary of Top Discrepancy Categories:
+If you are looking to prioritize your reconciliation efforts, focus on these categories which represent the bulk of the 144 discrepancies:
+*   **Invoice Issues (Price/Currency):** 46 occurrences (Top Priority)
+*   **GRN Issues (Missing/Mismatch):** 42 occurrences
+*   **Quantity Mismatches (Under/Over delivery):** 31 occurrences
+*   **Shipping Issues (Split/Partial):** 17 occurrences",2026-02-24T04:06:56.808611
+95e6ecb5-3e3e-4fb6-a9dd-76c5de816a61,Show all discrepancy reasons,"Based on the validation results, here are the **24 unique discrepancy reasons** identified across 144 records, ordered by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+**Summary Note:** The most frequent issue is **total price discrepancy**, accounting for nearly 12% of all discrepancies found. Many of these reasons fall under broader categories like **GRN Issues** or **Invoice Issues** for easier reconciliation management.",2026-02-24T04:17:26.983097
+c87f708b-1e15-4fed-b58f-6e5e9b1a63b8,Show all discrepancy reasons,"Here are the **24 unique discrepancy reasons** identified in the validation results, ordered by frequency:
+
+| Discrepancy Reason | Occurrences |
+| :--- | :--- |
+| total price discrepancy | 17 |
+| unit price mismatch | 12 |
+| under-delivery | 10 |
+| currency mismatch | 9 |
+| split shipment | 9 |
+| partial shipments | 8 |
+| multiple grns | 7 |
+| asn grn mismatch | 7 |
+| no grn | 7 |
+| grn missing | 6 |
+| late delivery | 6 |
+| invoice/grn quantity mismatch | 5 |
+| asn/grn mismatch | 5 |
+| missing grn | 5 |
+| invoice quantity mismatch | 5 |
+| arrived late | 4 |
+| delivered late | 3 |
+| less received | 3 |
+| over delivered | 3 |
+| over-delivery | 3 |
+| price mismatch | 3 |
+| asn quantity mismatch | 3 |
+| under delivered | 2 |
+| more received | 2 |
+
+**Summary Statistics:**
+*   **Most Common Issue:** Total price discrepancy (17 occurrences).
+*   **Total Discrepancies:** 144 (found across 16.3% of all POs).
+*   **Primary Categories:** Most issues fall under **Invoice Issues**, **GRN Issues**, or **Quantity Mismatches**.",2026-02-24T04:24:57.386348
+9581832d-8eaa-422e-a9ed-739aa21612ae,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list categorized by issue type:
+
+### **Invoice Issues**
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:** 12 occurrences
+*   **currency mismatch:** 9 occurrences
+*   **invoice quantity mismatch:** 5 occurrences
+*   **price mismatch:** 3 occurrences
+
+### **GRN (Goods Receipt Note) Issues**
+*   **multiple grns:** 7 occurrences
+*   **asn grn mismatch:** 7 occurrences
+*   **no grn:** 7 occurrences
+*   **grn missing:** 6 occurrences
+*   **invoice/grn quantity mismatch:** 5 occurrences
+*   **asn/grn mismatch:** 5 occurrences
+*   **missing grn:** 5 occurrences
+
+### **Quantity Mismatch Issues**
+*   **under-delivery:** 10 occurrences
+*   **over-delivery:** 3 occurrences
+*   **over delivered:** 3 occurrences
+*   **less received:** 3 occurrences
+*   **asn quantity mismatch:** 3 occurrences
+*   **under delivered:** 2 occurrences
+*   **more received:** 2 occurrences
+
+### **Shipping & Delivery Issues**
+*   **split shipment:** 9 occurrences
+*   **partial shipments:** 8 occurrences
+*   **late delivery:** 6 occurrences
+*   **arrived late:** 4 occurrences
+*   **delivered late:** 3 occurrences
+
+The most frequent issue is **total price discrepancy**, accounting for approximately 11.8% of all discrepancies.",2026-02-24T04:36:08.296033
+c50abc85-3a93-4fde-8b37-28e54e3fe4f8,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across the 144 flagged purchase orders. Here is the complete list ranked by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+The most frequent issue is **total price discrepancy**, accounting for approximately 11.8% of all discrepancies.",2026-02-24T04:39:45.622703
+95a82946-2a3c-4094-a063-ec54fcc60cf0,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list, sorted by frequency:
+
+### **Discrepancy Reasons & Occurrences**
+1.  **total price discrepancy:** 17
+2.  **unit price mismatch:** 12
+3.  **under-delivery:** 10
+4.  **currency mismatch:** 9
+5.  **split shipment:** 9
+6.  **partial shipments:** 8
+7.  **multiple grns:** 7
+8.  **asn grn mismatch:** 7
+9.  **no grn:** 7
+10. **grn missing:** 6
+11. **late delivery:** 6
+12. **invoice/grn quantity mismatch:** 5
+13. **asn/grn mismatch:** 5
+14. **missing grn:** 5
+15. **invoice quantity mismatch:** 5
+16. **arrived late:** 4
+17. **delivered late:** 3
+18. **less received:** 3
+19. **over delivered:** 3
+20. **over-delivery:** 3
+21. **price mismatch:** 3
+22. **asn quantity mismatch:** 3
+23. **under delivered:** 2
+24. **more received:** 2
+
+### **Summary by Category**
+*   **Invoice Issues:** (Total: 46) — *Includes price and currency mismatches.*
+*   **GRN (Goods Receipt Note) Issues:** (Total: 42) — *Includes missing, multiple, or mismatched GRNs.*
+*   **Quantity Mismatches:** (Total: 26) — *Includes under/over deliveries and receipt discrepancies.*
+*   **Shipping Issues:** (Total: 17) — *Includes split and partial shipments.*
+*   **Late Delivery Issues:** (Total: 13) — *Includes late arrivals and deliveries.*
+
+Would you like more details on a specific category or a list of POs associated with one of these reasons?",2026-02-24T04:44:11.118196
+9e433fc9-aa62-41f6-bd4d-268ac905e271,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 records. Here is the full list of reasons and their frequency:
+
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:** 12 occurrences
+*   **under-delivery:** 10 occurrences
+*   **currency mismatch:** 9 occurrences
+*   **split shipment:** 9 occurrences
+*   **partial shipments:** 8 occurrences
+*   **multiple grns:** 7 occurrences
+*   **asn grn mismatch:** 7 occurrences
+*   **no grn:** 7 occurrences
+*   **grn missing:** 6 occurrences
+*   **late delivery:** 6 occurrences
+*   **invoice/grn quantity mismatch:** 5 occurrences
+*   **asn/grn mismatch:** 5 occurrences
+*   **missing grn:** 5 occurrences
+*   **invoice quantity mismatch:** 5 occurrences
+*   **arrived late:** 4 occurrences
+*   **delivered late:** 3 occurrences
+*   **less received:** 3 occurrences
+*   **over delivered:** 3 occurrences
+*   **over-delivery:** 3 occurrences
+*   **price mismatch:** 3 occurrences
+*   **asn quantity mismatch:** 3 occurrences
+*   **under delivered:** 2 occurrences
+*   **more received:** 2 occurrences
+
+The most frequent issue is **total price discrepancy**, accounting for approximately 11.8% of all discrepancies.",2026-02-24T04:46:30.929558
+f6da79cd-d209-46b0-90f1-25a789482959,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 affected purchase orders. Here they are, grouped by their category and frequency:
+
+### **Invoice Issues (46 occurrences)**
+*   **Total price discrepancy:** 17
+*   **Unit price mismatch:** 12
+*   **Currency mismatch:** 9
+*   **Invoice quantity mismatch:** 5
+*   **Price mismatch:** 3
+
+### **GRN Issues (42 occurrences)**
+*   **Multiple GRNs:** 7
+*   **ASN GRN mismatch:** 7
+*   **No GRN:** 7
+*   **GRN missing:** 6
+*   **Invoice/GRN quantity mismatch:** 5
+*   **ASN/GRN mismatch:** 5
+*   **Missing GRN:** 5
+
+### **Quantity Mismatches (26 occurrences)**
+*   **Under-delivery:** 10
+*   **Over delivered / Over-delivery:** 6 (3 each)
+*   **ASN quantity mismatch:** 3
+*   **Less received:** 3
+*   **Under delivered:** 2
+*   **More received:** 2
+
+### **Shipping Issues (17 occurrences)**
+*   **Split shipment:** 9
+*   **Partial shipments:** 8
+
+### **Late Delivery Issues (13 occurrences)**
+*   **Late delivery:** 6
+*   **Arrived late:** 4
+*   **Delivered late:** 3
+
+The most frequent issue is **Total price discrepancy**, accounting for nearly 12% of all discrepancies. Would you like to see the specific PO numbers associated with any of these reasons?",2026-02-24T04:50:16.966656
+4ecc4b7a-d625-43ec-80d6-6465894bd119,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the full list of reasons and their frequency:
+
+*   **total price discrepancy:** 17 occurrences
+*   **unit price mismatch:** 12 occurrences
+*   **under-delivery:** 10 occurrences
+*   **currency mismatch:** 9 occurrences
+*   **split shipment:** 9 occurrences
+*   **partial shipments:** 8 occurrences
+*   **multiple grns:** 7 occurrences
+*   **asn grn mismatch:** 7 occurrences
+*   **no grn:** 7 occurrences
+*   **grn missing:** 6 occurrences
+*   **late delivery:** 6 occurrences
+*   **invoice/grn quantity mismatch:** 5 occurrences
+*   **asn/grn mismatch:** 5 occurrences
+*   **missing grn:** 5 occurrences
+*   **invoice quantity mismatch:** 5 occurrences
+*   **arrived late:** 4 occurrences
+*   **delivered late:** 3 occurrences
+*   **less received:** 3 occurrences
+*   **over delivered:** 3 occurrences
+*   **over-delivery:** 3 occurrences
+*   **price mismatch:** 3 occurrences
+*   **asn quantity mismatch:** 3 occurrences
+*   **under delivered:** 2 occurrences
+*   **more received:** 2 occurrences
+
+The most frequent issue is **total price discrepancy**, accounting for approximately 11.8% of all found discrepancies.",2026-02-24T05:00:03.380268
+5cf1ac78-63c3-4154-943d-8da00a253353,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the full list of reasons and their frequency, ranked from most to least common:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+These reasons generally fall into five main categories: **Invoice Issues**, **GRN (Goods Received Note) Issues**, **Quantity Mismatches**, **Shipping Issues**, and **Late Delivery Issues**.",2026-02-24T05:04:11.788786
+af039672-83f6-4584-9c6d-6a312244a2ec,Show all discrepancy reasons,"Here are all 24 unique discrepancy reasons identified in the validation results, ordered by frequency:
+
+1.  **total price discrepancy** (17 occurrences)
+2.  **unit price mismatch** (12 occurrences)
+3.  **under-delivery** (10 occurrences)
+4.  **currency mismatch** (9 occurrences)
+5.  **split shipment** (9 occurrences)
+6.  **partial shipments** (8 occurrences)
+7.  **multiple grns** (7 occurrences)
+8.  **asn grn mismatch** (7 occurrences)
+9.  **no grn** (7 occurrences)
+10. **grn missing** (6 occurrences)
+11. **late delivery** (6 occurrences)
+12. **invoice/grn quantity mismatch** (5 occurrences)
+13. **asn/grn mismatch** (5 occurrences)
+14. **missing grn** (5 occurrences)
+15. **invoice quantity mismatch** (5 occurrences)
+16. **arrived late** (4 occurrences)
+17. **delivered late** (3 occurrences)
+18. **less received** (3 occurrences)
+19. **over delivered** (3 occurrences)
+20. **over-delivery** (3 occurrences)
+21. **price mismatch** (3 occurrences)
+22. **asn quantity mismatch** (3 occurrences)
+23. **under delivered** (2 occurrences)
+24. **more received** (2 occurrences)
+
+The most frequent category of issues is **Invoice Issues** (led by total price discrepancies), followed by **GRN Issues** and **Quantity Mismatches**.",2026-02-24T05:08:02.431895
+2f6e453d-0dc6-4403-925e-571d26f02fd9,Show all discrepancy reasons,"Here are the 24 unique discrepancy reasons identified in the validation results, along with their frequencies:
+
+*   **total price discrepancy**: 17 occurrences
+*   **unit price mismatch**: 12 occurrences
+*   **under-delivery**: 10 occurrences
+*   **currency mismatch**: 9 occurrences
+*   **split shipment**: 9 occurrences
+*   **partial shipments**: 8 occurrences
+*   **multiple grns**: 7 occurrences
+*   **asn grn mismatch**: 7 occurrences
+*   **no grn**: 7 occurrences
+*   **grn missing**: 6 occurrences
+*   **late delivery**: 6 occurrences
+*   **invoice/grn quantity mismatch**: 5 occurrences
+*   **asn/grn mismatch**: 5 occurrences
+*   **missing grn**: 5 occurrences
+*   **invoice quantity mismatch**: 5 occurrences
+*   **arrived late**: 4 occurrences
+*   **delivered late**: 3 occurrences
+*   **less received**: 3 occurrences
+*   **over delivered**: 3 occurrences
+*   **over-delivery**: 3 occurrences
+*   **price mismatch**: 3 occurrences
+*   **asn quantity mismatch**: 3 occurrences
+*   **under delivered**: 2 occurrences
+*   **more received**: 2 occurrences
+
+The most common issue is **total price discrepancy**, accounting for 17 of the 144 total discrepancies found.",2026-02-24T05:14:36.127738
+72016456-e590-4594-963d-35fcd6bbc6b1,Show all discrepancy reasons,"Here are all the discrepancy reasons identified in the validation results, ordered by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+These reasons fall into five primary categories: **Invoice Issues**, **GRN Issues**, **Quantity Mismatches**, **Shipping Issues**, and **Late Delivery Issues**. Would you like to see a breakdown of discrepancies by one of these categories?",2026-02-24T05:16:32.130806
+1851bd21-cecb-4fc5-ad61-6b7242d275fd,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list, sorted by frequency:
+
+1.  **total price discrepancy**: 17 occurrences
+2.  **unit price mismatch**: 12 occurrences
+3.  **under-delivery**: 10 occurrences
+4.  **currency mismatch**: 9 occurrences
+5.  **split shipment**: 9 occurrences
+6.  **partial shipments**: 8 occurrences
+7.  **multiple grns**: 7 occurrences
+8.  **asn grn mismatch**: 7 occurrences
+9.  **no grn**: 7 occurrences
+10. **grn missing**: 6 occurrences
+11. **late delivery**: 6 occurrences
+12. **invoice/grn quantity mismatch**: 5 occurrences
+13. **asn/grn mismatch**: 5 occurrences
+14. **missing grn**: 5 occurrences
+15. **invoice quantity mismatch**: 5 occurrences
+16. **arrived late**: 4 occurrences
+17. **delivered late**: 3 occurrences
+18. **less received**: 3 occurrences
+19. **over delivered**: 3 occurrences
+20. **over-delivery**: 3 occurrences
+21. **price mismatch**: 3 occurrences
+22. **asn quantity mismatch**: 3 occurrences
+23. **under delivered**: 2 occurrences
+24. **more received**: 2 occurrences
+
+These reasons fall into five primary categories: **Invoice Issues**, **GRN Issues**, **Quantity Mismatches**, **Shipping Issues**, and **Late Delivery Issues**. Would you like to see a breakdown of discrepancies for a specific category?",2026-02-24T06:20:56.469762

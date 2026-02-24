@@ -12,3 +12,4 @@ argon2-cffi
 python-jose
 pyjwt
 openai
+redis

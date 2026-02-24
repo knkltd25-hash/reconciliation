@@ -1,6 +1,6 @@
 export const apiCall = async (endpoint, options = {}) => {
   const token = localStorage.getItem('access_token');
-  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://54.145.92.198:8000';
   
   const headers = {
     'Content-Type': 'application/json',

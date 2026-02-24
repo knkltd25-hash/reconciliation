@@ -14,11 +14,23 @@ from pydantic import BaseModel
 import sqlite3
 import google.generativeai as genai
 import uuid
+import redis
 
 app = FastAPI()
 
 # Load environment variables
 load_dotenv()
+
+# Redis configuration
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
+try:
+    redis_client = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, decode_responses=True)
+    redis_client.ping()
+    print("[REDIS] Connected to Redis")
+except Exception as e:
+    print(f"[REDIS] Connection failed: {e}. Using in-memory cache as fallback")
+    redis_client = None
 
 # Gemini configuration
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -26,7 +38,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # Chat configuration
-CONTEXT_WINDOW = 10  # Keep last 10 messages in context
+CONTEXT_WINDOW = 15  # Keep last 15 messages in context
 CHAT_HISTORY_FILE = "chat_history.csv"
 
 # Security configuration
@@ -146,6 +158,18 @@ def get_user_by_username(username: str):
         return {"id": result[0], "username": result[1], "email": result[2], "role": result[3]}
     return None
 
+def load_reason_buckets():
+    """Load reason buckets from JSON file"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(current_dir)
+    reason_buckets_file = os.path.join(parent_dir, "reasons_validation", "reason_buckets.json")
+    try:
+        with open(reason_buckets_file, 'r') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Error loading reason buckets: {str(e)}")
+        return {}
+
 def load_validation_context():
     """Load validation results for context"""
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -162,7 +186,10 @@ def load_validation_context():
         mismatches_df = df[df['Match/Not'] == False]
         reason_counts = mismatches_df['stated_reason'].value_counts().to_dict()
         
-        # Format reason frequency
+        # Load reason buckets
+        reason_buckets = load_reason_buckets()
+        
+        # Format reason frequency with bucket classification
         reason_text = "\n".join([
             f"  • {reason}: {count} occurrences"
             for reason, count in sorted(reason_counts.items(), key=lambda x: x[1], reverse=True)
@@ -191,6 +218,9 @@ Data Context:
 - Total unique reasons found: {len(reason_counts)}
 - Most common reason: {max(reason_counts.items(), key=lambda x: x[1])[0] if reason_counts else 'N/A'}
 - Percentage of discrepancies: {(mismatch_count/total_pos*100):.1f}%
+
+Available Reason Categories:
+{json.dumps(reason_buckets, indent=2)}
 
 You can answer questions about:
 - Frequency of specific discrepancy reasons
@@ -240,7 +270,20 @@ def save_chat_message(session_id: str, user_message: str, assistant_message: str
         return False
 
 def get_context_window(session_id: str):
-    """Get last N messages for context"""
+    """Get last N messages for context with Redis caching"""
+    cache_key = f"chat_context:{session_id}"
+    
+    # Try to get from Redis cache first
+    if redis_client:
+        try:
+            cached = redis_client.get(cache_key)
+            if cached:
+                print(f"[REDIS] Cache hit for session {session_id}")
+                return json.loads(cached)
+        except Exception as e:
+            print(f"[REDIS] Cache read error: {e}")
+    
+    # Load from database if not in cache
     history = load_chat_history(session_id)
     # Return last CONTEXT_WINDOW messages
     recent_messages = history[-CONTEXT_WINDOW:] if len(history) > CONTEXT_WINDOW else history
@@ -250,7 +293,61 @@ def get_context_window(session_id: str):
         messages.append({"role": "user", "content": chat['user_message']})
         messages.append({"role": "assistant", "content": chat['assistant_message']})
     
+    # Cache the context in Redis with 24-hour TTL
+    if redis_client:
+        try:
+            redis_client.setex(cache_key, 86400, json.dumps(messages))
+            print(f"[REDIS] Cached context for session {session_id}")
+        except Exception as e:
+            print(f"[REDIS] Cache write error: {e}")
+    
     return messages
+
+def save_chat_message_to_cache(session_id: str, user_message: str, assistant_message: str):
+    """Save new chat message and update cache"""
+    cache_key = f"chat_context:{session_id}"
+    
+    # Load from cache or database
+    if redis_client:
+        try:
+            cached = redis_client.get(cache_key)
+            if cached:
+                messages = json.loads(cached)
+            else:
+                messages = get_context_window(session_id)
+        except Exception as e:
+            print(f"[REDIS] Error reading cache: {e}")
+            messages = get_context_window(session_id)
+    else:
+        messages = get_context_window(session_id)
+    
+    # Add new messages
+    messages.append({"role": "user", "content": user_message})
+    messages.append({"role": "assistant", "content": assistant_message})
+    
+    # Keep only last CONTEXT_WINDOW messages
+    if len(messages) > CONTEXT_WINDOW * 2:
+        messages = messages[-(CONTEXT_WINDOW * 2):]
+    
+    # Update cache
+    if redis_client:
+        try:
+            redis_client.setex(cache_key, 86400, json.dumps(messages))
+            print(f"[REDIS] Updated cache for session {session_id}")
+        except Exception as e:
+            print(f"[REDIS] Cache update error: {e}")
+    
+    return messages
+
+def clear_chat_cache(session_id: str):
+    """Clear chat cache for a session"""
+    cache_key = f"chat_context:{session_id}"
+    if redis_client:
+        try:
+            redis_client.delete(cache_key)
+            print(f"[REDIS] Cleared cache for session {session_id}")
+        except Exception as e:
+            print(f"[REDIS] Cache clear error: {e}")
 
 app.add_middleware(
     CORSMiddleware,
@@ -334,6 +431,274 @@ def get_current_user(username: str = Depends(verify_token)):
 @app.get("/")
 def read_root():
     return {"message": "Reconciliation with RCA API is running."}
+
+@app.get("/api/po-analytics")
+def get_po_analytics():
+    """Get PO analytics data from validation results"""
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        validation_file = os.path.join(current_dir, "final_reason_validation_results.csv")
+        
+        if not os.path.exists(validation_file):
+            return {"status": "error", "message": "Validation data not found"}
+        
+        # Load validation results
+        df = pd.read_csv(validation_file)
+        
+        # Calculate PO health metrics
+        total_pos = len(df)
+        pos_without_issues = len(df[df['Match/Not'] == True])
+        pos_with_issues = len(df[df['Match/Not'] == False])
+        
+        # Load reason buckets for categorization
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        parent_dir = os.path.dirname(current_dir)
+        reason_buckets_file = os.path.join(parent_dir, "reasons_validation", "reason_buckets.json")
+        
+        reason_buckets = {}
+        if os.path.exists(reason_buckets_file):
+            with open(reason_buckets_file, 'r') as f:
+                reason_buckets = json.load(f)
+        
+        # Get discrepancy breakdown by category
+        discrepancy_df = df[df['Match/Not'] == False].copy()
+        discrepancy_df['bucket_category'] = discrepancy_df['stated_reason'].map(
+            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+        )
+        
+        # Calculate category-wise metrics
+        category_breakdown = []
+        category_totals = discrepancy_df['bucket_category'].value_counts()
+        
+        for category in category_totals.index:
+            count = int(category_totals[category])
+            # Estimate average recovery per PO (in rupees)
+            avg_recovery = {
+                "Invoice Issue": 15000,
+                "GRN Issue": 12000,
+                "Quantity Mismatch": 8500,
+                "Shipping Issue": 5000,
+                "Late Delivery Issue": 3500,
+                "Unspecified Issue": 2000,
+            }.get(category, 5000)
+            
+            total_recovery = count * avg_recovery
+            category_breakdown.append({
+                "category": category,
+                "posCount": count,
+                "avgRecoveryPerPO": avg_recovery,
+                "totalRecovery": total_recovery
+            })
+        
+        # Calculate potential recovery
+        total_recovery = sum(item["totalRecovery"] for item in category_breakdown)
+        
+        # Estimate "correct with issues" - roughly 40% of discrepancies
+        correct_with_issues = max(0, int(pos_with_issues * 0.38))
+        
+        return {
+            "status": "success",
+            "poData": {
+                "totalPOs": total_pos,
+                "posWithoutIssues": pos_without_issues,
+                "posWithIssues": pos_with_issues,
+                "correctWithIssues": correct_with_issues,
+                "withDiscrepancies": pos_with_issues,
+                "potentialRecoveryAmount": total_recovery
+            },
+            "discrepancyBreakdown": category_breakdown,
+            "summary": {
+                "cleanPOPercentage": round((pos_without_issues / total_pos * 100), 1),
+                "issuePercentage": round((pos_with_issues / total_pos * 100), 1),
+                "recoveryRate": round((correct_with_issues / pos_with_issues * 100) if pos_with_issues > 0 else 0, 1)
+            }
+        }
+    
+    except Exception as e:
+        import traceback
+        print(f"Error getting PO analytics: {str(e)}")
+        traceback.print_exc()
+        return {
+            "status": "error",
+            "message": str(e)
+        }
+
+@app.get("/api/po-level-issues")
+def get_po_level_issues(category: str = None):
+    """Get individual POs with issues, optionally filtered by category"""
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        validation_file = os.path.join(current_dir, "final_reason_validation_results.csv")
+        
+        if not os.path.exists(validation_file):
+            return {"status": "error", "message": "Validation data not found"}
+        
+        # Load validation results
+        df = pd.read_csv(validation_file)
+        
+        # Filter for only discrepancies (Match/Not = False)
+        # Show all reviewed POs (both matched and mismatched)
+        issue_df = df.copy()
+        
+        # Load reason buckets for categorization
+        parent_dir = os.path.dirname(current_dir)
+        reason_buckets_file = os.path.join(parent_dir, "reasons_validation", "reason_buckets.json")
+        
+        reason_buckets = {}
+        if os.path.exists(reason_buckets_file):
+            with open(reason_buckets_file, 'r') as f:
+                reason_buckets = json.load(f)
+        
+        # Map stated_reason to bucket category
+        issue_df['bucket_category'] = issue_df['stated_reason'].map(
+            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+        )
+        
+        # Filter by category if provided
+        if category:
+            issue_df = issue_df[issue_df['bucket_category'] == category]
+        
+        # Define recovery amounts per category for penalty calculation
+        recovery_amounts = {
+            "Invoice Issue": 15000,
+            "GRN Issue": 12000,
+            "Quantity Mismatch": 8500,
+            "Shipping Issue": 5000,
+            "Late Delivery Issue": 3500,
+            "Unspecified Issue": 2000
+        }
+        
+        # Format response
+        pos_with_issues = []
+        for _, row in issue_df.iterrows():
+            category = str(row['bucket_category'])
+            penalty_amount = recovery_amounts.get(category, 2000)
+            # Alignment based on Match/Not column: True = "Yes", False = "No"
+            alignment = "Yes" if row['Match/Not'] == True else "No"
+            
+            pos_with_issues.append({
+                "po_id": str(row['PO_ID']),
+                "stated_reason": str(row['stated_reason']),
+                "category": category,
+                "comments": str(row['Comments']),
+                "penalty_amount": penalty_amount,
+                "alignment": alignment,
+                "status": "open"  # Default status
+            })
+        
+        # Group by category
+        grouped_issues = {}
+        for issue in pos_with_issues:
+            cat = issue['category']
+            if cat not in grouped_issues:
+                grouped_issues[cat] = []
+            grouped_issues[cat].append(issue)
+        
+        return {
+            "status": "success",
+            "poWithIssues": pos_with_issues,
+            "groupedByCategory": grouped_issues,
+            "totalIssues": len(pos_with_issues)
+        }
+    
+    except Exception as e:
+        import traceback
+        print(f"Error getting PO-level issues: {str(e)}")
+        traceback.print_exc()
+        return {
+            "status": "error",
+            "message": str(e)
+        }
+
+@app.get("/api/top-pos")
+def get_top_pos():
+    """Get top 5 POs by recovery amount and top 5 POs with high penalties"""
+    try:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        validation_file = os.path.join(current_dir, "final_reason_validation_results.csv")
+        
+        if not os.path.exists(validation_file):
+            return {"status": "error", "message": "Validation data not found"}
+        
+        # Load validation results
+        df = pd.read_csv(validation_file)
+        
+        # Load reason buckets for categorization
+        parent_dir = os.path.dirname(current_dir)
+        reason_buckets_file = os.path.join(parent_dir, "reasons_validation", "reason_buckets.json")
+        
+        reason_buckets = {}
+        if os.path.exists(reason_buckets_file):
+            with open(reason_buckets_file, 'r') as f:
+                reason_buckets = json.load(f)
+        
+        # Filter for only issues
+        issue_df = df[df['Match/Not'] == False].copy()
+        
+        # Map to categories
+        issue_df['category'] = issue_df['stated_reason'].map(
+            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+        )
+        
+        # Assign recovery amounts by category
+        recovery_map = {
+            "Invoice Issue": 15000,
+            "GRN Issue": 12000,
+            "Quantity Mismatch": 8500,
+            "Shipping Issue": 5000,
+            "Late Delivery Issue": 3500,
+            "Unspecified Issue": 2000,
+        }
+        
+        issue_df['recovery_amount'] = issue_df['category'].map(
+            lambda x: recovery_map.get(x, 5000)
+        )
+        
+        # Top 5 POs by recovery amount
+        top_recovery_pos = issue_df.nlargest(5, 'recovery_amount')[
+            ['PO_ID', 'stated_reason', 'category', 'recovery_amount']
+        ].to_dict('records')
+        
+        top_recovery_pos = [
+            {
+                "po_id": str(item['PO_ID']),
+                "reason": str(item['stated_reason']),
+                "category": str(item['category']),
+                "recovery_amount": int(item['recovery_amount'])
+            }
+            for item in top_recovery_pos
+        ]
+        
+        # Top 5 POs with high penalties (by recovery amount, these are the same)
+        top_penalty_pos = issue_df.nlargest(5, 'recovery_amount')[
+            ['PO_ID', 'stated_reason', 'category', 'recovery_amount', 'Comments']
+        ].to_dict('records')
+        
+        top_penalty_pos = [
+            {
+                "po_id": str(item['PO_ID']),
+                "reason": str(item['stated_reason']),
+                "category": str(item['category']),
+                "penalty_amount": int(item['recovery_amount']),
+                "issue": str(item['Comments'])
+            }
+            for item in top_penalty_pos
+        ]
+        
+        return {
+            "status": "success",
+            "topRecoveryPOS": top_recovery_pos,
+            "topPenaltyPOS": top_penalty_pos
+        }
+    
+    except Exception as e:
+        import traceback
+        print(f"Error getting top POS: {str(e)}")
+        traceback.print_exc()
+        return {
+            "status": "error",
+            "message": str(e)
+        }
 
 @app.post("/run-validation")
 def run_validation():
@@ -875,7 +1240,7 @@ User Question: {request.message}"""
         response = model.generate_content(
             full_prompt,
             generation_config=genai.types.GenerationConfig(
-                max_output_tokens=500,
+                max_output_tokens=4096,
                 temperature=0.7,
             ),
             safety_settings=[
@@ -901,9 +1266,10 @@ User Question: {request.message}"""
         assistant_message = response.text
         print(f"[CHAT] Received response: {assistant_message[:50]}...")
         
-        # Save to chat history
+        # Save to chat history and update cache
         save_chat_message(request.session_id, request.message, assistant_message)
-        print("[CHAT] Message saved to history")
+        save_chat_message_to_cache(request.session_id, request.message, assistant_message)
+        print("[CHAT] Message saved to history and cache")
         
         return ChatResponse(
             session_id=request.session_id,
