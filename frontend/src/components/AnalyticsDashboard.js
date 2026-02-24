@@ -12,6 +12,8 @@ import { PieChart } from 'recharts';
 import { Pie } from 'recharts';
 import { Cell } from 'recharts';
 import { Tooltip } from 'recharts';
+import { BarChart } from 'recharts';
+import { Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import React, { useState, useEffect } from "react";
 
 import { apiCall } from "../utils/api";
