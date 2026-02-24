@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+
+import { apiCall } from "../utils/api";
 import {
   Box,
   Grid,
@@ -13,100 +15,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  LinearProgress,
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
 } from "@mui/material";
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import WarningIcon from "@mui/icons-material/Warning";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import AssignmentIcon from "@mui/icons-material/Assignment";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-
-// Mock PO data
-const mockPOData = {
-  totalPOs: 487,
-  posWithoutIssues: 285,
-  posWithIssues: 202,
-  correctWithIssues: 78,
-  withDiscrepancies: 124,
-  potentialRecoveryAmount: 1875000, // ₹18.75L
-};
-
-const mockDiscrepancyBreakdown = [
-  { category: "Invoice Issue", posCount: 46, avgRecoveryPerPO: 15000, totalRecovery: 690000 },
-  { category: "GRN Issue", posCount: 42, avgRecoveryPerPO: 12000, totalRecovery: 504000 },
-  { category: "Quantity Mismatch", posCount: 26, avgRecoveryPerPO: 8500, totalRecovery: 221000 },
-  { category: "Shipping Issue", posCount: 17, avgRecoveryPerPO: 5000, totalRecovery: 85000 },
-  { category: "Late Delivery Issue", posCount: 13, avgRecoveryPerPO: 3500, totalRecovery: 45500 },
-  { category: "Unspecified Issue", posCount: 8, avgRecoveryPerPO: 2000, totalRecovery: 16000 },
-];
-
-const KPICard = ({ title, value, icon: Icon, color, trend, trendLabel, subtext }) => (
-  <Card
-    sx={{
-      border: "1px solid #e5e7eb",
-      boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)",
-      transition: "all 0.3s ease",
-      "&:hover": {
-        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-        borderColor: color,
-      },
-    }}
-  >
-    <CardContent>
-      <Stack spacing={2}>
-        <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
-          <Box>
-            <Typography sx={{ color: "#64748b", fontSize: "0.9rem", fontWeight: 500, mb: 1 }}>
-              {title}
-            </Typography>
-            <Typography sx={{ fontSize: "2rem", fontWeight: 700, color: "#0f172a" }}>
-              {value}
-            </Typography>
-            {subtext && (
-              <Typography sx={{ fontSize: "0.75rem", color: "#94a3b8", mt: 0.5 }}>
-                {subtext}
-              </Typography>
-            )}
-          </Box>
-          <Box
-            sx={{
-              width: 48,
-              height: 48,
-              borderRadius: "12px",
-              backgroundColor: `${color}15`,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon sx={{ color, fontSize: 24 }} />
-          </Box>
-        </Stack>
-        {trend !== undefined && (
-          <Stack direction="row" spacing={1} alignItems="center">
-            <TrendingUpIcon
-              sx={{
-                fontSize: 16,
-                color: trend > 0 ? "#ef4444" : "#10b981",
-                transform: trend < 0 ? "rotate(180deg)" : "none",
-              }}
-            />
-            <Typography sx={{ fontSize: "0.85rem", color: trend > 0 ? "#ef4444" : "#10b981", fontWeight: 600 }}>
-              {trend > 0 ? "+" : ""}{trend} {trendLabel}
-            </Typography>
-          </Stack>
-        )}
-      </Stack>
-    </CardContent>
-  </Card>
-);
 
 const AnalyticsDashboard = () => {
   const [poData, setPoData] = useState(null);

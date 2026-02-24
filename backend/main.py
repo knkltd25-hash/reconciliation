@@ -16,8 +16,11 @@ import google.generativeai as genai
 import uuid
 import redis
 
-app = FastAPI()
 
+# Import and include the risk analysis router
+import risk_analysis
+
+app = FastAPI()
 # Load environment variables
 load_dotenv()
 
@@ -32,10 +35,14 @@ except Exception as e:
     print(f"[REDIS] Connection failed: {e}. Using in-memory cache as fallback")
     redis_client = None
 
+
 # Gemini configuration
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("models/gemini-flash-latest")
+
+# Register risk analysis router
+app.include_router(risk_analysis.router)
 
 # Chat configuration
 CONTEXT_WINDOW = 15  # Keep last 15 messages in context

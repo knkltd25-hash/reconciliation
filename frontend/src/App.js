@@ -5,6 +5,7 @@ import Chatbot from "./components/Chatbot";
 import AnalyticsDashboard from "./components/AnalyticsDashboard";
 import IssuesList from "./components/IssuesList";
 import Settings from "./components/Settings";
+import RiskAnalysis from "./components/RiskAnalysis";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -18,6 +19,7 @@ function DashboardLayout() {
         <Route path="/chat" element={<Chatbot />} />
         <Route path="/dashboard" element={<AnalyticsDashboard />} />
         <Route path="/issues" element={<IssuesList />} />
+        <Route path="/prediction" element={<RiskAnalysis />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/" element={<Navigate to="/chat" />} />
       </Routes>

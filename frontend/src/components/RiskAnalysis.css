@@ -1,0 +1,29 @@
+.risk-analysis-container {
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 32px auto;
+  max-width: 98vw;
+}
+.risk-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 15px;
+}
+.risk-table th, .risk-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: center;
+}
+.risk-table th {
+  background: #f0f2f5;
+  font-weight: 600;
+}
+.risk-table tr:nth-child(even) {
+  background: #fafafa;
+}
+.risk-table tr:hover {
+  background: #e6f7ff;
+}

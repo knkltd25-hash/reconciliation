@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
     { label: "Chat", icon: ChatIcon, path: "/chat" },
     { label: "Dashboard", icon: DashboardIcon, path: "/dashboard" },
     { label: "Issues", icon: AssignmentIcon, path: "/issues" },
+    { label: "Prediction", icon: DashboardIcon, path: "/prediction" },
     { label: "Settings", icon: SettingsIcon, path: "/settings" },
   ];
 
@@ -217,6 +218,7 @@ const Layout = ({ children }) => {
               {location.pathname === "/chat" && "Chat Assistant"}
               {location.pathname === "/dashboard" && "Dashboard"}
               {location.pathname === "/issues" && "Issue Tracking"}
+              {location.pathname === "/prediction" && "PO Risk Analysis"}
               {location.pathname === "/settings" && "Settings"}
             </Typography>
             <Button
