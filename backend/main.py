@@ -18,7 +18,7 @@ import redis
 
 
 # Import and include the risk analysis router
-import risk_analysis
+from backend import risk_analysis
 
 app = FastAPI()
 # Load environment variables

@@ -728,3 +728,36 @@ These reasons fall into five primary categories: **Invoice Issues**, **GRN Issue
 24. **more received**: 2 occurrences
 
 These reasons fall into five primary categories: **Invoice Issues**, **GRN Issues**, **Quantity Mismatches**, **Shipping Issues**, and **Late Delivery Issues**. Would you like to see a breakdown of discrepancies for a specific category?",2026-02-24T06:20:56.469762
+463dea35-7325-44d7-a3fb-e4de239db816,Show all discrepancy reasons,"There are **24 unique discrepancy reasons** identified across 144 purchase orders. Here is the complete list categorized by frequency:
+
+**High Frequency (10+ occurrences):**
+*   **total price discrepancy:** 17
+*   **unit price mismatch:** 12
+*   **under-delivery:** 10
+
+**Medium Frequency (5–9 occurrences):**
+*   **currency mismatch:** 9
+*   **split shipment:** 9
+*   **partial shipments:** 8
+*   **multiple grns:** 7
+*   **asn grn mismatch:** 7
+*   **no grn:** 7
+*   **grn missing:** 6
+*   **late delivery:** 6
+*   **invoice/grn quantity mismatch:** 5
+*   **asn/grn mismatch:** 5
+*   **missing grn:** 5
+*   **invoice quantity mismatch:** 5
+
+**Low Frequency (2–4 occurrences):**
+*   **arrived late:** 4
+*   **delivered late:** 3
+*   **less received:** 3
+*   **over delivered:** 3
+*   **over-delivery:** 3
+*   **price mismatch:** 3
+*   **asn quantity mismatch:** 3
+*   **under delivered:** 2
+*   **more received:** 2
+
+The most common issue is **total price discrepancy**, accounting for approximately 11.8% of all discrepancies found.",2026-02-24T14:34:54.733426

@@ -78,7 +78,7 @@ const Signup = () => {
       }
 
       // Auto-login after signup
-      const loginResponse = await fetch('http://54.145.92.198:8000/login', {
+      const loginResponse = await fetch('http://localhost:8000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
