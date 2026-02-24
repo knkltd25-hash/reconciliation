@@ -121,7 +121,7 @@ def init_db():
     if not cursor.fetchone():
         admin_password = hash_password("admin")
         cursor.execute(
-            "INSERT INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
+            "INSERT OR IGNORE INTO users (username, email, password, role) VALUES (?, ?, ?, ?)",
             ("admin", "admin@reconciliation.local", admin_password, "admin")
         )
         conn.commit()
