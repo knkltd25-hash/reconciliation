@@ -3,6 +3,9 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import KPICard from './KPICard';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Button from '@mui/material/Button';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import React, { useState, useEffect } from "react";
 
 import { apiCall } from "../utils/api";
