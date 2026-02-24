@@ -1,4 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
+import { apiCall } from '../utils/api';
 import './RiskAnalysis.css';
 
 const severityColors = {
@@ -13,11 +15,7 @@ export default function RiskAnalysis() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api/po-risk-analysis')
-      .then((res) => {
-        if (!res.ok) throw new Error('Failed to fetch risk analysis');
-        return res.json();
-      })
+    apiCall('/api/po-risk-analysis')
       .then((d) => {
         setData(d);
         setLoading(false);
