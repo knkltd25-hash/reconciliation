@@ -7,6 +7,7 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import LinearProgress from '@mui/material/LinearProgress';
+import { ResponsiveContainer } from 'recharts';
 import React, { useState, useEffect } from "react";
 
 import { apiCall } from "../utils/api";
