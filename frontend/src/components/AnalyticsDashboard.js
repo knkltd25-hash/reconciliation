@@ -139,7 +139,7 @@ const AnalyticsDashboard = () => {
         setLoading(true);
         
         // Fetch analytics data
-        const analyticsResponse = await fetch("http://localhost:8000/api/po-analytics");
+        const analyticsResponse = await fetch("http://54.145.92.198:8000/api/po-analytics");
         const analyticsData = await analyticsResponse.json();
         
         if (analyticsData.status === "success") {
@@ -152,7 +152,7 @@ const AnalyticsDashboard = () => {
         
         // Fetch top pos data separately with its own error handling
         try {
-          const topPosResponse = await fetch("http://localhost:8000/api/top-pos");
+          const topPosResponse = await fetch("http://54.145.92.198:8000/api/top-pos");
           if (topPosResponse.ok) {
             const topPosData = await topPosResponse.json();
             if (topPosData.status === "success") {

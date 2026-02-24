@@ -61,7 +61,7 @@ const IssuesList = () => {
   useEffect(() => {
     const fetchPOIssues = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/po-level-issues");
+        const response = await fetch("http://54.145.92.198:8000/api/po-level-issues");
         if (response.ok) {
           const data = await response.json();
           if (data.status === "success") {
