@@ -112,7 +112,12 @@ def init_db():
         conn.commit()
     
     # Seed default admin user
-    cursor.execute("SELECT id FROM users WHERE username = ?", ("admin",))
+    # Seed default admin user safely
+    cursor.execute(
+        "SELECT id FROM users WHERE username = ? OR email = ?",
+        ("admin", "admin@reconciliation.local")
+    )
+
     if not cursor.fetchone():
         admin_password = hash_password("admin")
         cursor.execute(
@@ -120,7 +125,7 @@ def init_db():
             ("admin", "admin@reconciliation.local", admin_password, "admin")
         )
         conn.commit()
-    
+        
     conn.close()
 
 init_db()
