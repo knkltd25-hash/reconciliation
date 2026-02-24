@@ -468,7 +468,7 @@ def get_po_analytics():
         # Get discrepancy breakdown by category
         discrepancy_df = df[df['Match/Not'] == False].copy()
         discrepancy_df['bucket_category'] = discrepancy_df['stated_reason'].map(
-            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+            lambda x: reason_buckets.get(str(x).strip().lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
         )
         
         # Calculate category-wise metrics
@@ -556,7 +556,7 @@ def get_po_level_issues(category: str = None):
         
         # Map stated_reason to bucket category
         issue_df['bucket_category'] = issue_df['stated_reason'].map(
-            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+            lambda x: reason_buckets.get(str(x).strip().lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
         )
         
         # Filter by category if provided
@@ -642,7 +642,7 @@ def get_top_pos():
         
         # Map to categories
         issue_df['category'] = issue_df['stated_reason'].map(
-            lambda x: reason_buckets.get(x.lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
+            lambda x: reason_buckets.get(str(x).strip().lower(), "Unspecified Issue") if pd.notna(x) else "Unspecified Issue"
         )
         
         # Assign recovery amounts by category
