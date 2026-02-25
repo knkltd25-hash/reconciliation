@@ -1,5 +1,5 @@
 PO_ID,stated_reason,Match/Not,Comments
-PO1000,arrived late,True,On time delivery
+PO1000,arrived late,False,On time delivery
 PO1001,no reason,True,No discrepancy
 PO1002,no reason,True,No discrepancy
 PO1003,no reason,True,No discrepancy
@@ -71,11 +71,13 @@ PO1068,no reason,True,No discrepancy
 PO1069,no reason,True,No discrepancy
 PO1070,no reason,True,No discrepancy
 PO1071,less received,True,Normal delivery: 90
+PO1071,less received,False,Normal delivery: 90
 PO1072,no reason,True,No discrepancy
 PO1073,no reason,True,No discrepancy
 PO1074,under-delivery,False,PO or GRN data not found
 PO1075,no reason,True,No discrepancy
 PO1076,over delivered,True,On time delivery
+PO1076,over delivered,False,On time delivery
 PO1077,no reason,True,No discrepancy
 PO1078,no reason,True,No discrepancy
 PO1079,no reason,True,No discrepancy
@@ -118,10 +120,13 @@ PO1115,no reason,True,No discrepancy
 PO1116,no reason,True,No discrepancy
 PO1117,no reason,True,No discrepancy
 PO1118,less received,True,Normal delivery: 93
+PO1118,less received,False,Normal delivery: 93
 PO1119,no reason,True,No discrepancy
 PO1120,arrived late,True,On time delivery
+PO1120,arrived late,False,On time delivery
 PO1121,under-delivery,False,"Under-delivery: PO=183, GRN=167"
 PO1122,under-delivery,True,Normal delivery: 193
+PO1122,under-delivery,False,Normal delivery: 193
 PO1123,no reason,True,No discrepancy
 PO1124,no reason,True,No discrepancy
 PO1125,no reason,True,No discrepancy
